@@ -4,7 +4,8 @@
 
 ## 20141019-1501-CE
 ### Video: LIES_EXPOSED_Leaked_Moolah_Video.mov
-This is a video of a “Alex Green”  
+This is a video of a “Alex Green” 
+
 
 ## 20141019-1659-CE
 ### Webpage of LIES_EXPOSED_Leaked_Moolah_Video  
@@ -39,6 +40,10 @@ See: “20141020-2336-CE”
 
 ## Where Is Alex Green, Former CEO of Moolah.io As Evidence Stacks Up Against Him?
 ### Youtube: [Link](http://youtu.be/WTT5B4EhHDw)
-[Mirror 1](https://web.archive.org/web/20141021001619/https://www.youtube.com/watch?v=WTT5B4EhHDw) | 
+[Mirror 1](https://web.archive.org/web/20141021001619/https://www.youtube.com/watch?v=WTT5B4EhHDw)  
+
+## 20141021-0056-CE
+### Reddit Post:  My thoughts on what appears to be The Foundation vs Moolah by /u/1brokeshibe
+[Link](http://www.reddit.com/r/dogecoin/comments/24d82v/my_thoughts_on_what_appears_to_be_the_foundation/) | [Mirror 1](https://web.archive.org/web/20141021005134/http://www.reddit.com/r/dogecoin/comments/24d82v/my_thoughts_on_what_appears_to_be_the_foundation/)
 
 
