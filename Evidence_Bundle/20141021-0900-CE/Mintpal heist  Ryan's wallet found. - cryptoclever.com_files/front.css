@@ -1,0 +1,51 @@
+.pwal_content_wrapper { text-align: center; width: 100%;  margin: auto; }
+.pwal_container {
+	width: 100%;
+	float: left;
+	padding: 20px;
+	margin: 10px auto;
+	text-align: center;
+	border: 1px solid #e3e3e3;
+	border-radius: 3px;
+	height: auto;
+}
+
+.pwal_container .pwal_description {
+	width: 100%;
+	font-size:1.2em;
+	font-weight:bold;
+	margin-bottom: 1em; }
+
+.pwal_container .pwal_buttons { width: 100%; float: left; }
+
+.pwal_container .pwal_buttons .pwal_button { float: left; width: 100%; }
+.pwal_container .pwal_buttons .pwal_button_1 { width: 100%; }
+.pwal_container .pwal_buttons .pwal_button_2 { width: 50%; }
+.pwal_container .pwal_buttons .pwal_button_3 { width: 33%; }
+.pwal_container .pwal_buttons .pwal_button_4 { width: 25%; }
+.pwal_container .pwal_buttons .pwal_button_5 { width: 20%; }
+.pwal_container .pwal_buttons .pwal_button_6 { width: 16%; }
+
+/*
+.pwal_container ul { list-style: none; overflow: auto; margin: auto; padding: 0;}
+.pwal_container ul li{ float: left; list-style-type: none !important; margin: 0; padding: 0; }
+.pwal_container ul li { background: none !important;; background-image: none !important; }
+*/
+
+/* If you want Facebook comments to be added by your visitor, remove the following line.
+For correct display, you may need to change other css properties too*/
+
+.pwal_container .pwal_button_facebook .fb_edge_widget_with_comment iframe.fb_iframe_widget_lift {
+/*	display: none !important;  */
+	margin-left: -999em;
+}
+
+/* .fb_edge_widget_with_comment span.fb_edge_comment_widget iframe.fb_ltr {display: none !important;} */
+
+/* Hiding Google pop-up. As G+ does not wait, removing this line will not give any pratical result */
+.pwal_container .gc-bubbleDefault.pls-container{display:none !important;}
+
+
+
+
+/* 329254-1406490560-ai */

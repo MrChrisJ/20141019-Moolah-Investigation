@@ -1,0 +1,455 @@
+/* Directory Style */
+
+#dr_update_form{
+	width: 99%;
+}
+.dp_error, .error {
+	background: #FFEBE8;
+}
+.error{
+	border: 1px solid red;
+	background-color: #FFEBE8;
+}
+
+label.error {
+	display: block;
+	background: #FFEBE8;
+	color: #111;
+	padding: 0 1em;
+	margin: 0 1.2em 0 0;
+	border: 0;
+	box-sizing:border-box;
+}
+
+.field_checking {
+	color: black;
+}
+
+.field_exists {
+	color: red;
+}
+
+.field_available {
+	color: green;
+}
+
+.row-actions {
+	visibility: hidden;
+	padding: 2px 0 0;
+}
+
+tr:hover .row-actions,
+div.comment-item:hover .row-actions {
+	visibility: visible;
+}
+
+.clear{
+	clear: both;
+	width:auto;
+	height: auto;
+}
+
+.clear_left{
+	clear: left;
+}
+
+.clear_right{
+	clear: right;
+}
+
+.dr_tax_panel{
+	overflow: auto;
+	height:160px;
+	border:1px solid #ddd;
+}
+
+.dr_tax_panel ul{
+	list-style: none outside none;
+	padding: 0;
+	margin: 0;
+}
+.dr_tax_panel ul.children{
+	font-size: .8em;
+	margin-left: 1.6em;
+}
+
+.dr_taxonomydiv{
+	float: left;
+	display: block;
+	width:47%;
+	margin-right: 3%;
+}
+
+.action-form, .confirm-form {
+	margin-top: 10px;
+}
+
+.dr-contact-form {
+	width: 300px;
+	float: left;
+}
+
+#dr-message,
+#dr-message-error {
+	background-color: #8FF57A;
+	color: #1A6A00;
+	-moz-border-radius: 3px 3px 3px 3px;
+	border: 1px solid #80CF70;
+	font-weight: normal;
+	margin: 3px 0px 10px 0px;
+	text-decoration: none;
+	display: block;
+	font-size: 12px;
+	padding: 5px 50px;
+	float: left;
+}
+
+#dr-message-error {
+	background-color: #FFEBE8;
+	color: #000;
+	border: 1px solid #CC0000;
+}
+
+
+.editfield input,
+.editfield textarea,
+.editfield select {
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+	width: 100%;
+}
+
+/* #dr_listing_list */
+
+#dr_listing_list .entry-title{
+	float: left;
+}
+
+#dr_listing_list .entry-meta{
+	clear: none;
+	float: right !important;
+	width: 230px;
+	border-left: 1px solid #ddd;
+	padding: 0 5px;
+	margin-left: 5px;
+}
+
+#dr_listing_list .entry-post{
+	border: 1px solid #ddd;
+	margin-bottom: 1em;
+	padding: 1em;
+}
+
+#dr_listing_list .entry-summary{
+	clear: left;
+	padding:0;
+}
+
+/*Categories list grid css*/
+#dr_list_categories span{
+	font-size: small;
+}
+
+.dr_list_categories ul{
+	padding:0;
+	margin:0;
+}
+
+.dr_list_grid h2{
+	background-color: #eee;
+	padding: .2em 1em;
+	border-radius: .3em;
+}
+
+.dr_list_grid li{
+	float: left;
+	list-style: none outside none;
+	min-height: 11em;
+	padding: .5em;
+	width: 19%;
+	margin: 0 2% 2% 0;
+	border: medium solid #eee;
+	border-radius: .4em;
+}
+
+
+/*Categories list css*/
+.dr_list h2{
+	background-color: #eee;
+	padding: .2em 1em;
+	border-radius: .3em;
+	text-shadow: 1px 1px #fff;
+}
+
+.dr_list ul{
+	min-width:50%;
+}
+
+.dr_list li{
+	list-style: none outside none;
+	margin: .6em;
+}
+
+.dr_list div{
+	float:left;
+	margin: 0 1em;
+}
+
+/* Pagination styles */
+.dr-navigation{
+	float:right;
+}
+
+.dr-pagination {
+	clear:both;
+	padding:20px 0;
+	position: relative;
+	font-size:11px;
+	line-height:13px;
+	z-index:99;
+}
+
+.dr-pagination span, .dr-pagination a {
+	display:block;
+	float:left;
+	margin: 2px 2px 2px 0;
+	padding:6px 9px 5px 9px;
+	text-decoration:none;
+	width:auto;
+	color:#fff;
+	background: #999;
+}
+.dr-pagination a:hover{
+	color:#fff;
+	background: #3279BB;
+}
+.dr-pagination .current{
+	padding:6px 9px 5px 9px;
+	background: #3279BB;
+	color:#fff;
+}
+
+/** Sigin Form **/
+/* tabbed list */
+#login-register-password, ul.dr_tabs {
+	padding-bottom: 0;
+	margin: 0 !important;
+	position: relative;
+	list-style: none;
+	z-index: 1000;
+	float: left;
+}
+
+ul.dr_tabs li {
+	background: #fff;
+	border: 1px solid #E7E9F6;
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
+	line-height: 2em;
+	padding: 0;
+	margin-right: 5px;
+	overflow: hidden;
+	float: left;
+}
+
+ul.dr_tabs li a {
+	text-decoration: none;
+	padding: 0 10px;
+	display: block;
+}
+
+ul.dr_tabs li.dr_active {
+	border-bottom: 1px solid #fff;
+}
+ul.dr_tabs li.dr_active a {
+	font-weight: bold;
+	color: #333;
+}
+
+.dr_tab_container {
+	background: #fff;
+	position: relative;
+	margin: 0;
+	border: 1px solid #E7E9F6;
+	z-index: 999;
+	float: left;
+	width: 100%;
+	top: -1px;
+}
+.dr_tab_content {
+	padding: 15px;
+}
+.dr_tab_content ul {
+	padding: 0;
+	margin: 0 0 0 15px;
+}
+.dr_tab_content li {
+	margin: 5px 0;
+}
+
+/* global styles */
+#login-register-password {
+	width: 100%;
+}
+#login-register-password h3 {
+	border: 0 none;
+	margin: 10px 0;
+	padding: 0;
+}
+#login-register-password p {
+	margin: 0 0 15px 0;
+	padding: 0;
+}
+/* form elements */
+.wp-user-form {}
+.username,
+.password,
+.login_fields {
+	margin: 7px 0 0 0;
+	overflow: hidden;
+	width: 100%;
+}
+.username label,
+.password label {
+	float: left;
+	width: 25%;
+}
+.username input,
+.password input {
+	float: left;
+	width: 200px;
+	padding: 2px 3px;
+	color: #777;
+}
+.rememberme {
+	overflow: hidden;
+	width: 100%;
+	margin-bottom: 7px;
+}
+#rememberme {
+	float: left;
+	margin: 4px 4px -4px 0;
+}
+.user-submit {
+	padding: 5px 10px;
+	margin: 5px 0;
+}
+.userinfo {
+	float: left;
+	width: 75%;
+	margin-bottom: 10px;
+}
+.userinfo p {
+	margin-left: 10px;
+}
+.usericon {
+	float: left;
+	width: 15%;
+	margin: 0 0 10px 22px;
+}
+.usericon img {
+	border: 1px solid #F4950E;
+	padding: 1px;
+}
+
+/* Custom Fields onput */
+.dr-custom-block table {
+	border-collapse: collapse;
+	width:100%;
+}
+
+.dr-custom-block th,
+.dr-custom-block td {
+	border: 1px solid #ddd;
+	padding: 0 4px;
+}
+
+.dr-custom-block th{
+	width: 30%;
+}
+
+/* custom input field styles */
+.ct-form-field table{
+	border-collapse: collapse;
+	width: 100%;
+}
+
+.ct-form-field label{
+	border:none;
+	font-family: inherit;
+}
+.ct-form-field td{
+	border:none;
+}
+
+.ct-form-field p{
+	font-size: .8em;
+}
+
+/** Thickbox layer adjustment to get on top of 2011 images*/
+#TB_overlay {
+	z-index:10000;
+}
+
+#TB_window {
+	z-index: 10002;
+}
+
+#TB_load{
+	z-index:10003;
+}
+
+#TB_HideSelect{
+	z-index:9999;
+}
+
+/** File upload button
+*
+* this is rather empirically arrived at ratios to get the upload button
+* to work in all browsers due to [type=file] weirdness between browsers
+* Firefox in particualr is touchy.
+*/
+
+.upload-button {
+  cursor: pointer;
+  display: inline-block;
+  overflow: hidden;
+  position: relative;
+}
+
+.upload-button input {
+  position: absolute;
+  right: 0;
+  top: -200%;
+  width: 100%;
+  height: 400%;
+  font-size: 10%;
+  letter-spacing: 12em;
+  cursor: pointer;
+  filter: alpha(opacity=0);
+  -moz-opacity: 0;
+  opacity: 0;
+  margin-right: 10px;
+}
+
+.upload-button .button {
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 11px;
+  margin-right: 5px;
+  padding: 4px 18px;
+  text-transform: uppercase;
+}
+
+.upload-button .file-holder {
+	background: #ddd;
+	padding:3px;
+}
+
+
+
+/* 329254-1408547501-au */

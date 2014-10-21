@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<!-- saved from url=(0057)https://disqus.com/home/preload?utm_source=disqus_embed#5 -->
+<html lang="en" class=" js no-touch history localstorage sessionstorage contenteditable"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Disqus</title>
+
+  <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="underscore" src="underscore.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="home/apps/dashboard/app" src="app.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="disqus.sdk" src="sdk.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="remote/config" src="config(1).js"></script><!--<base target="_blank">--><base href="." target="_blank">
+  <link rel="shortcut icon" href="https://a.disquscdn.com/img/favicon16-32.ico" type="image/vnd.microsoft.icon">
+  <link rel="apple-touch-icon" href="https://a.disquscdn.com/dotcom/d-309f716/img/brand/disqus-social-icon-white-blue.png">
+
+  
+  <link rel="stylesheet" href="https://a.disquscdn.com/home/d-dfa0155/css/disqus-web/pages/hovercards.css">
+
+  <script type="text/javascript" async="" src="mixpanel-2.2.min.js"></script><script type="text/javascript" async="" src="ga.js"></script><script>
+  /* This code gets embedded into a bare script block. */
+window.DISQUS_HOME_VERSION = (function () {
+    'use strict';
+
+    var localStorageSupported = (function () {
+        try {
+            localStorage.setItem('foo', 'bar');
+            localStorage.removeItem('foo');
+            return true;
+        } catch (e) {
+            return false;
+        }
+    }());
+
+    var isIframed = (function (win) {
+        try {
+            return win.self !== win.top;
+        } catch (e) {
+            // if an exception is thrown it almost certainly means that the
+            // document is in an iframe (and a single-origin policy exception was thrown)
+            // so return true
+            return true;
+        }
+    })(window);
+
+    var cookieMatch = document.cookie.match('dhome_internal=([^;]+)');
+
+    var optedOut = (cookieMatch && cookieMatch[1] === 'false') ||
+          localStorageSupported && localStorage.getItem('dhome_v2oo') === 'true';
+
+    if (isIframed)
+        optedOut = false;
+
+    return optedOut ? '1' : '2';
+}());
+
+
+  if (window.DISQUS_HOME_VERSION === '1') {
+      document.write(
+        '<link rel="stylesheet" href="//a.disquscdn.com/home/d-dfa0155/css/disqus-web/pages/dashboard-imports.css">'
+      );
+  } else {
+      document.write(
+        '<link rel="stylesheet" href="//a.disquscdn.com/home/d-dfa0155/css/main.css">'
+      );
+  }
+  </script><link rel="stylesheet" href="https://a.disquscdn.com/home/d-dfa0155/css/main.css">
+
+  <script src="raven.min.js"></script>
+<script src="require-config.js"></script>
+<script src="require.js"></script>
+<script>
+    // Don't bother initializing Raven if we're in a super djanky browser
+    if (document.addEventListener) {
+        Raven.config("//026e773bf1524b4481b96350d4f8b7f8@sentry.services.disqus.com/33", {
+            whilelistUrls: [
+                /a\.disquscdn\.com/
+            ]
+        }).install();
+    }
+
+    require.config({
+        baseUrl: "//a.disquscdn.com/home/d-dfa0155/js",
+        paths: {
+            'disqus.sdk': "//a.disquscdn.com/next/current/sdk",
+
+            // When running locally, use hardcoded file at fixtures/config.js
+            // In production, use production config
+            'remote/config': "//disqus.com/next/config",
+        }
+    });
+</script>
+
+
+  <script type="text/javascript">
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-1410476-16']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+
+  </script>
+
+  <!-- start Mixpanel --><script type="text/javascript">(function(e,b){if(!b.__SV){var a,f,i,g;window.mixpanel=b;a=e.createElement("script");a.type="text/javascript";a.async=!0;a.src=("https:"===e.location.protocol?"https:":"http:")+'//cdn.mxpnl.com/libs/mixpanel-2.2.min.js';f=e.getElementsByTagName("script")[0];f.parentNode.insertBefore(a,f);b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==
+  typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.track_charge people.clear_charges people.delete_user".split(" ");for(g=0;g<i.length;g++)f(c,i[g]);
+  b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
+  mixpanel.init("3ad8df9f28f928f3f970501b99cc717c", {track_pageview: false});
+  mixpanel.set_config({ cross_subdomain_cookie: false });</script><!-- end Mixpanel -->
+<style type="text/css">@media only screen and (min-width: 480px) { body.scroll-fix { margin-right: 0px; } body.scroll-fix .compensation { margin-right: 0px; } }</style></head>
+<body class="home-drawer scroll-fix"><div id="container-page">
+<div class="viewport">
+    <header class="nav-container-outer" data-role="nav-view"><div class="compensation"><div class="nav-container-inner" data-mix-location="nav">
+    <div class="nav-right">
+
+        
+
+        <div id="discover-menu" class="nav-discover-wrapper tooltipped" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Discover"><div><div class="nav-discover dropdown" data-action="toggle-dropdown" data-dropdown="discover">
+
+    <a data-toggle="dropdown" class="dropdown-toggle" href="https://disqus.com/home/preload?utm_source=disqus_embed#">
+        
+        <svg class="icon-discover" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 40 40" enable-background="new 0 0 40 40" xml:space="preserve"><path class="dot" d="M0 4c0-2.2 1.8-4 4-4s4 1.8 4 4S6.2 8 4 8S0 6.2 0 4z"></path><path class="dot" d="M0 20c0-2.2 1.8-4 4-4s4 1.8 4 4s-1.8 4-4 4S0 22.2 0 20z"></path><path class="dot" d="M0 36c0-2.2 1.8-4 4-4s4 1.8 4 4s-1.8 4-4 4S0 38.2 0 36z"></path><path class="dot" d="M16 4c0-2.2 1.8-4 4-4s4 1.8 4 4s-1.8 4-4 4S16 6.2 16 4z"></path><path class="dot" d="M16 20c0-2.2 1.8-4 4-4s4 1.8 4 4s-1.8 4-4 4S16 22.2 16 20z"></path><path class="dot" d="M16 36c0-2.2 1.8-4 4-4s4 1.8 4 4s-1.8 4-4 4S16 38.2 16 36z"></path><path class="dot" d="M32 4c0-2.2 1.8-4 4-4s4 1.8 4 4s-1.8 4-4 4S32 6.2 32 4z"></path><path class="dot" d="M32 20c0-2.2 1.8-4 4-4s4 1.8 4 4s-1.8 4-4 4S32 22.2 32 20z"></path><path class="dot" d="M32 36c0-2.2 1.8-4 4-4s4 1.8 4 4s-1.8 4-4 4S32 38.2 32 36z"></path></svg>
+    </a>
+
+    <div class="dropdown-menu dropdown-discover" role="menu" aria-labeledby="drop-discover">
+        <div class="dropdown-discover-following">
+            <header class="dropdown-discover-header">
+                <h4>Following <a href="https://disqus.com/home/user/MrChrisEllis/following" class="count">0</a></h4>
+                <p>Follow people and communities to find more stories.</p>
+            </header>
+            <div class="following">
+                <div class="following-people">
+                    <h5>People</h5>
+                    <ul>
+                    
+                        <li class="blank">You're not following anyone.</li>
+                    
+                    </ul>
+                </div>
+                <div class="following-communities">
+                    <h5>Communities</h5>
+                    <ul id="suggestion-nav-forums">
+                    
+                         <li class="blank">You're not following any communities.</li>
+                    
+                    </ul>
+                </div>
+            </div>
+
+            <footer>
+                <div class="connect">
+                    
+                    <a href="https://disqus.com/follow/facebook/" class="btn btn-facebook btn-block">
+                        Connect <span class="icon-facebook"></span></a>
+                    
+                    <a href="https://disqus.com/home/user/MrChrisEllis/following" class="btn btn-light btn-block">Manage All</a>
+                </div>
+            </footer>
+        </div>
+        <div class="dropdown-discover-browse">
+            <header class="dropdown-discover-header">
+                <h4>Browse</h4>
+                <p>Disqus shows you community-powered stories.</p>
+            </header>
+            <ul class="browse-links">
+                <li><a href="https://disqus.com/home/topics/business">Business</a></li>
+                <li><a href="https://disqus.com/home/topics/celebrity">Celebrity</a></li>
+                <li><a href="https://disqus.com/home/topics/culture">Culture</a></li>
+                <li><a href="https://disqus.com/home/topics/entertainment">Entertainment</a></li>
+                <li><a href="https://disqus.com/home/topics/games">Games</a></li>
+                <li><a href="https://disqus.com/home/topics/living">Living</a></li>
+                <li><a href="https://disqus.com/home/topics/news">News</a></li>
+                <li><a href="https://disqus.com/home/topics/sports">Sports</a></li>
+                <li><a href="https://disqus.com/home/topics/style">Style</a></li>
+                <li><a href="https://disqus.com/home/topics/tech">Tech</a></li>
+            </ul>
+            <a href="https://help.disqus.com/customer/portal/articles/1587748" target="_blank" class="btn btn-light btn-block">Learn More</a>
+        </div>
+    </div>
+</div>
+</div></div>
+
+        <div class="nav-settings-wrapper tooltipped" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Settings">
+            <div class="nav-settings dropdown" data-action="toggle-dropdown" data-dropdown="settings">
+    <a data-toggle="dropdown" class="dropdown-toggle" href="https://disqus.com/home/preload?utm_source=disqus_embed#">
+        
+        <svg class="icon-settings" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 40 40" enable-background="new 0 0 40 40" xml:space="preserve"><path fill-rule="evenodd" clip-rule="evenodd" d="M40 23.9v-7.7h-4.2c-0.4-1.6-1-3.1-1.9-4.6l3-3l-5.5-5.5l-3 3 c-1.4-0.9-2.9-1.5-4.6-1.9V0h-7.7v4.2c-1.6 0.4-3.2 1-4.6 1.9l-3-3L3.1 8.6l3 3c-0.8 1.4-1.5 2.9-1.9 4.6H0v7.7h4.3 c0.4 1.6 1.1 3.1 1.9 4.5l-3 3l5.5 5.5l3.1-3.1c1.4 0.8 2.9 1.5 4.5 1.8V40h7.7v-4.3c1.6-0.4 3.1-1 4.5-1.8l3.1 3.1l5.5-5.5l-3.1-3 c0.8-1.4 1.5-2.9 1.9-4.5H40z M13.3 20c0-3.7 3-6.7 6.7-6.7s6.7 3 6.7 6.7s-3 6.7-6.7 6.7S13.3 23.7 13.3 20z"></path></svg>
+    </a>
+
+    <ul class="dropdown-menu dropdown-settings" data-mix-location="user menu">
+        <li>
+    <a href="https://disqus.com/home/preload?utm_source=disqus_embed#" class="no-mobile" data-action="show-edit-profile">
+        Edit Profile
+    </a>
+</li>
+<li>
+    <a href="https://disqus.com/home/preload?utm_source=disqus_embed#" class="no-mobile" data-action="show-account">
+        Settings
+    </a>
+</li>
+<li>
+    <a href="https://disqus.com/home/preload?utm_source=disqus_embed#" data-action="opt-out">
+        Switch Back
+    </a>
+</li>
+
+<li role="presentation" class="divider no-mobile"></li>
+
+<li>
+    
+</li>
+<li>
+    <a href="https://disqus.com/follow/facebook/" class="no-mobile">
+        Find Friends
+    </a>
+</li>
+<li>
+    <a href="https://disqus.com/admin/create/" class="no-mobile">
+        Add Disqus To Site
+    </a>
+</li>
+
+<li role="presentation" class="divider no-mobile"></li>
+
+<li>
+    
+    <a href="https://disqus.com/home/forums/channel-discussdisqus" target="_blank">
+        Feedback?
+    </a>
+</li>
+<li>
+    <a href="https://help.disqus.com/" target="_blank" data-role="help">
+        Help
+    </a>
+</li>
+<li>
+    <a href="https://disqus.com/logout/?redirect=http%3A%2F%2Fdisqus.com">
+        Log Out
+    </a>
+</li>
+
+    </ul>
+</div>
+
+        </div>
+
+        <div class="nav-settings-mobile-wrapper">
+            <div class="nav-settings-mobile" data-action="toggle-sidebar" data-mix-location="mobile">
+    <svg class="icon-settings" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 40 40" enable-background="new 0 0 40 40" xml:space="preserve"><path fill-rule="evenodd" clip-rule="evenodd" d="M40 23.9v-7.7h-4.2c-0.4-1.6-1-3.1-1.9-4.6l3-3l-5.5-5.5l-3 3 c-1.4-0.9-2.9-1.5-4.6-1.9V0h-7.7v4.2c-1.6 0.4-3.2 1-4.6 1.9l-3-3L3.1 8.6l3 3c-0.8 1.4-1.5 2.9-1.9 4.6H0v7.7h4.3 c0.4 1.6 1.1 3.1 1.9 4.5l-3 3l5.5 5.5l3.1-3.1c1.4 0.8 2.9 1.5 4.5 1.8V40h7.7v-4.3c1.6-0.4 3.1-1 4.5-1.8l3.1 3.1l5.5-5.5l-3.1-3 c0.8-1.4 1.5-2.9 1.9-4.5H40z M13.3 20c0-3.7 3-6.7 6.7-6.7s6.7 3 6.7 6.7s-3 6.7-6.7 6.7S13.3 23.7 13.3 20z"></path></svg>
+    <svg class="icon-x" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 40 40" enable-background="new 0 0 40 40" xml:space="preserve"><polygon points="40,5.5 34.5,0 20,14.5 5.5,0 0,5.5 14.5,20 0,34.5 5.5,40 20,25.5 34.5,40 40,34.5 25.5,20"></polygon></svg>
+</div>
+
+        </div>
+    </div>
+    <div class="nav-left">
+        <a href="https://disqus.com/home/" class="nav-logo">
+            <img class="logo-desktop" src="disqus-logo-blue-white.svg" alt="Disqus">
+            <img class="logo-mobile" src="disqus-social-icon-blue-white.svg" alt="Disqus">
+        </a>
+        <div class="nav-home-wrapper tooltipped" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Home Feed">
+            <a href="https://disqus.com/home/" class="nav-home" data-page-icon="">
+                
+                <svg class="icon-home" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 40 40" enable-background="new 0 0 40 40" xml:space="preserve"><path d="M39.5 20.7L21.7 2.5c-0.9-1-2.4-1-3.3 0L0.5 20.7c-0.9 1-0.6 1.7 0.8 1.7H5v13.9c0 1 0 1.8 1.8 1.8h8.7v-14 h9.1v14h9.1c1.4 0 1.4-0.8 1.4-1.8V22.4h3.7C40.1 22.4 40.4 21.6 39.5 20.7z"></path></svg>
+            </a>
+        </div>
+    </div>
+    <div class="nav-center">
+        <div class="nav-profile-wrapper tooltipped" data-role="user" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Me">
+
+            <a href="https://disqus.com/home/user/MrChrisEllis" class="nav-profile" data-page-icon="user/MrChrisEllis">
+    <img src="avatar92(9).jpg" alt="MrChrisEllis">
+</a>
+
+
+        </div>
+        <div class="nav-notif-wrapper tooltipped" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Replies &amp; Notifications">
+
+            <a href="https://disqus.com/home/inbox" class="nav-notif" data-role="notifications" data-page-icon="inbox">
+                <div class="notif-count" data-role="unread-notification-count">0</div>
+                
+                <svg class="icon-notif" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="159.8 0 480.2 480" enable-background="new 159.8 0 480.2 480" xml:space="preserve"><path class="fill" d="M409 480c-52.5 0-103.5-18-145.5-52.5l-87 12c-6 0-10.5-1.5-13.5-6s-4.5-10.5-1.5-15l33-85.5 c-12-30-18-61.5-18-93C176.5 108 280 0 409 0c127.5 0 231 108 231 240S536.5 480 409 480z"></path><path class="outline" d="M409 480c-52.5 0-103.5-18-145.5-52.5l-87 12c-6 0-10.5-1.5-13.5-6s-4.5-10.5-1.5-15l33-85.5 c-12-30-18-61.5-18-93C176.4 108 280 0 409 0c127.5 0 231 108 231 240S536.5 480 409 480z M270.4 396.7c3 0 5.7 0.6 8.1 2.3 c36 31.5 82.5 49.5 130.5 49.5c111 1.5 201-93 201-208.5S520 30 409 30c-112.5 0-202.5 94.5-202.5 210c0 30 6 60 18 87 c1.5 3 1.5 7.5 0 12l-27 67.5l67.5-9C267.6 397 270.4 396.7 270.4 396.7z"></path><path class="arrow" d="M419.5 252v48l78-73.5l-78-72v42c-94.5 0-117 108-117 108C329.5 256.5 367 252 419.5 252z"></path></svg>
+            </a>
+
+        </div>
+    </div>
+</div>
+</div></header>
+
+    
+    <div class="nav-drawer">
+        <a href="https://disqus.com/home/" data-action="full-root" target="_blank" class="nav-logo">
+            <img src="disqus-logo-blue-white.svg" alt="Disqus">
+        </a>
+        <div class="nav-drawer-right">
+            <a class="nav-expand truncate-line" data-action="full-root" target="_blank" href="https://disqus.com/home/">
+                
+                <svg class="icon-home" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 40 40" enable-background="new 0 0 40 40" xml:space="preserve"><path d="M39.5 20.7L21.7 2.5c-0.9-1-2.4-1-3.3 0L0.5 20.7c-0.9 1-0.6 1.7 0.8 1.7H5v13.9c0 1 0 1.8 1.8 1.8h8.7v-14 h9.1v14h9.1c1.4 0 1.4-0.8 1.4-1.8V22.4h3.7C40.1 22.4 40.4 21.6 39.5 20.7z"></path></svg>
+                <span class="text-desktop">Disqus Home</span>
+            </a>
+            <a class="nav-feedback truncate-line" target="_blank" href="https://disqus.com/home/channel/discussdisqus">
+                
+                <svg class="icon-discussion" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 18.7 16.7" enable-background="new 0 0 18.7 16.7" xml:space="preserve"><path d="M16.3 1H8.6C7.7 1 6.9 1.8 6.9 2.7v6.7h5.9l2.6 2.5V9.3h0.8 c0.9 0 1.7-0.8 1.7-1.7v-5C18 1.8 17.2 1 16.3 1z M5.9 10.3V5.2H2.7C1.8 5.2 1 5.9 1 6.8v5c0 0.9 0.8 1.7 1.7 1.7h0.8V16l2.5-2.5 h4.3c0.9 0 1.7-0.8 1.7-1.7v-1.5c-0.1 0-0.1 0-0.2 0H5.9z"></path></svg>
+                <span class="text-desktop">Feedback</span>
+            </a>
+            <a class="nav-refresh truncate-line" data-action="refresh-drawer" href="https://disqus.com/home/preload?utm_source=disqus_embed#">
+                <svg class="icon-refresh" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 466.6 405.8" enable-background="new 0 0 466.6 405.8" xml:space="preserve"><path d="M363.7 307.2l102.8-116.9h-66.9c-3.2-50.3-24.3-97.1-60-132.5C302.1 20.5 252.5 0 200 0C89.7 0 0 91 0 202.9 c0 111.9 89.7 202.9 200 202.9c44.8 0 88.6-15.2 123.4-42.9l6.3-5l-43.2-47.1l-5.4 4.1c-23.5 17.8-51.5 27.2-81 27.2 c-75.6 0-137-62.5-137-139.3S124.4 63.7 200 63.7c35.5 0 69.2 13.9 94.9 39.1c23.9 23.5 38.3 54.3 41 87.5H260L363.7 307.2z" class="style0"></path></svg>
+                <span class="text-desktop">Refresh</span>
+            </a>
+            <a class="nav-close" data-action="close-drawer" href="https://disqus.com/home/preload?utm_source=disqus_embed#"><span class="icon-cancel"></span></a>
+        </div>
+    </div>
+
+    <div id="container-main"><div><p></p>
+</div></div>
+</div>
+
+
+<div class="sidebar compensation" data-role="sidebar">
+    <ul class="sidebar-options" data-mix-location="user menu mobile">
+        <li>
+    <a href="https://disqus.com/home/preload?utm_source=disqus_embed#" class="no-mobile" data-action="show-edit-profile">
+        Edit Profile
+    </a>
+</li>
+<li>
+    <a href="https://disqus.com/home/preload?utm_source=disqus_embed#" class="no-mobile" data-action="show-account">
+        Settings
+    </a>
+</li>
+<li>
+    <a href="https://disqus.com/home/preload?utm_source=disqus_embed#" data-action="opt-out">
+        Switch Back
+    </a>
+</li>
+
+<li role="presentation" class="divider no-mobile"></li>
+
+<li>
+    
+</li>
+<li>
+    <a href="https://disqus.com/follow/facebook/" class="no-mobile">
+        Find Friends
+    </a>
+</li>
+<li>
+    <a href="https://disqus.com/admin/create/" class="no-mobile">
+        Add Disqus To Site
+    </a>
+</li>
+
+<li role="presentation" class="divider no-mobile"></li>
+
+<li>
+    
+    <a href="https://disqus.com/home/forums/channel-discussdisqus" target="_blank">
+        Feedback?
+    </a>
+</li>
+<li>
+    <a href="https://help.disqus.com/" target="_blank" data-role="help">
+        Help
+    </a>
+</li>
+<li>
+    <a href="https://disqus.com/logout/?redirect=http%3A%2F%2Fdisqus.com">
+        Log Out
+    </a>
+</li>
+
+    </ul>
+</div>
+</div></body></html>

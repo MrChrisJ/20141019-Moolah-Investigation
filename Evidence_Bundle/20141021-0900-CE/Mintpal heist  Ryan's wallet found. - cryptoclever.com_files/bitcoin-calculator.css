@@ -1,0 +1,60 @@
+@charset "utf-8";
+/* CSS Document */
+
+.bitcoin-curreny-calculator {
+	padding:10px;
+	-moz-box-shadow: 0 0 5px #888;
+	-webkit-box-shadow: 0 0 5px#888;
+	box-shadow: 0 0 5px #888;
+	font-family:Arial, Helvetica, sans-serif;
+	width:250px;
+	color:#333;
+	font-size:10pt;
+	margin:10px 0 10px 0;
+}
+
+.bitcoin-curreny-calculator .sub-heading {
+	font-weight: bold;
+	margin:10px 0px 10px 0px;
+}
+
+.bitcoin-curreny-calculator .heading {
+	font-weight:bold;
+	background-color:#333;
+	color:#efefef;
+	padding:10px;
+}
+
+.bitcoin-curreny-calculator input {
+	border:none;
+	border:solid 1px #ddd;
+	margin:0px 0px 10px 0px;
+}
+
+.bitcoin-curreny-calculator .bitcoin-calculator-exchanged {
+	background-color: #E28008;
+	padding:10px;
+	margin:10px 0px 10px 0px;
+	font-size: 20px;
+	color:#efefef;
+	height: 20px;
+}
+.bitcoin-curreny-calculator-footer {
+	background-color:#efefef;
+	border-top:solid 1px #ddd;
+	margin-top:10px;
+}
+.bitcoin-curreny-calculator-footer a{
+	font-size:9px;
+	color:#333;
+}
+.bitcoin-curreny-calculator-link {
+	margin-top:7px;
+	text-align:center;
+}
+.bitcoin-curreny-calculator-bitcoin-address {
+	margin-top:7px;
+	font-size:9px;
+	text-align:center;
+	padding-bottom:7px;
+}

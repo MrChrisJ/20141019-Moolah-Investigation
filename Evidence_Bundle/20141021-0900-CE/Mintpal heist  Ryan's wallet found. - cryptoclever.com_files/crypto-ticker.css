@@ -1,0 +1,43 @@
+table.crypto-ticker-tbl {
+	border-spacing: 0px;
+	border-collapse: collapse;
+	margin: 0px;
+	padding: 0px;
+}
+
+.crypto-ticker-tbl tr {
+	padding: 0px;
+	vertical-align: middle;
+}
+
+.crypto-ticker-tbl td {
+	padding: 1px;
+	vertical-align: middle;
+}
+
+td.crypto-ticker-cell-icon {}
+
+td.crypto-ticker-cell-abbrev {}
+
+td.crypto-ticker-cell-quote {
+	text-align: right;
+}
+
+td.crypto-ticker-cell-exch {
+	font-size: smaller;
+}
+
+td.crypto-ticker-delay {
+	padding: 2px;
+	vertical-align: bottom;
+	text-align: center;
+	font-size: smaller;
+}
+
+img.crypto-ticker-icon {
+	vertical-align: middle;
+	width: 16px;
+	height: 16px;
+	padding: 0px;
+	margin: 0px 0px 0px 10px;
+}

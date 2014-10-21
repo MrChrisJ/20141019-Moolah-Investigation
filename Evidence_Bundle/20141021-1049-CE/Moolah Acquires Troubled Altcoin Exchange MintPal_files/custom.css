@@ -1,0 +1,136 @@
+/*
+ * This is a sample custom stylesheet.  Copy it to ubermenu/custom/custom.css and
+ * set your Style Application setting to 'Custom' to start customizing
+ */
+
+
+/**********************************************************************
+ * UberMenu Skin: Custom
+ * UberMenu - WordPress Mega Menu Plugin http://wpmegamenu.com
+ **********************************************************************/
+
+#megaMenu {
+	border: none;
+	background: #f1c40f;
+}
+
+#megaMenu ul.megaMenu > li.menu-item > a {
+	padding: 15px;
+}
+
+#megaMenu ul.megaMenu > li.menu-item > a span.wpmega-link-title {
+	text-transform: uppercase;
+	font-size: 15px;
+	font-weight: 500;
+	line-height: 1;
+	color: #353536;
+}
+
+#megaMenu ul.megaMenu > li.menu-item > a span.wpmega-link-title em {
+	font-style: normal;
+}
+
+#megaMenu ul.megaMenu > li.menu-item > a span.wpmega-link-title span.icon,
+#megaMenu ul.megaMenu > li.menu-item > a span.wpmega-item-description {
+	display: none;
+}
+
+#megaMenu ul.megaMenu > li.menu-item.mega-with-sub > a {
+	padding-right: 30px;
+}
+
+#megaMenu ul.megaMenu > li.menu-item.mega-with-sub > a:after {
+	font-family: 'EntypoRegular';
+	font-size: 44px;
+	line-height: 0;
+	font-weight: normal;
+	content:'\E760';
+	border: none;
+	opacity: 0.4;
+	padding-top: 0;
+	position: absolute;
+	display: block;
+	top: 50%;
+	right: 8px;
+}
+
+#megaMenu ul.megaMenu > li.menu-item:hover > a {
+	background: #353536;
+}
+
+#megaMenu ul.megaMenu > li.menu-item:hover > a span.wpmega-link-title,
+#megaMenu ul.megaMenu > li.menu-item.mega-with-sub:hover > a:after {
+	color: #fff;
+}
+
+#megaMenu ul.megaMenu > li.menu-item > ul.sub-menu {
+	left: auto !important;
+	border-radius: 0 !important;
+	margin: 0 !important;
+	padding: 0 !important;
+	background: #353536;
+}
+
+#megaMenu ul.megaMenu > li.menu-item > ul.sub-menu li {
+	margin: 0 !important;
+	padding: 0 !important;
+	min-width: 120px !important;
+}
+
+#megaMenu ul.megaMenu > li.menu-item > ul.sub-menu > li a {
+	color: #fff;
+	font-size: 14px;
+	padding: 8px 15px !important;
+	margin: 0 !important;
+}
+
+#megaMenu ul.megaMenu > li.menu-item > ul.sub-menu ul.sub-menu {
+	width: 100%;
+}
+
+#megaMenu ul.megaMenu > li.menu-item > ul.sub-menu ul.sub-menu li {
+	padding: 0;
+}
+
+#megaMenu ul.megaMenu > li.menu-item > ul.sub-menu ul.sub-menu li a {
+	color: #ddd;
+	font-weight: normal;
+}
+
+#megaMenu ul.megaMenu > li.menu-information > ul.sub-menu li.menu-item {
+	width: 50%;
+}
+
+#megaMenu ul.megaMenu > li.menu-item > ul.sub-menu > li a:hover,
+#megaMenu ul.megaMenu > li.menu-item > ul.sub-menu ul.sub-menu li a:hover {
+	background: #f1c40f !important;
+	color: #353536;
+}
+
+#megaMenu ul.megaMenu > li.menu-item > ul.sub-menu > li a span {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+#megaMenu ul.megaMenu li.menu-news ul.sub-menu {
+	max-width: 511px !important;
+}
+
+.ie #megaMenu ul.megaMenu > li.menu-item.mega-with-sub > a:after {
+	margin-top: -9px;
+}
+
+/* IE9 + (http://www.impressivewebs.com/ie10-css-hacks/) */
+@media screen and (min-width:0\0) {
+
+	/* 
+	   This really shouldn't be needed, but for whatever reason,
+	   IE (all the way up to 11) renders the custom font icon totally
+	   off centre
+	 */
+	#megaMenu ul.megaMenu > li.menu-item.mega-with-sub > a:after {
+		margin-top: -9px;
+	}
+
+}
