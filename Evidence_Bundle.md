@@ -21,8 +21,8 @@ Registered in England and Wales company number 9143500 on 23rd July 2014
 
 ## 20141020-2200-CE
 ### Complete_conversation_with_Mintpal-Moolah_s_-Alex_Green-_AKA_Ryan_Gentle_AKA_Ryan_Kennedy.mp4
-[Link](http://youtu.be/gjUsn2rH_xE) 
-SHA-256: 5a03f4899aff4cd90414a59c8a60467b136f7884e945b6e85ea6404594732fe9
+[Link](http://youtu.be/gjUsn2rH_xE)  
+SHA-256: 5a03f4899aff4cd90414a59c8a60467b136f7884e945b6e85ea6404594732fe9  
 BitTorrent: magnet:?xt=urn:btih:11168baaafdc31191e45a156245c8f862802dfd1 
 See: “20141020-2336-CE”
 
