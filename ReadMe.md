@@ -2,9 +2,10 @@
 =================
 
 **Proof of Publication**:   
-[Commit 1](http://www.cryptograffiti.info/?txnr=1250) | [Blockchain ](https://blockchain.info/tx/99f69853864d771c792695585b9cf2056069073113a22261f408cc6cb1f197a3)  
-[Commit 2](http://www.cryptograffiti.info/?txnr=1255) | [Blockchain](https://blockchain.info/tx/d799a9b08e154baefa2f2f4aaa8840efeb2b0555c0cd9fc0b2d4678866454c10)  
-[Commit 3](http://www.cryptograffiti.info/?txnr=1256) | [Blockchain](https://blockchain.info/tx/2a6c72d5e6c8cda674ed0710268073735292a65b2adccfd5b87c3371d4cfe5b2)  
+[Timestamp 1](http://www.cryptograffiti.info/?txnr=1250) | [Block 326,085 ](https://blockchain.info/tx/99f69853864d771c792695585b9cf2056069073113a22261f408cc6cb1f197a3) | [4c8d1c6](https://github.com/MrChrisJ/20141019-Moolah-Investigation/commit/4c8d1c606b548f7da15f19ed180e1a38c9a91e63)  
+[Timestamp 2](http://www.cryptograffiti.info/?txnr=1255) | [Block 326,231](https://blockchain.info/tx/d799a9b08e154baefa2f2f4aaa8840efeb2b0555c0cd9fc0b2d4678866454c10) | [a41746b](https://github.com/MrChrisJ/20141019-Moolah-Investigation/commit/a41746bf9d40300f515ad39c6c13d0f7661ead5f)    
+[Timestamp 3](http://www.cryptograffiti.info/?txnr=1256) | [Block 326,291](https://blockchain.info/tx/2a6c72d5e6c8cda674ed0710268073735292a65b2adccfd5b87c3371d4cfe5b2) | [809c876](https://github.com/MrChrisJ/20141019-Moolah-Investigation/commit/809c87631bf8b3ca1bb32556f07c6284fb16d365)  
+[Timestamp 4](http://www.cryptograffiti.info/?txnr=1257) | [Block 326,297](https://blockchain.info/tx/60b4c67ea20a2ff72aa3c113d597764dc7ee8899368a7af616413b15d6ddca1a) | [0fab334](https://github.com/MrChrisJ/20141019-Moolah-Investigation/commit/0fab334b10cd1bd5441586f5fbe16fe8345dd037)  
 
 See [**Evidence_Bundle.md**](https://github.com/MrChrisJ/20141019-Moolah-Investigation/blob/master/Evidence_Bundle.md) to see the **Discovery process*  
 See [**Journal**](https://github.com/MrChrisJ/20141019-Moolah-Investigation/tree/master/Journal) for contextual notes  
