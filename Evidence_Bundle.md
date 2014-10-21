@@ -2,7 +2,7 @@
 ===============
 
 
-## 20141019-1501-CE
+## [20141019-1501-CE](https://github.com/MrChrisJ/20141019-Moolah-Investigation/tree/master/Evidence_Bundle/20141019-1501-CE)
 ### Video: LIES_EXPOSED_Leaked_Moolah_Video.mov
 This is a video of a “Alex Green” 
 
@@ -28,7 +28,7 @@ See: “20141020-2336-CE”
 
 ## 20141020-2210-CE
 ### Tweet by @BenDoernberg - Ben Doernberg
-“.@moolah_io's new lie: admits he's serial scammer Ryan Kennedy, but this time he was hacked! [http://blog.moolah.io/2014/10/19/recent-events/](http://blog.moolah.io/2014/10/19/recent-events/)”
+“.@moolah_io's new lie: admits he's serial scammer Ryan Kennedy, but this time he was hacked! [http://blog.moolah.io/2014/10/19/recent-events/](http://blog.moolah.io/2014/10/19/recent-events/)”  
 [Link](https://twitter.com/BenDoernberg/status/523716160462663681) | [Mirror 1](https://web.archive.org/web/20141020221105/https://twitter.com/BenDoernberg/status/523716160462663681) | [Mirror 2](https://www.evernote.com/shard/s78/sh/4db4c4bf-0f94-41e6-9641-a4dfa72c9dfc/b2e6166b69b856d35c1a4725d12d677a)
 
 ## 20141020-2245-CE
