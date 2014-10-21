@@ -7,8 +7,12 @@
 [Timestamp 3](http://www.cryptograffiti.info/?txnr=1256) | [Block 326,291](https://blockchain.info/tx/2a6c72d5e6c8cda674ed0710268073735292a65b2adccfd5b87c3371d4cfe5b2) | [809c876](https://github.com/MrChrisJ/20141019-Moolah-Investigation/commit/809c87631bf8b3ca1bb32556f07c6284fb16d365)  
 [Timestamp 4](http://www.cryptograffiti.info/?txnr=1257) | [Block 326,297](https://blockchain.info/tx/60b4c67ea20a2ff72aa3c113d597764dc7ee8899368a7af616413b15d6ddca1a) | [0fab334](https://github.com/MrChrisJ/20141019-Moolah-Investigation/commit/0fab334b10cd1bd5441586f5fbe16fe8345dd037)  
 
-See [**Evidence_Bundle.md**](https://github.com/MrChrisJ/20141019-Moolah-Investigation/blob/master/Evidence_Bundle.md) to see the **Discovery process*  
+Investigation is at **Discovery** stage
+
+See [**Evidence_Bundle.md**](https://github.com/MrChrisJ/20141019-Moolah-Investigation/blob/master/Evidence_Bundle.md) to see the *Discovery process*  
 See [**Journal**](https://github.com/MrChrisJ/20141019-Moolah-Investigation/tree/master/Journal) for contextual notes  
+
+## Description
 
 This is an experimental investigation technique using the a GitHub repository and and the Bitcoin blockchain to conduct an investigation on [Moolah.io](https://moolah.io/).  
 

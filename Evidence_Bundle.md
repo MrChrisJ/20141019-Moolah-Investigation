@@ -98,6 +98,19 @@ Note Mirror is archive.org and seems to be broken.
 ### DueDil Directorships page for “Mr Ryan Kennedy”
 [Link](https://www.duedil.com/director/918970099/ryan-kennedy/directorships) | [Mirror 1](https://web.archive.org/web/20141021112022/https://www.duedil.com/director/918970099/ryan-kennedy/directorships)  
 
+## [20141021-1333-CE](https://github.com/MrChrisJ/20141019-Moolah-Investigation/tree/master/Evidence_Bundle/20141021-1333-CE)
+### /r/dogecoin Reddit post “A few words from a former Moolah employee…”
+[Link](http://www.reddit.com/r/dogecoin/comments/2jdid4/a_few_words_from_a_former_moolah_employee/) | [Mirror 1](https://web.archive.org/web/20141021133106/http://www.reddit.com/r/dogecoin/comments/2jdid4/a_few_words_from_a_former_moolah_employee/)  
+
+## [20141021-1348-CE](https://github.com/MrChrisJ/20141019-Moolah-Investigation/tree/master/Evidence_Bundle/20141021-1348-CE)
+### Tweet by @coolbearcjs: “FRAUDSTER ALERT: @moolah_io Leaked Document Supports Theory That CEO Alex Green Changed Name.”
+[Link](https://twitter.com/coolbearcjs/status/522965626407907328) | [Mirror 1](https://web.archive.org/web/20141021134923/https://twitter.com/coolbearcjs/status/522965626407907328)  
+
+## [20141021-1402-CE](https://github.com/MrChrisJ/20141019-Moolah-Investigation/tree/master/Evidence_Bundle/20141021-1402-CE)
+### Tweet by @DCryptFund “Just got the confirmation that Ryan Gentle Francis aka 'Alex Green' @moolah_io  @MintPalExchange is arrested in Bristol for questioning.”
+[Link](https://twitter.com/dcryptfund/status/522708331182702592) | [Mirror 1](https://web.archive.org/web/20141021140047/https://twitter.com/dcryptfund/status/522708331182702592)  
+
+
 	
 
 
