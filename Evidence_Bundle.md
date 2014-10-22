@@ -110,7 +110,47 @@ Note Mirror is archive.org and seems to be broken.
 ### Tweet by @DCryptFund “Just got the confirmation that Ryan Gentle Francis aka 'Alex Green' @moolah_io  @MintPalExchange is arrested in Bristol for questioning.”
 [Link](https://twitter.com/dcryptfund/status/522708331182702592) | [Mirror 1](https://web.archive.org/web/20141021140047/https://twitter.com/dcryptfund/status/522708331182702592)  
 
+## [20141022-0118-CE](https://github.com/MrChrisJ/20141019-Moolah-Investigation/tree/master/Evidence_Bundle/20141022-0118-CE)
+### Tweet from @MintPalExchange: “We are deeply sorry for all those with funds that are missing and are doing everything we can to recover the funds and bring Ryan to justice”
+[Link](https://twitter.com/MintPalExchange/status/523939208428544000) | [Mirror 1](https://web.archive.org/web/20141022013607/https://twitter.com/MintPalExchange/status/523939208428544000)  
 
+## [20141022-0906-CE](https://github.com/MrChrisJ/20141019-Moolah-Investigation/tree/master/Evidence_Bundle/20141022-0906-CE)
+### Tweet from @MintPalExchange: “We do not know Ryan's current location, and he is unfortunately the only one with access to customer funds.”
+[Link](https://twitter.com/MintPalExchange/status/523939006988701696) | [Mirror 1](https://web.archive.org/web/20141022090736/https://twitter.com/MintPalExchange/status/523939006988701696)  
+
+## [20141022-0916-CE](https://github.com/MrChrisJ/20141019-Moolah-Investigation/tree/master/Evidence_Bundle/20141022-0916-CE)
+### LinkedIn Profile of Chelsea Hopkins, Community Manager at Moolah
+[Link](https://www.linkedin.com/pub/chelsea-hopkins/33/327/a10) | [Mirror 1](https://www.evernote.com/shard/s78/sh/b4a72679-b6f0-4ac4-b621-52b3a79047bc/083dc03edcbe34bcecfc9d2e284c8126)  
+She is also listed as one of the directors at Moolah see [**20141020-1851-CE**](https://github.com/MrChrisJ/20141019-Moolah-Investigation/tree/master/Evidence_Bundle/20141020-1851-CE)  
+
+## [20141022-0923-CE](https://github.com/MrChrisJ/20141019-Moolah-Investigation/tree/master/Evidence_Bundle/20141022-0923-CE)
+### LinkedIn Profile of Landon Merrill 
+[Link](www.linkedin.com/pub/landon-merrill/52/12b/118) | [Mirror 1](https://www.evernote.com/shard/s78/sh/32ce8826-1c73-4c66-b0c4-472ed0c712fe/e6df62504da308b6143349736cf1de8b)  
+
+## [20141022-0926-CE](https://github.com/MrChrisJ/20141019-Moolah-Investigation/tree/master/Evidence_Bundle/20141022-0926-CE)
+### Tweet by Jackson Palmer, Dogecoin Founder: “Moolah CEO accused of disappearing with $1.4 million in Bitcoin…”
+[Link](https://twitter.com/ummjackson/status/524608030109732865) | [Mirror 1](https://web.archive.org/web/20141022092737/https://twitter.com/ummjackson/status/524608030109732865)  
+
+## [20141022-0929-CE](https://github.com/MrChrisJ/20141019-Moolah-Investigation/tree/master/Evidence_Bundle/20141022-0929-CE)
+### Secret content
+
+Proof-of-Knowledge: 
+7fede6e615b424960d0bba5566630ab0cdaa79000d4682dcf46ac5ad934fedda
+e66839e31e2236517ee4801628ea428812fd09d9a8e38e758e72e0e32b6dcc8e
+d531c7e35926281bd343233a26b45a237ffd4081b855aabcce96cbd8a660f0d9
+
+## [20141022-0958-CE](https://github.com/MrChrisJ/20141019-Moolah-Investigation/tree/master/Evidence_Bundle/20141022-0958-CE)
+### The Daily Dot: Moolah CEO accused of disappearing with $1.4 million in Bitcoin
+#### Stated Publish Date: October 21, 2014 / 20141021
+[Link](http://www.dailydot.com/politics/moolah-dogecoin-alex-green-ryan-kennedy-ryan-gentle-millions-missing-mintpal/) | [Mirror 1](https://web.archive.org/web/20141022092948/http://www.dailydot.com/politics/moolah-dogecoin-alex-green-ryan-kennedy-ryan-gentle-millions-missing-mintpal/)  
+
+## 
+### 
+Link | Mirror  
+
+## 
+### 
+Link | Mirror  
 	
 
 

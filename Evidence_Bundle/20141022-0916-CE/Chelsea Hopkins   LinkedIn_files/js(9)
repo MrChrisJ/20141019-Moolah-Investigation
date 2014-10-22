@@ -1,0 +1,952 @@
+(function(){dust.register("tl/shared/get_logo",p);
+var w={"imgElement":c,"path":t,"defaultGlyph":q,"defaultImg":h};
+function p(z,y){y=y.shiftBlocks(w);
+return z.helper("param",y,{},{"key":"pictureId"}).helper("param",y,{},{"key":"type","defaultVal":"company"}).helper("param",y,{},{"key":"width","defaultVal":"60"}).helper("param",y,{},{"key":"height","defaultVal":"60"}).helper("param",y,{},{"key":"altText","defaultVal":""}).helper("param",y,{},{"key":"className","defaultVal":""}).helper("param",y,{},{"key":"generateUrl","defaultVal":"false"}).helper("param",y,{},{"key":"useGlyphGhost","defaultVal":"false"}).helper("eq",y,{"else":o,"block":e},{"key":d,"value":"true"})
+}function o(z,y){y=y.shiftBlocks(w);
+return z.helper("eq",y,{"else":m,"block":k},{"key":f,"value":"true"})
+}function m(z,y){y=y.shiftBlocks(w);
+return z.block(y.getBlock("imgElement"),y,{},null)
+}function k(z,y){y=y.shiftBlocks(w);
+return z.exists(y.get("pictureId"),y,{"else":i,"block":g},null)
+}function i(z,y){y=y.shiftBlocks(w);
+return z.block(y.getBlock("defaultGlyph"),y,{},null)
+}function g(z,y){y=y.shiftBlocks(w);
+return z.block(y.getBlock("imgElement"),y,{},null)
+}function f(z,y){y=y.shiftBlocks(w);
+return z.reference(y.get("useGlyphGhost"),y,"h")
+}function e(z,y){y=y.shiftBlocks(w);
+return z.block(y.getBlock("path"),y,{},null)
+}function d(z,y){y=y.shiftBlocks(w);
+return z.reference(y.get("generateUrl"),y,"h")
+}function c(z,y){y=y.shiftBlocks(w);
+return z.write("<img ").exists(y.get("className"),y,{"block":v},null).write(" ").exists(y.get("altText"),y,{"block":u},null).write(' width="').reference(y.get("width"),y,"h").write('" height="').reference(y.get("height"),y,"h").write('" src="').block(y.getBlock("path"),y,{},null).write('"/>')
+}function v(z,y){y=y.shiftBlocks(w);
+return z.write('class="').reference(y.get("className"),y,"h").write('"')
+}function u(z,y){y=y.shiftBlocks(w);
+return z.write('alt="').reference(y.get("altText"),y,"h").write('"')
+}function t(z,y){y=y.shiftBlocks(w);
+return z.exists(y.get("pictureId"),y,{"else":s,"block":r},null)
+}function s(z,y){y=y.shiftBlocks(w);
+return z.block(y.getBlock("defaultImg"),y,{},null)
+}function r(z,y){y=y.shiftBlocks(w);
+return z.reference(y.get("media_picture_link"),y,"h",["s"])
+}function q(z,y){y=y.shiftBlocks(w);
+return z.write('<div aria-role="img"').exists(y.get("className"),y,{"block":n},null).exists(y.get("altText"),y,{"block":l},null).write('><div class="glyph" aria-hidden="true"></div>').exists(y.get("altText"),y,{"block":j},null).write("</div>")
+}function n(z,y){y=y.shiftBlocks(w);
+return z.write(' class="').reference(y.get("className"),y,"h").write('"')
+}function l(z,y){y=y.shiftBlocks(w);
+return z.write(' title="').reference(y.get("altText"),y,"h").write('"')
+}function j(z,y){y=y.shiftBlocks(w);
+return z.write('<span class="alt">').reference(y.get("altText"),y,"h").write("</span>")
+}function h(z,y){y=y.shiftBlocks(w);
+return z.helper("eq",y,{"else":b,"block":a},{"value":"50","key":x})
+}function b(z,y){y=y.shiftBlocks(w);
+return z.reference(y.get("genericGhostImage"),y,"h")
+}function a(z,y){y=y.shiftBlocks(w);
+return z.reference(y.get("ghostImage60"),y,"h")
+}function x(z,y){y=y.shiftBlocks(w);
+return z.reference(y.get("width"),y,"h")
+}return p
+})();
+(function(){dust.register("get_logo",dust.cache["tl/shared/get_logo"])
+})();(function(){dust.register("tl/shared/default_hidden_params",a);
+function a(c,b){return c.partial("tl/shared/inputHidden",b.rebase(b.get("csrfToken")),null).partial("tl/shared/inputHidden",b.rebase(b.get("sourceAlias")),null)
+}return a
+})();
+(function(){dust.register("default_hidden_params",dust.cache["tl/shared/default_hidden_params"])
+})();(function(){dust.register("tl/shared/inputHidden",a);
+function a(c,b){return c.write('<input type="hidden" value="').reference(b.getPath(true,["value"]),b,"h").write('" name="').reference(b.getPath(true,["name"]),b,"h").write('" id="').reference(b.getPath(true,["name"]),b,"h").write('_id"/>')
+}return a
+})();
+(function(){dust.register("inputHidden",dust.cache["tl/shared/inputHidden"])
+})();(function(){dust.register("tl/shared/inputs/inputPassword",a);
+function a(c,b){return c.write('<input type="password" id="').reference(b.getPath(true,["id"]),b,"h").write('" value="').reference(b.getPath(true,["value"]),b,"h",["s"]).write('" name="').reference(b.getPath(true,["name"]),b,"h").write('" ').reference(b.getPath(true,["extras"]),b,"h").write(" ").block(b.getBlock("passwordFormExtras"),b,{},null).write("/>")
+}return a
+})();
+(function(){dust.register("inputPassword",dust.cache["tl/shared/inputs/inputPassword"])
+})();(function(){dust.register("tl/shared/inputText",a);
+function a(c,b){return c.write('<input type="text" id="').reference(b.getPath(true,["id"]),b,"h").write('" value="').reference(b.getPath(true,["value"]),b,"h",["s"]).write('" name="').reference(b.getPath(true,["name"]),b,"h").write('" ').reference(b.getPath(true,["extras"]),b,"h").write(" ").block(b.getBlock("formExtras"),b,{},null).write(" />")
+}return a
+})();
+(function(){dust.register("inputText",dust.cache["tl/shared/inputText"])
+})();(function(){dust.register("tl/apps/chrome/consumer/nav/header/add_connection/connectionTab",j);
+function j(l,k){return l.write('<div class="connection-tab-content li-scroll-content"><div class="connection-tab-list-container" id="connection-tab-top-container">').helper("eq",k,{"block":i},{"key":g,"value":"active"}).write('</div><div class="connection-tab-list-container" id="connection-tab-middle-container">').helper("eq",k,{"block":f},{"key":d,"value":"control"}).write('</div><div class="connection-tab-list-container" id="connection-tab-bottom-container">').helper("eq",k,{"block":c},{"key":a,"value":"active"}).write('</div></div><div class="li-scroll-track"><div class="li-scroll-thumb"><div class="li-scroll-scrollbar"></div></div></div>')
+}function i(l,k){return l.section(k.getPath(false,["global_nav_pymk_invitations","inbox_pending_invitations"]),k,{"block":h},null)
+}function h(l,k){return l.partial("tl/apps/chrome/consumer/nav/header/add_connection/invitations",k,null)
+}function g(l,k){return l.reference(k.get("show_invitations"),k,"h")
+}function f(l,k){return l.section(k.get("global_nav_pymk_invitations"),k,{"block":e},null)
+}function e(l,k){return l.partial("tl/apps/chrome/consumer/nav/header/add_connection/add_connection_invite_import",k,null)
+}function d(l,k){return l.reference(k.get("lix_list_position"),k,"h")
+}function c(l,k){return l.section(k.getPath(false,["global_nav_pymk_invitations","contacts_pymk_people_cards"]),k,{"block":b},null)
+}function b(l,k){return l.partial("tl/apps/chrome/consumer/nav/header/add_connection/pymk",k,null)
+}function a(l,k){return l.reference(k.get("show_pymk"),k,"h")
+}return j
+})();
+(function(){dust.register("connectionTab",dust.cache["tl/apps/chrome/consumer/nav/header/add_connection/connectionTab"])
+})();(function(){dust.register("tl/apps/chrome/consumer/nav/header/add_connection/pendingConnectionList",n);
+function n(r,q){return r.exists(q.get("singleItem"),q,{"else":l,"block":i},null)
+}function l(r,q){return r.write('<h4 class="connection-list-header"><a href="').reference(q.get("connectionTabHeaderLinkUrl"),q,"h").write('">').helper("eq",q,{"else":j,"block":e},{"key":q.get("connectionTabType"),"value":"PYMK"}).reference(q.get("connectionTabHeaderText"),q,"h",["s"]).write("</a></h4>").helper("eq",q,{"block":c},{"key":q.get("connectionTabType"),"value":"PYMK"}).write('<ul class="connection-tab-people-list">').section(q.get("people"),q,{"block":k},null).write("</ul>")
+}function j(r,q){return r.helper("gt",q,{"block":h},{"key":q.get("totalResults"),"value":f,"type":"number"})
+}function h(r,q){return r.write('<span class="connection-tab-header-action">').reference(q.get("i18n_connection_tab_header_action"),q,"h").write("</span>")
+}function f(r,q){return r.reference(q.get("maxResults"),q,"h")
+}function e(r,q){return r.helper("gt",q,{"block":d},{"key":q.get("totalResults"),"value":"1","type":"number"})
+}function d(r,q){return r.write('<span class="connection-tab-header-action">').reference(q.get("i18n_connection_tab_header_action"),q,"h").write("</span>")
+}function c(r,q){return r.helper("eq",q,{"block":b},{"key":q.get("hasPYMKBadge"),"value":"true","type":"boolean"})
+}function b(r,q){return r.write('<a class="connection-tab-badge-text" href="').reference(q.get("url_link_to_all_pymk"),q,"h",["s"]).write('"><span class="add-people-glyph-icon" aria-hidden="true"></span><div>').helper("select",q,{"block":a},{"key":q.get("lix_pymk_badge_copy")}).write("</div></a>")
+}function a(r,q){return r.helper("eq",q,{"block":p},{"value":"B"}).helper("eq",q,{"block":o},{"value":"C"}).helper("default",q,{"block":m},null)
+}function p(r,q){return r.write("<h5>").reference(q.get("i18n_badge_text_headline_B"),q,"h").write("</h5><p>").reference(q.get("i18n_badge_text_copy_B"),q,"h",["s"]).write("</p>")
+}function o(r,q){return r.write("<h5>").reference(q.get("i18n_badge_text_headline_C"),q,"h").write("</h5><p>").reference(q.get("i18n_badge_text_copy_C"),q,"h",["s"]).write("</p>")
+}function m(r,q){return r.write("<h5>").reference(q.get("i18n_badge_text_headline_A"),q,"h").write("</h5><p>").reference(q.get("i18n_badge_text_copy_A"),q,"h",["s"]).write("</p>")
+}function k(r,q){return r.partial("tl/apps/chrome/consumer/nav/header/add_connection/pendingConnectionItem",q,null)
+}function i(r,q){return r.section(q.get("people"),q,{"block":g},null)
+}function g(r,q){return r.partial("tl/apps/chrome/consumer/nav/header/add_connection/pendingConnectionItem",q,null)
+}return n
+})();
+(function(){dust.register("pendingConnectionList",dust.cache["tl/apps/chrome/consumer/nav/header/add_connection/pendingConnectionList"])
+})();(function(){dust.register("tl/apps/chrome/consumer/nav/header/add_connection/pendingConnectionItem",p);
+function p(x,w){return x.write("<li").exists(w.get("isNew"),w,{"block":n},null).write('><span class="loader"></span>').exists(w.get("invitationDate"),w,{"block":m},null).helper("select",w,{"block":k},{"key":f}).exists(w.get("isGuest"),w,{"else":e,"block":c},null).write('<div class="connection-item-info">').exists(w.get("isGuest"),w,{"else":v,"block":u},null).write("</div>").helper("select",w,{"block":t},{"key":a}).write("</li>")
+}function n(x,w){return x.write(' class="new-item"')
+}function m(x,w){return x.write('<span class="connection-item-date">').reference(w.get("fmt_connection_date"),w,"h").write("</span>")
+}function k(x,w){return x.helper("eq",w,{"block":i},{"value":"PYMK"}).helper("eq",w,{"block":g},{"value":"INVITATION"})
+}function i(x,w){return x
+}function g(x,w){return x
+}function f(x,w){return x.reference(w.get("connectionTabType"),w,"h")
+}function e(x,w){return x.write('<a class="item-profile-picture-link" href="').reference(w.get("profilePhotoLink"),w,"h").write('">').helper("partial",w,{"block":d},{"pictureId":w.get("pictureID"),"height":"40","width":"40","altText":w.get("fmt_full_name"),"type":"person","className":"profile-picture"}).write("</a>")
+}function d(x,w){return x.partial("tl/shared/get_logo",w,null)
+}function c(x,w){return x.write('<span class="item-guest"><span class="item-guest-icon" aria-hidden="true"></span><span class="screen-reader-text">').reference(w.get("fmt_full_name"),w,"h",["s"]).write("</span></span>")
+}function v(x,w){return x.write('<h5 class="item-primary-headline"><a title="').reference(w.get("fmt_full_name"),w,"h").write('" href="').reference(w.get("profileNameLink"),w,"h").write('">').reference(w.get("fmt_full_name"),w,"h").write('</a></h5><h6 class="item-secondary-headline" title="').reference(w.get("headline"),w,"h").write('">').reference(w.get("fmtAuto_string_truncate_1"),w,"h").write("</h6>")
+}function u(x,w){return x.write('<h5 class="item-primary-headline" title="').reference(w.get("fmt_full_name"),w,"h").write('">').reference(w.get("fmt_full_name"),w,"h").write('</h5><h6 class="item-secondary-headline" title="').reference(w.get("i18n_connection_tab_invitations_send"),w,"h").write('">').reference(w.get("i18n_connection_tab_invitations_send"),w,"h").write("</h6>")
+}function t(x,w){return x.helper("eq",w,{"block":s},{"value":"PYMK"}).helper("eq",w,{"block":b},{"value":"INVITATION"})
+}function s(x,w){return x.write('<div class="connection-item-actions-wrapper" data-connection-type="').exists(w.get("isGuest"),w,{"else":r,"block":q},null).write('"><div class="connection-item-actions-content">').exists(w.get("isGuest"),w,{"else":o,"block":j},null).write("</div></div>")
+}function r(x,w){return x.write("pymk")
+}function q(x,w){return x.write("gymk")
+}function o(x,w){return x.write('<form method="post" action="').reference(w.get("url_connection_tab_pymk_connect"),w,"h",["s"]).write('" class="action-form pymk-form"><input type="hidden" name="memIds" value="').reference(w.get("memberID"),w,"h").write('"/><input type="hidden" name="authTokens" value="').reference(w.get("authTokenValue"),w,"h").write('"/><input type="hidden" name="authTypes" value="').reference(w.get("authTokenType"),w,"h").write('"/><input type="hidden" name="firstName" value="').reference(w.get("firstName"),w,"h").write('"/><input type="hidden" name="lastName" value="').reference(w.get("lastName"),w,"h").write('"/><input type="hidden" name="ref" value="global-nav"/>').helper("ne",w,{"block":l},{"key":w.get("pymkConnectType"),"value":"redirect"}).write('<button role="button" class="connection-item-action primary" data-li-trk-code="nav_utilities_pymk_connect" title="').reference(w.get("i18n_connection_tab_pymk_connect"),w,"h",["s"]).write('"><span aria-hidden="true" class="glyph connect-icon"></span><span class="screen-reader-text">').reference(w.get("i18n_connection_tab_pymk_connect"),w,"h",["s"]).write("</span></button></form>")
+}function l(x,w){return x.write('<input type="hidden" name="isAjax" value="true"/>')
+}function j(x,w){return x.write('<form method="post" action="').reference(w.get("inviteUrl"),w,"h").write('" class="action-form pymk-form"><input type="hidden" name="email" value="').reference(w.get("guestEmail"),w,"h").write('"/><input type="hidden" name="greeting" value="').reference(w.get("i18n_connection_tab_invitations_greeting"),w,"h",["s"]).write('"/><input type="hidden" name="subject" value="').reference(w.get("i18n_connection_tab_invitations_subject"),w,"h",["s"]).write('"/><input type="hidden" name="firstName" value="').reference(w.get("firstName"),w,"h").write('"/><input type="hidden" name="lastName" value="').reference(w.get("lastName"),w,"h").write('"/><input type="hidden" name="ref" value="global-nav"/>').helper("eq",w,{"block":h},{"key":w.get("pymkConnectType"),"value":"redirect"}).write('<button role="button" class="connection-item-action primary" data-li-trk-code="nav_utilities_gymk_invite" title="').reference(w.get("i18n_connection_tab_gymk_invite"),w,"h",["s"]).write('"><span aria-hidden="true" class="glyph invite-icon"></span><span class="screen-reader-text">').reference(w.get("i18n_connection_tab_gymk_invite"),w,"h",["s"]).write("</span></button></form>")
+}function h(x,w){return x.write('<input type="hidden" name="isSync" value="true"/>')
+}function b(x,w){return x.write('<div class="connection-item-actions-wrapper" data-connection-type="invitation"><div class="connection-item-actions-content"><form method="post" action="').reference(w.get("url_invitation_action"),w,"h").write('" class="action-form"><input type="hidden" name="mboxItemGID" value="').reference(w.get("invitationID"),w,"h").write('"/><input type="hidden" name="actionType" value="invitationIgnore"/><input type="hidden" name="authToken" value="').reference(w.get("authTokenValue"),w,"h").write('"/><input type="hidden" name="senderID" value="').reference(w.get("memberID"),w,"h").write('"/><input type="hidden" name="source" value="globalNav" /><button role="button" class="connection-item-action secondary ignore-button" data-li-trk-code="nav_utilities_invites_ignore"  title="').reference(w.get("i18n_connection_tab_invitations_ignore"),w,"h",["s"]).write('"><span aria-hidden="true" class="glyph ignore-icon"></span><span class="screen-reader-text">').reference(w.get("i18n_connection_tab_invitations_ignore"),w,"h",["s"]).write('</span></button></form><form method="post" action="').reference(w.get("send_message"),w,"h").write('" class="action-form message-form"><button role="button" class="connection-item-action secondary message-button" data-li-trk-code="nav_utilities_invites_flip_send_message" title="').reference(w.get("i18n_connection_tab_invitations_message"),w,"h",["s"]).write('"><span aria-hidden="true" class="glyph message-icon"></span><span class="screen-reader-text">').reference(w.get("i18n_connection_tab_invitations_message"),w,"h",["s"]).write('</span></button></form><form method="post" action="').reference(w.get("url_invitation_action"),w,"h").write('" class="action-form"><input type="hidden" name="mboxItemGID" value="').reference(w.get("invitationID"),w,"h").write('"/><input type="hidden" name="actionType" value="invitationAccept"/><input type="hidden" name="authToken" value="').reference(w.get("authTokenValue"),w,"h").write('"/><input type="hidden" name="senderID" value="').reference(w.get("memberID"),w,"h").write('"/><input type="hidden" name="source" value="globalNav" /><input type="hidden" name="ctx" value="nav"/><button role="button" class="connection-item-action primary" data-li-trk-code="nav_utilities_invites_accept" title="').reference(w.get("i18n_connection_tab_invitations_accept"),w,"h",["s"]).write('"><span aria-hidden="true" class="glyph accept-icon"></span><span class="screen-reader-text">').reference(w.get("i18n_connection_tab_invitations_accept"),w,"h",["s"]).write("</span></button></form></div></div>")
+}function a(x,w){return x.reference(w.get("connectionTabType"),w,"h")
+}return p
+})();
+(function(){dust.register("pendingConnectionItem",dust.cache["tl/apps/chrome/consumer/nav/header/add_connection/pendingConnectionItem"])
+})();(function(){dust.register("tl/apps/chrome/consumer/nav/header/add_connection/invitations",a);
+function a(c,b){return c.partial("tl/apps/chrome/consumer/nav/header/add_connection/pendingConnectionList",b,{"connectionTabHeaderLinkUrl":b.get("url_link_to_all_invitations"),"connectionTabHeaderText":b.get("i18n_connection_tab_invitations_header"),"connectionTabMaxNumber":b.get("lix_invitations_max_number_test"),"invitationConnectType":b.get("lix_invitation_connect_behavior"),"connectionTabTrackingProfilePicture":"nav_utilities_invites_photo","connectionTabTrackingProfileName":"nav_utilities_invites_name","connectionTabType":"INVITATION"})
+}return a
+})();
+(function(){dust.register("invitations",dust.cache["tl/apps/chrome/consumer/nav/header/add_connection/invitations"])
+})();(function(){dust.register("tl/apps/chrome/consumer/nav/header/add_connection/pymk",a);
+function a(c,b){return c.partial("tl/apps/chrome/consumer/nav/header/add_connection/pendingConnectionList",b,{"connectionTabHeaderLinkUrl":b.get("url_link_to_all_pymk"),"connectionTabHeaderText":b.get("i18n_connection_tab_pymk_header"),"pymkConnectType":b.get("lix_pymk_connect_behavior"),"connectionTabTrackingProfilePicture":"nav_utilities_pymk_photo","connectionTabTrackingProfileName":"nav_utilities_pymk_name","connectionTabType":"PYMK"})
+}return a
+})();
+(function(){dust.register("pymk",dust.cache["tl/apps/chrome/consumer/nav/header/add_connection/pymk"])
+})();(function(){dust.register("tl/apps/chrome/consumer/nav/header/add_connection/add_connection_invite_import",ac);
+var ap={"default_error_message":U,"social_proof_and_submit_module":R,"childJSFormParams":O};
+function ac(ar,aq){aq=aq.shiftBlocks(ap);
+return ar.write('<h4 class="connection-list-header"><a href="').reference(aq.get("url_invite_import"),aq,"h",["s"]).write('">').reference(aq.get("i18n_connection_tab_header_invite_v2"),aq,"h").write('</a></h4><div class="connection-importer-container">').helper("ne",aq,{"block":ab},{"key":Z,"value":"none"}).helper("select",aq,{"block":W},{"key":J}).write("</div>")
+}function ab(ar,aq){aq=aq.shiftBlocks(ap);
+return ar.write("<p>").reference(aq.get("i18n_quickly_find_contacts"),aq,"h").write("</p>")
+}function Z(ar,aq){aq=aq.shiftBlocks(ap);
+return ar.reference(aq.get("lix_show_subhed"),aq,"h")
+}function W(ar,aq){aq=aq.shiftBlocks(ap);
+return ar.helper("eq",aq,{"block":T},{"value":"B"}).helper("eq",aq,{"block":K},{"value":"C"}).helper("default",aq,{"block":ah},null)
+}function T(ar,aq){aq=aq.shiftBlocks(ap);
+return ar.section(aq.get("ButtonFetchForm"),aq,{"block":Q},null).write('<ul class="emailProviders">').section(aq.get("ButtonFetchForm"),aq,{"block":i},null).write('<li id="other-email-li" class="other"><a href="#" id="other-email" class="expand-form-link icon-email sprite sprite-other">').reference(aq.get("i18n_other"),aq,"h").write("</a></li></ul>").section(aq.get("SimpleFetchForm"),aq,{"block":ai},null)
+}function Q(ar,aq){aq=aq.shiftBlocks(ap);
+return ar.helper("eq",aq,{"block":N},{"key":I,"value":"on"}).write('<form target="fetch_popup" id="oneClickForm" class="hidden" name="').reference(aq.get("name"),aq,"h").write('" method="').reference(aq.get("method"),aq,"h").write('" action="').reference(aq.get("action"),aq,"h").write('">').section(aq.get("html"),aq,{"block":G},null).write("</form>")
+}function N(ar,aq){aq=aq.shiftBlocks(ap);
+return ar.helper("jsControl",aq,{"block":L},{"name":"LI.AbookExpandedTracking"})
+}function L(ar,aq){aq=aq.shiftBlocks(ap);
+return ar.write("{origin: 'desktop-global-nav-add-connections-dropdown',impressionId: '").reference(aq.getPath(false,["html","abookImportImpressionId","value"]),aq,"h").write("',trackingUrl: '").reference(aq.get("linkAuto_abook_import_impression_submit_1"),aq,"h",["s"]).write("'}")
+}function I(ar,aq){aq=aq.shiftBlocks(ap);
+return ar.reference(aq.get("lix_abook_expanded_tracking"),aq,"h")
+}function G(ar,aq){aq=aq.shiftBlocks(ap);
+return ar.section(aq.get("email"),aq,{"block":z},null).section(aq.get("referrer_alias"),aq,{"block":x},null).section(aq.get("in_promo"),aq,{"block":v},null).section(aq.get("secured"),aq,{"block":t},null).section(aq.get("variation"),aq,{"block":r},null).section(aq.get("origin_name"),aq,{"block":p},null).helper("eq",aq,{"block":n},{"key":j,"value":"on"}).partial("tl/shared/default_hidden_params",aq,null)
+}function z(ar,aq){aq=aq.shiftBlocks(ap);
+return ar.write('<input type="text" name="email" autocomplete="off"/>')
+}function x(ar,aq){aq=aq.shiftBlocks(ap);
+return ar.partial("tl/shared/inputHidden",aq,null)
+}function v(ar,aq){aq=aq.shiftBlocks(ap);
+return ar.partial("tl/shared/inputHidden",aq,null)
+}function t(ar,aq){aq=aq.shiftBlocks(ap);
+return ar.partial("tl/shared/inputHidden",aq,null)
+}function r(ar,aq){aq=aq.shiftBlocks(ap);
+return ar.partial("tl/shared/inputHidden",aq,null)
+}function p(ar,aq){aq=aq.shiftBlocks(ap);
+return ar.partial("tl/shared/inputHidden",aq,null)
+}function n(ar,aq){aq=aq.shiftBlocks(ap);
+return ar.section(aq.get("abookImportImpressionId"),aq,{"block":l},null)
+}function l(ar,aq){aq=aq.shiftBlocks(ap);
+return ar.partial("tl/shared/inputHidden",aq,null)
+}function j(ar,aq){aq=aq.shiftBlocks(ap);
+return ar.reference(aq.get("lix_abook_expanded_tracking"),aq,"h")
+}function i(ar,aq){aq=aq.shiftBlocks(ap);
+return ar.section(aq.get("buttonInfo"),aq,{"block":f},null)
+}function f(ar,aq){aq=aq.shiftBlocks(ap);
+return ar.write('<li class="').reference(aq.get("provider"),aq,"h").write(' one-click" data-li-dummy-email="').reference(aq.get("stubEmail"),aq,"h").write('"><a href="#" title="').reference(aq.get("provider"),aq,"h").write('">').helper("select",aq,{"block":d},{"key":ak}).write("</a></li>")
+}function d(ar,aq){aq=aq.shiftBlocks(ap);
+return ar.helper("eq",aq,{"block":b},{"value":"yahooSocial"}).helper("eq",aq,{"block":ao},{"value":"gmail"}).helper("eq",aq,{"block":am},{"value":"hotmail"})
+}function b(ar,aq){aq=aq.shiftBlocks(ap);
+return ar.reference(aq.get("i18n_yahoo"),aq,"h",["s"])
+}function ao(ar,aq){aq=aq.shiftBlocks(ap);
+return ar.reference(aq.get("i18n_gmail"),aq,"h",["s"])
+}function am(ar,aq){aq=aq.shiftBlocks(ap);
+return ar.reference(aq.get("i18n_hotmail"),aq,"h",["s"])
+}function ak(ar,aq){aq=aq.shiftBlocks(ap);
+return ar.reference(aq.get("provider"),aq,"h")
+}function ai(ar,aq){aq=aq.shiftBlocks(ap);
+return ar.helper("jsControl",aq,{"block":ag},{"name":"LI.OneClickImporter"}).write('<div id="otherEmailForm" class="import-form hidden abook-imprt-container">').helper("eq",aq,{"block":ae},{"key":X,"value":"on"}).partial("tl/apps/fetch/embed/abook_base_import_form",aq,null).write("</div>")
+}function ag(ar,aq){aq=aq.shiftBlocks(ap);
+return ar.write("{targetFormId : 'oneClickForm',emailFieldName : 'email',oneClickSelector : '.one-click',fireDisplayTracking : true,submitterConfig : {formTarget : 'fetch_popup',emailFieldName : 'email',successUrl : '").reference(aq.get("linkAuto_fetch_email_resolution_1"),aq,"h",["s"]).write("'}}")
+}function ae(ar,aq){aq=aq.shiftBlocks(ap);
+return ar.helper("jsControl",aq,{"block":ad},{"name":"LI.AbookExpandedTracking"})
+}function ad(ar,aq){aq=aq.shiftBlocks(ap);
+return ar.write("{origin: 'desktop-global-nav-add-connections-dropdown',impressionId: '").reference(aq.getPath(false,["html","abookImportImpressionId","value"]),aq,"h").write("',trackingUrl: '").reference(aq.get("linkAuto_abook_import_impression_submit_1"),aq,"h",["s"]).write("'}")
+}function X(ar,aq){aq=aq.shiftBlocks(ap);
+return ar.reference(aq.get("lix_abook_expanded_tracking"),aq,"h")
+}function U(ar,aq){aq=aq.shiftBlocks(ap);
+return ar.write('<div class="input-wrapper error" role="alert" id="wmi-notice"><strong class="error-txt addconndropdown-error"></strong></div>')
+}function R(ar,aq){aq=aq.shiftBlocks(ap);
+return ar.write('</fieldset><input type="submit" class="otherFormSubmitBtn" id="resolve-btn" value="').reference(aq.get("i18n__submit_btn_value"),aq,"h",["s"]).write('"/><input type="button" class="otherFormCancelBtn" id="cancelOtherEmailFormBtn" value="').reference(aq.get("i18n__cancel_btn_value"),aq,"h",["s"]).write('"/>')
+}function O(ar,aq){aq=aq.shiftBlocks(ap);
+return ar.write("submitBtnClass: '.otherFormSubmitBtn',")
+}function K(ar,aq){aq=aq.shiftBlocks(ap);
+return ar.section(aq.get("ButtonFetchForm"),aq,{"block":H},null).write('<ul class="emailProviders">').section(aq.get("ButtonFetchForm"),aq,{"block":k},null).write('<li id="otherEmailBtn" class="other"><a href=\'').reference(aq.get("link__abook_import_other"),aq,"h",["s"]).write('\' class="icon-email sprite sprite-other">').reference(aq.get("i18n_other"),aq,"h").write("</a></li></ul>").section(aq.get("SimpleFetchForm"),aq,{"block":al},null)
+}function H(ar,aq){aq=aq.shiftBlocks(ap);
+return ar.helper("eq",aq,{"block":F},{"key":D,"value":"on"}).write('<form target="fetch_popup" id="oneClickForm" class="hidden" name="').reference(aq.get("name"),aq,"h").write('" method="').reference(aq.get("method"),aq,"h").write('" action="').reference(aq.get("action"),aq,"h").write('">').section(aq.get("html"),aq,{"block":C},null).write("</form>")
+}function F(ar,aq){aq=aq.shiftBlocks(ap);
+return ar.helper("jsControl",aq,{"block":E},{"name":"LI.AbookExpandedTracking"})
+}function E(ar,aq){aq=aq.shiftBlocks(ap);
+return ar.write("{origin: 'desktop-global-nav-add-connections-dropdown',impressionId: '").reference(aq.getPath(false,["html","abookImportImpressionId","value"]),aq,"h").write("',trackingUrl: '").reference(aq.get("linkAuto_abook_import_impression_submit_1"),aq,"h",["s"]).write("'}")
+}function D(ar,aq){aq=aq.shiftBlocks(ap);
+return ar.reference(aq.get("lix_abook_expanded_tracking"),aq,"h")
+}function C(ar,aq){aq=aq.shiftBlocks(ap);
+return ar.section(aq.get("email"),aq,{"block":B},null).section(aq.get("referrer_alias"),aq,{"block":A},null).section(aq.get("in_promo"),aq,{"block":y},null).section(aq.get("secured"),aq,{"block":w},null).section(aq.get("variation"),aq,{"block":u},null).section(aq.get("origin_name"),aq,{"block":s},null).helper("eq",aq,{"block":q},{"key":m,"value":"on"}).partial("tl/shared/default_hidden_params",aq,null)
+}function B(ar,aq){aq=aq.shiftBlocks(ap);
+return ar.write('<input type="text" name="email" autocomplete="off"/>')
+}function A(ar,aq){aq=aq.shiftBlocks(ap);
+return ar.partial("tl/shared/inputHidden",aq,null)
+}function y(ar,aq){aq=aq.shiftBlocks(ap);
+return ar.partial("tl/shared/inputHidden",aq,null)
+}function w(ar,aq){aq=aq.shiftBlocks(ap);
+return ar.partial("tl/shared/inputHidden",aq,null)
+}function u(ar,aq){aq=aq.shiftBlocks(ap);
+return ar.partial("tl/shared/inputHidden",aq,null)
+}function s(ar,aq){aq=aq.shiftBlocks(ap);
+return ar.partial("tl/shared/inputHidden",aq,null)
+}function q(ar,aq){aq=aq.shiftBlocks(ap);
+return ar.section(aq.get("abookImportImpressionId"),aq,{"block":o},null)
+}function o(ar,aq){aq=aq.shiftBlocks(ap);
+return ar.partial("tl/shared/inputHidden",aq,null)
+}function m(ar,aq){aq=aq.shiftBlocks(ap);
+return ar.reference(aq.get("lix_abook_expanded_tracking"),aq,"h")
+}function k(ar,aq){aq=aq.shiftBlocks(ap);
+return ar.section(aq.get("buttonInfo"),aq,{"block":h},null)
+}function h(ar,aq){aq=aq.shiftBlocks(ap);
+return ar.write('<li class="').reference(aq.get("provider"),aq,"h").write(' one-click" data-li-dummy-email="').reference(aq.get("stubEmail"),aq,"h").write('"><a href="#" title="').reference(aq.get("provider"),aq,"h").write('">').helper("select",aq,{"block":g},{"key":an}).write("</a></li>")
+}function g(ar,aq){aq=aq.shiftBlocks(ap);
+return ar.helper("eq",aq,{"block":e},{"value":"yahooSocial"}).helper("eq",aq,{"block":c},{"value":"gmail"}).helper("eq",aq,{"block":a},{"value":"hotmail"})
+}function e(ar,aq){aq=aq.shiftBlocks(ap);
+return ar.reference(aq.get("i18n_yahoo"),aq,"h",["s"])
+}function c(ar,aq){aq=aq.shiftBlocks(ap);
+return ar.reference(aq.get("i18n_gmail"),aq,"h",["s"])
+}function a(ar,aq){aq=aq.shiftBlocks(ap);
+return ar.reference(aq.get("i18n_hotmail"),aq,"h",["s"])
+}function an(ar,aq){aq=aq.shiftBlocks(ap);
+return ar.reference(aq.get("provider"),aq,"h")
+}function al(ar,aq){aq=aq.shiftBlocks(ap);
+return ar.helper("jsControl",aq,{"block":aj},{"name":"LI.OneClickImporter"})
+}function aj(ar,aq){aq=aq.shiftBlocks(ap);
+return ar.write("{targetFormId : 'oneClickForm',emailFieldName : 'email',oneClickSelector : '.one-click',fireDisplayTracking : true,submitterConfig : {formTarget : 'fetch_popup',emailFieldName : 'email',successUrl : '").reference(aq.get("link__abook_import_other"),aq,"h",["s"]).write("'}}")
+}function ah(ar,aq){aq=aq.shiftBlocks(ap);
+return ar.write('<ul class="emailProviders">').section(aq.get("ButtonFetchForm"),aq,{"block":af},null).write('<li id="otherEmailBtn" class="other"><a href=\'').reference(aq.get("link__abook_import_other"),aq,"h",["s"]).write('\' id="other-email" class="icon-email sprite sprite-other">').reference(aq.get("i18n_other"),aq,"h").write("</a></li></ul>")
+}function af(ar,aq){aq=aq.shiftBlocks(ap);
+return ar.section(aq.get("buttonInfo"),aq,{"block":aa},null)
+}function aa(ar,aq){aq=aq.shiftBlocks(ap);
+return ar.write('<li class="').reference(aq.get("provider"),aq,"h").write(' one-click" data-li-dummy-email="').reference(aq.get("stubEmail"),aq,"h").write("\"><a href='").reference(aq.get("link__abook_import"),aq,"h",["s"]).write("'>").helper("select",aq,{"block":Y},{"key":M}).write("</a></li>")
+}function Y(ar,aq){aq=aq.shiftBlocks(ap);
+return ar.helper("eq",aq,{"block":V},{"value":"yahooSocial"}).helper("eq",aq,{"block":S},{"value":"gmail"}).helper("eq",aq,{"block":P},{"value":"hotmail"})
+}function V(ar,aq){aq=aq.shiftBlocks(ap);
+return ar.reference(aq.get("i18n_yahoo"),aq,"h",["s"])
+}function S(ar,aq){aq=aq.shiftBlocks(ap);
+return ar.reference(aq.get("i18n_gmail"),aq,"h",["s"])
+}function P(ar,aq){aq=aq.shiftBlocks(ap);
+return ar.reference(aq.get("i18n_hotmail"),aq,"h",["s"])
+}function M(ar,aq){aq=aq.shiftBlocks(ap);
+return ar.reference(aq.get("provider"),aq,"h")
+}function J(ar,aq){aq=aq.shiftBlocks(ap);
+return ar.reference(aq.get("lix_provider_click"),aq,"h")
+}return ac
+})();
+(function(){dust.register("add_connection_invite_import",dust.cache["tl/apps/chrome/consumer/nav/header/add_connection/add_connection_invite_import"])
+})();(function(){dust.register("tl/apps/fetch/embed/abook_base_import_form",p);
+function p(x,w){return x.write('<form id="abook-import-form" class="stacked-form import-form" target="wmi_form_popup" action="').reference(w.get("action"),w,"h").write('" name="').reference(w.get("name"),w,"h").write('" method="').reference(w.get("method"),w,"h").write('"><fieldset class="authenticate"><legend>').reference(w.get("i18n__enter_email_credentials"),w,"h",["s"]).write("</legend>").block(w.getBlock("default_error_message"),w,{"block":n},null).write('<div class="input-wrapper">').section(w.get("html"),w,{"block":m},null).write("</div>").block(w.getBlock("social_proof_and_submit_module"),w,{"block":r},null).write("</form>").helper("jsControl",w,{"block":q},{"name":"LI.FetchForm"})
+}function n(x,w){return x.write('<div class="alert" role="alert" id="wmi-notice"><i class="icon"></i><span class="error-txt"></span><a class="dismiss" title="dismiss this message" role="button">').reference(w.get("i18n__alert_dismiss"),w,"h",["s"]).write("</a></div>")
+}function m(x,w){return x.section(w.get("email"),w,{"block":k},null).section(w.get("password"),w,{"block":i},null).section(w.get("oauth_override"),w,{"block":g},null).section(w.get("referrer_alias"),w,{"block":f},null).section(w.get("secured"),w,{"block":e},null).section(w.get("in_promo"),w,{"block":d},null).section(w.get("variation"),w,{"block":c},null).section(w.get("origin_name"),w,{"block":v},null).partial("tl/shared/default_hidden_params",w,null).helper("eq",w,{"block":u},{"key":s,"value":"on"})
+}function k(x,w){return x.write('<div class="form-row"><label for="').reference(w.get("id"),w,"h").write('" class="ghost">').reference(w.get("i18n__email_label"),w,"h",["s"]).write("</label>").helper("jsControl",w,{},{"name":"GhostLabel"}).partial("tl/shared/inputText",w,null).write('<span class="loader"></span></div>')
+}function i(x,w){return x.write('<label for="').reference(w.get("id"),w,"h").write('" class="ghost">').reference(w.get("i18n__password_label"),w,"h",["s"]).write("</label>").helper("jsControl",w,{},{"name":"GhostLabel"}).partial("tl/shared/inputs/inputPassword",w,null)
+}function g(x,w){return x.partial("tl/shared/inputHidden",w,null)
+}function f(x,w){return x.partial("tl/shared/inputHidden",w,null)
+}function e(x,w){return x.partial("tl/shared/inputHidden",w,null)
+}function d(x,w){return x.partial("tl/shared/inputHidden",w,null)
+}function c(x,w){return x.partial("tl/shared/inputHidden",w,null)
+}function v(x,w){return x.partial("tl/shared/inputHidden",w,null)
+}function u(x,w){return x.section(w.get("abookImportImpressionId"),w,{"block":t},null)
+}function t(x,w){return x.partial("tl/shared/inputHidden",w,null)
+}function s(x,w){return x.reference(w.get("lix_abook_expanded_tracking"),w,"h")
+}function r(x,w){return x.write('</fieldset><input type="submit" class="add-connections" id="resolve-btn" value="').reference(w.get("i18n__submit_btn_value"),w,"h",["s"]).write('"/><div class="security-message">').partial("tl/apps/fetch/partial/abook_security_msg",w,null).write("</div>")
+}function q(x,w){return x.write("{viewConstructor : LI.FetchFormView,viewConfig : {unsupportedEmailTypeMessage : '").reference(w.get("i18n__unsupported_email_msg"),w,"h",["s","j"]).write("',invalidEmailMessage : '").reference(w.get("i18n__invalid_email_msg"),w,"h",["s","j"]).write("',generalErrorMessage : '").reference(w.get("i18n__general_error_msg"),w,"h",["s","j"]).write("',invalidLoginMessage : '").reference(w.get("i18n__invalid_login_msg"),w,"h",["s","j"]).write("',loginLimitMessage : '").reference(w.get("i18n__login_limit_msg"),w,"h",["s","j"]).write("',noContactsReturnedMessage : '").reference(w.get("i18n__no_contacts_returned_msg"),w,"h",["s","j"]).write("',webmailUrlErrorMessage: 'webmail url error - need i18n, voice and tone!',userEnteredWebmailUrlErrorMessage: 'other webmail url error - need i18n, voice and tone!',emailInputClass: 'input[name=email]',pwordInputClass: 'input[name=password]',errorElId: '#wmi-notice',errorTextClass: '.error-txt',submitBtnClass: '.add-connections',").block(w.getBlock("childJSFormParams"),w,{},null).write("loadSpinnerClass: '.loader'},resolverConstructor : LI.ImportEmailResolver,resolverConfig : {resolveUrl: '").reference(w.get("linkAuto_fetch_email_resolution_1"),w,"h",["s","j"]).write("',emailPlaceholder: '").reference(w.getPath(false,["html","email","name"]),w,"h").write("'},submitterConstructor : LI.ImportSubmitter,submitterConfig : {formTarget : 'wmi_form_popup',successUrl : '").reference(w.get("linkAuto_fetch_followup_2"),w,"h",["s","j"]).write("',suppressSuccess : ").exists(w.get("hasCustomSuccess"),w,{"else":o,"block":l},null).write(",exchangeImapEnabled : false},isInitResolved : ").exists(w.get("isResolved"),w,{"else":j,"block":h},null).write(",hidePasswordField : ").exists(w.get("passwordRequired"),w,{"else":b,"block":a},null).write("}")
+}function o(x,w){return x.write("false")
+}function l(x,w){return x.reference(w.get("hasCustomSuccess"),w,"h")
+}function j(x,w){return x.write("false")
+}function h(x,w){return x.reference(w.get("isResolved"),w,"h")
+}function b(x,w){return x.write("true")
+}function a(x,w){return x.write("false")
+}return p
+})();
+(function(){dust.register("abook_base_import_form",dust.cache["tl/apps/fetch/embed/abook_base_import_form"])
+})();(function(){dust.register("tl/apps/fetch/partial/abook_security_msg",e);
+function e(g,f){return g.write('<span class="fontastic"></span><div class="tooltip-content-container" style="display:none;"><div id="abk-learn-more-callout" role="tooltip">').helper("eq",f,{"else":d,"block":c},{"key":b,"value":"D"}).write("</div></div>").helper("i18n",f,{"block":a},{"key":"i18n__security_msg_txt","filters":"|s"})
+}function d(g,f){return g.reference(f.get("i18n__learn_more_msg"),f,"h",["s"])
+}function c(g,f){return g.reference(f.get("i18n__learn_more_policy_and_help"),f,"h",["s"])
+}function b(g,f){return g.reference(f.get("lix_abi_disclosure"),f,"h")
+}function a(g,f){return g.write('<p>We\'ll import your address book to suggest connections and help you manage your contacts.</p><p> We\'ll never email anyone without your permission. <a href="#" id="abk-learn-more-link">Learn more</a></p>')
+}return e
+})();
+(function(){dust.register("abook_security_msg",dust.cache["tl/apps/fetch/partial/abook_security_msg"])
+})();LI.OneClickImporter=function(b,a){var a={emailDomain:a.emailDomain||"",emailFieldName:a.emailFieldName||"email",originFieldName:a.originFieldName||"origin_name",targetFormId:a.targetFormId||"",oneClickSelector:a.oneClickSelector||"a",submitterConfig:a.submitterConfig||null,fireDisplayTracking:a.fireDisplayTracking||false},d=YDom.get(a.targetFormId),c=new LI.ImportSubmitter(d,a.submitterConfig);
+c.registerCallback(LI.ImportSubmitter.NO_CONTACTS_EVT,c.success);
+if(a.fireDisplayTracking){if(WebTracking){WebTracking.trackUserAction("fetch_buttons_display")
+}}YEvent.on(Y$(a.oneClickSelector,b),"click",function(e){var h=YEvent.getTarget(e),g=YDom.getAttribute(h,"data-li-dummy-email")||YDom.getAttribute(h.parentNode,"data-li-dummy-email"),f=!g?"otherEmail":g.substring(g.indexOf("@")+1,g.lastIndexOf("."));
+if(WebTracking){WebTracking.trackUserAction("multi-abook-import-button",{email:g,origin:f})
+}if(f!=="otherEmail"){YEvent.preventDefault(e);
+YDom.setAttribute(d[a.emailFieldName],"value",g);
+YDom.setAttribute(d[a.originFieldName],"value",f);
+c.submit()
+}})
+};LI.FetchForm=function(b,a){var a={viewConstructor:a.viewConstructor||LI.FetchFormView,viewConfig:a.viewConfig||{},submitterConstructor:a.submitterConstructor||LI.ImportSubmitter,submitterConfig:a.submitterConfig||{},resolverConstructor:a.resolverConstructor||LI.ImportEmailResolver,resolverConfig:a.resolverConfig||{},successUrl:a.successUrl||"",isInitResolved:a.isInitResolved||false,hidePasswordField:a.hidePasswordField||false,exchangeImapEnabled:a.exchangeImapEnabled||false},h=new a.viewConstructor(b,a.viewConfig),g=new a.resolverConstructor(b["email"],a.resolverConfig),e=new a.submitterConstructor(b,a.submitterConfig),d=false,f;
+if(a.hidePasswordField){h.togglePasswordField(false)
+}g.registerStartEvt(function(){h.toggleResolvingSpinner(true);
+h.toggleForm(false)
+});
+g.registerCancelEvt(function(){c("Resolve canceled!");
+h.toggleResolvingSpinner(false);
+h.toggleForm(true)
+});
+g.registerSuccessEvt(function(i){c("Resolve succeeded!");
+c(i);
+h.toggleResolvingSpinner(false);
+if(i.notSupported||(!a.exchangeImapEnabled&&(i.WEBMAIL_ADDRESS||i.WEBMAIL_ADDRESS===""))){h.showUnsupportedEmailError();
+h.toggleForm(false);
+return
+}h.clearMsg();
+h.togglePasswordField(i.passwordRequired&&i.passwordRequired!=="false");
+h.modifyField("origin_name",i.origin);
+h.toggleForm(true)
+});
+g.registerErrorEvt(function(){h.toggleResolvingSpinner(false);
+h.showGeneralError()
+});
+g.registerInvalidEmailEvt(function(){h.toggleResolvingSpinner(false);
+h.toggleForm(false);
+h.showInvalidEmailError()
+});
+$(b).on("submit",function(i){h.clearMsg();
+if($(b["email"]).val().length===0){i.stopPropagation();
+return
+}e.submit()
+});
+e.registerCallback(LI.ImportSubmitter.NO_CONTACTS_EVT,function(i){c("No contacts!  eventInfo:");
+c(i);
+h.showNoContactsReturnedError()
+});
+e.registerCallback(LI.ImportSubmitter.BAD_LOGIN_EVT,function(i){c("Bad login!  eventInfo:");
+c(i);
+h.showBadLoginError()
+});
+e.registerCallback(LI.ImportSubmitter.IN_PROGRESS_EVT,function(){c("in progress...")
+});
+if(!a.isInitResolved){g.resolve()
+}function c(i){if(d){LI.log(i)
+}}$(document).on("keyup",function(i){if(i.ctrlKey&&i.altKey&&i.shiftKey&&i.keyCode==="76"){d=true;
+c("***** LI.FetchForm debugging logging on")
+}});
+f={submitter:e,resolver:g};
+LI.Events.fire("fetch-import-form-ready",f);
+return f
+};LI.FetchFormView=function(e,z){var q="error",s="disabled",m=$(document),z={unsupportedEmailTypeMessage:z.unsupportedEmailTypeMessage||"",invalidEmailMessage:z.invalidEmailMessage||"",generalErrorMessage:z.generalErrorMessage||"",invalidLoginMessage:z.invalidLoginMessage||"",loginLimitMessage:z.loginLimitMessage||"",noContactsReturnedMessage:z.noContactsReturnedMessage||"",webmailUrlErrorMessage:z.webmailUrlErrorMessage||"",userEnteredWebmailUrlErrorMessage:z.userEnteredWebmailUrlErrorMessage||"",removeSubhead:z.removeSubhead||null,emailInputEl:$(z.emailInputClass,e)||"",loadSpinnerEl:$(z.loadSpinnerClass,e)||"",pwordInputEl:$(z.pwordInputClass,e)||"",wmailURLInputEl:$(z.wmailURLInputClass,e)||null,unameInputEl:$(z.unameInputClass,e)||null,errorEl:$(z.errorElId)||"",errorTextEl:$(z.errorTextClass,z.errorEl)||"",submitBtnEl:$(z.submitBtnClass,e)||""},x=$.extend(x,z),d=x.errorEl,u=x.errorTextEl,p=x.pwordInputEl.next(),a=false;
+function g(){if(x.emailInputEl.val().length===0||(x.pwordInputEl.val().length===0&&x.pwordInputEl.is(":visible"))){w(false);
+m.trigger("abookLoadedForm")
+}}$(document).ready(g());
+$(e).on("keyup","input",function(){g()
+});
+function k(A){m.trigger("abookErrorTriggered",[A]);
+u.text(A);
+if(x.removeSubhead){$("#callout-subhed").remove();
+x.removeSubhead=false
+}d.css("display","block");
+a=true
+}function y(){k(x.generalErrorMessage)
+}function b(){k(x.invalidLoginMessage)
+}function c(){k(x.noContactsReturnedMessage)
+}function i(){x.emailInputEl.addClass(q);
+k(x.invalidEmailMessage)
+}function f(){x.emailInputEl.addClass(q);
+k(x.unsupportedEmailTypeMessage)
+}function r(){k(x.loginLimitMessage)
+}function n(){m.trigger("abookClearError");
+if(a===true){d.css("display","none");
+$("#abook-import-form input."+q).each(function(){$(this).removeClass(q)
+})
+}a=false
+}function o(){k(x.webmailUrlErrorMessage)
+}function w(A){if(A){x.submitBtnEl.removeAttr(s)
+}else{x.submitBtnEl.attr(s,s)
+}}function h(A){if(A){x.pwordInputEl.removeAttr(s);
+if(p.hasClass("hint")){p.removeClass("ghost-hide");
+p.addClass("ghost-show")
+}}else{x.pwordInputEl.attr(s,s);
+if(p.hasClass("hint")){p.removeClass("ghost-show");
+p.addClass("ghost-hide")
+}}}function v(A){if(A){x.wmailURLInputEl.removeAttr(s)
+}else{x.wmailURLInputEl.attr(s,s)
+}}function j(A){if(A){x.unameInputEl.removeAttr(s)
+}else{x.unameInputEl.attr(s,s)
+}}function l(A,B){var C=$('input[name ="'+A+'"]',e);
+C.val(B)
+}function t(A){if(A){x.loadSpinnerEl.css("display","block")
+}else{x.loadSpinnerEl.css("display","none")
+}}return{showGeneralError:y,showBadLoginError:b,showUnsupportedEmailError:f,showLoginLimitError:r,showNoContactsReturnedError:c,showInvalidEmailError:i,showWebmailUrlErrorMessage:o,clearMsg:n,togglePasswordField:h,toggleWebmailUrlField:v,toggleUsernameField:j,toggleResolvingSpinner:t,modifyField:l,toggleForm:w}
+};(function(){var a=5000,b;
+LI.ImportEmailResolver=function(g,u){var u={resolveUrl:u.resolveUrl||null,emailPlaceholder:u.emailPlaceholder};
+var s=g,w=s.value,v=s.value,q=new YAHOO.util.CustomEvent("startResolve"),o=new YAHOO.util.CustomEvent("cancelResolve"),f=new YAHOO.util.CustomEvent("failResolve"),d=new YAHOO.util.CustomEvent("successResolve"),r=new YAHOO.util.CustomEvent("invalidEmail"),i,j,e=u.emailPlaceholder.charAt(0).toUpperCase()+u.emailPlaceholder.slice(1);
+function m(){if(!s||s.value===w){return
+}if(i!=null){window.clearTimeout(i);
+i=null
+}if(j!=null){window.clearInterval(j);
+j=null
+}w=YAHOO.lang.trim(s.value);
+if(!b){b=/^([a-zA-Z0-9_\-=\.\'\+]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,10}|[0-9]{1,3})(\]?)$/i
+}if(w.match(b)){j=window.setInterval(function(){if(w===v){t()
+}else{v=w
+}},500)
+}else{if(w.length>0){i=window.setTimeout(function(){r.fire();
+if(i!=null){window.clearTimeout(i);
+i=null
+}},a)
+}else{o.fire();
+return
+}}q.fire()
+}function t(){if(j!=null){window.clearInterval(j);
+j=null
+}function x(A){d.fire(A.responseText)
+}var z={custom:{error:function(){},exception:function(){f.fire({error:true});
+return false
+}},success:x,failure:function(){f.fire({error:true})
+}},y=LI.addParams(u.resolveUrl,{email:v});
+LI.asyncRequest("GET",y,z)
+}function h(){w=YAHOO.lang.trim(s.value);
+if(w.length>0&&w!==e){q.fire();
+t()
+}}function k(x){q.subscribe(function(z,y){x(y[0])
+})
+}function l(x){o.subscribe(function(z,y){x(y[0])
+})
+}function c(x){d.subscribe(function(z,y){x(y[0])
+})
+}function n(x){f.subscribe(function(z,y){x(y[0])
+})
+}function p(x){r.subscribe(function(z,y){x(y[0])
+})
+}YEvent.on(s,"keyup",function(x){m()
+});
+return{registerStartEvt:k,registerCancelEvt:l,registerSuccessEvt:c,registerErrorEvt:n,registerInvalidEmailEvt:p,resolve:h}
+}
+}());(function(){var d={"hotmail.com":{width:905,height:580},"live.com":{width:905,height:580},"msn.com":{width:905,height:580},"aol.com":{width:520,height:315},"default":{width:790,height:580}},b={"1":"GENERAL_ERROR","2":"INVALID_LOGIN_ERROR","3":"UNSUPPORTED_EMAIL_TYPE_ERROR","4":"LOGIN_LIMIT_ERROR","5":"NO_CONTACTS_RETURNED"},a={},c;
+LI.ImportSubmitter=function(g,z){var z={domainPopupSizes:d,errorMap:b,formTarget:z.formTarget||"zeppelin_popup",emailFieldName:z.emailFieldName||"email",successUrl:z.successUrl||"",suppressSuccess:z.suppressSuccess||false},q=false,y=null,r=z.domainPopupSizes["default"].width,x=z.domainPopupSizes["default"].height,t=g,E=function(F,G){return LI.Events.bind(F,G)
+},A=function(){return LI.Events.fire.apply(LI.Events,arguments)
+},j=false,e=new YAHOO.util.CustomEvent("success",null,null,YAHOO.util.CustomEvent.FLAT),u=new YAHOO.util.CustomEvent("inProgress",null,null,YAHOO.util.CustomEvent.FLAT),o=new YAHOO.util.CustomEvent("authenticated",null,null,YAHOO.util.CustomEvent.FLAT),D=new YAHOO.util.CustomEvent("badLogin",null,null,YAHOO.util.CustomEvent.FLAT),s=new YAHOO.util.CustomEvent("noContacts",null,null,YAHOO.util.CustomEvent.FLAT),p=new YAHOO.util.CustomEvent("badUrl",null,null,YAHOO.util.CustomEvent.FLAT),C=new YAHOO.util.CustomEvent("error",null,null,YAHOO.util.CustomEvent.FLAT),i=new YAHOO.util.CustomEvent("close",null,null,YAHOO.util.CustomEvent.FLAT);
+function n(F){if(j&&window.console&&console.log){console.log(F)
+}}function f(H,I){var J=I.ticketID||"",F=I.origin||"",K=I.batchID||"",G=I.windowName||"";
+n(H+" : ticketID="+J+" origin="+F+" "+z.batchIdParamKey+"="+K+" targetName="+G)
+}function v(H){n("Import success!  eventInfo:");
+n(H);
+var F=$(g["origin_name"]).val()||"",G=$(g["referrer_alias"]).val()||"",I={origin:F,referrer:G};
+window.location.href=LI.addParams(z.successUrl,I)
+}function l(){y=window.open("#",z.formTarget,"width="+r+",height="+x+",toolbar=0,location=0,toolbar=0,status=0,scrollbars=no")
+}function h(F){var G=F.split("@")[1];
+if(z.domainPopupSizes[G]){r=z.domainPopupSizes[G].width;
+x=z.domainPopupSizes[G].height
+}else{r=z.domainPopupSizes["default"].width;
+x=z.domainPopupSizes["default"].height
+}}function m(){if(y){y.focus();
+setTimeout(function(){y.close()
+},5)
+}}function w(){if(q){return
+}q=true;
+setTimeout(function(){q=false
+},3000);
+h(YDom.getAttribute(t[z.emailFieldName],"value"));
+l();
+t.submit()
+}function B(){YEvent.on(window,"unload",function(){if(y){y.close()
+}});
+YEvent.on(document,"keyup",function(F){if(F.ctrlKey&&F.altKey&&F.shiftKey&&F.keyCode===76){j=true;
+n("***** ImportSubmitter: debugging logging on")
+}});
+E(a[c.BAD_LOGIN_EVT],m);
+E(a[c.NO_CONTACTS_EVT],m);
+E(a[c.BAD_URL_EVT],m);
+E(a[c.GENERAL_ERROR_EVT],m);
+E(a[c.SUCCESS_EVT],m);
+if(!z.suppressSuccess){E(a[c.SUCCESS_EVT],v)
+}}B();
+function k(F,G){E(a[F],function(I){try{G(I)
+}catch(H){n(H)
+}})
+}return{submit:w,registerCallback:k,success:v}
+};
+c=LI.ImportSubmitter;
+c.SUCCESS_EVT="SUCCESS";
+c.IN_PROGRESS_EVT="IN_PROGRESS";
+c.AUTH_EVT="AUTH";
+c.BAD_LOGIN_EVT="BAD_LOGIN";
+c.NO_CONTACTS_EVT="NO_CONTACTS";
+c.BAD_URL_EVT="BAD_URL";
+c.GENERAL_ERROR_EVT="GENERAL_ERROR";
+c.POLLING_CLOSE_EVT="POLLING_CLOSE";
+a[c.SUCCESS_EVT]="zpolling-completed";
+a[c.IN_PROGRESS_EVT]="zpolling-in-progress";
+a[c.AUTH_EVT]="zpolling-in-progress-authenticated";
+a[c.BAD_LOGIN_EVT]="zpolling-bad-login";
+a[c.NO_CONTACTS_EVT]="zpolling-no-contacts-returned";
+a[c.BAD_URL_EVT]="zpolling-webmail-url-incorrect";
+a[c.GENERAL_ERROR_EVT]="zpolling-generic-error";
+a[c.POLLING_CLOSE_EVT]="zpolling-force-quit"
+})();(function(){YEvent.onDOMReady(function(){var d=document.getElementById("benefitsContinue");
+var b=document.forms["address-book-import-form"].elements["email"];
+var e=document.getElementById("resolve-btn");
+YEvent.on(d,"click",function(g){if(b.value!=""){var f=document.getElementById("password-nWMIForm");
+var h=document.getElementById("pswd-div");
+if(h.style.display=="none"||f.value!==""){e.click()
+}}});
+var c=document.getElementById("skipButton");
+YEvent.on(c,"click",function(f){a()
+})
+});
+function a(){var b=document.getElementById("benefitsContinue").offsetWidth;
+if(b!=0){document.getElementById("inviterInnerDiv").style.backgroundPosition=(b-12)/2+"px 0"
+}}})();(function(){var a="hidden",c="selected",f="expand-form-link";
+function g(k){return !YDom.hasClass(k,f)
+}function i(k){switch(k.tagName.toUpperCase()){case"LI":return k;
+case"A":return k.parentNode;
+case"SPAN":return k.parentNode.parentNode;
+default:return null
+}}function d(p,q,n,l){var m=Y$("li."+c,l,true),k,o;
+if(p!==m){k=Y$("."+f+"."+c,l,true);
+YDom.removeClass(m,c);
+YDom.removeClass(k,c)
+}YDom.addClass(q,a);
+YDom.addClass(n,a)
+}function b(m,o,n,l){var k=YDom.hasClass(m,c);
+if(!k){d(m,o,n,l)
+}LI.toggleClass(n,a,k);
+LI.toggleClass(m,c)
+}function j(n,o,l,k){var m=YDom.hasClass(n,c);
+if(!m){d(n,o,l,k)
+}LI.toggleClass(n.children[0],c,!m);
+LI.toggleClass(o,a,m);
+LI.toggleClass(n,c)
+}function e(m,l,n,k){LI.toggleClass(m,n);
+LI.toggleClass(l,k)
+}function h(){var k=document.getElementById("addconnections");
+YEvent.on(k,"click",function(t){var p=document.getElementById("cancelOtherEmailFormBtn"),m=document.getElementById("otherEmailForm"),o=document.getElementById("other-email-li"),r=document.getElementById("outlook-li"),n=document.getElementById("manual-invite-li"),q=document.getElementById("manual-invite-form-module"),s=YEvent.getTarget(t),l=i(s);
+if(s===p){YDom.addClass(m,a);
+YDom.removeClass(Y$("."+c,k,true),c)
+}if(s.href===window.location+"#"){YEvent.preventDefault(t)
+}if(l){if(l!==n&&!YDom.hasClass(q,a)){e(q,n,a,c)
+}if(l!==o&&!YDom.hasClass(m,a)){e(m,o,a,c)
+}if(l===o||l===r){if(!g(l.children[0])){j(l,m,q,k)
+}}if(n&&(l===n)){if(!g(l.children[0])){b(n,m,q,k)
+}}}})
+}YEvent.onDOMReady(h)
+}());(function(){var g=YAHOO.util.Dom,o=YAHOO.util.Event,a=YAHOO.lang,n=YAHOO.env.ua,d=window,s=document,j=document.body,k=1500,q=25,f="dragging",m=0,r=1,b="max-height",l="mousemove",c="show",p=n.gecko?"DOMMouseScroll":"mousewheel",i="li-scroll-thumb";
+LI.define("ScrollTopObserver");
+LI.ScrollTopObserver=function(u,v){var t=(v&&v.distanceFromBottomTrigger)||40,G=this,z;
+this.enable=true;
+this.distanceReached=new YAHOO.util.CustomEvent("distanceReached");
+function A(){var H=window.setTimeout(function(){g.removeClass(z.track,c)
+},z.thumbHideTimeout);
+z.thumbHideTimeoutIds.push(H)
+}function E(J){var M=t+1,L,I,K,H;
+if(G.enable){if(u===window){K=d.pageYOffset||s.scrollTop||j.scrollTop;
+if(n.gecko){M=d.scrollMaxY-K
+}else{if(n.webkit){M=j.scrollHeight-j.scrollTop-d.innerHeight
+}else{if(n.ie){M=j.scrollHeight-s.clientHeight-s.scrollTop
+}else{if(n.opera){M=j.scrollHeight-K-d.innerHeight
+}}}}L=n.gecko?d.scrollMaxY:j.scrollHeight;
+I=parseInt(g.getStyle(document.body,b))||L
+}else{H=(z&&z.content)||u;
+L=H.scrollHeight;
+I=parseInt(g.getStyle(H,b))||L;
+M=L-H.scrollTop-H.clientHeight
+}if((M<=t)&&(L>I)){G.distanceReached.fire({distanceFromBottom:M})
+}}}function B(){var H;
+while(z.thumbHideTimeoutIds.length){H=z.thumbHideTimeoutIds.pop();
+window.clearTimeout(H)
+}}function C(){g.addClass(z.track,c);
+B();
+o.on(document,p,(function(I){try{I.preventDefault()
+}catch(H){return false
+}}),null,true)
+}function x(){A();
+o.removeListener(document,p)
+}function y(I){var H=o.getTarget(I),J=(n.ie&&(I.button===r))||I.button===m;
+if(J){H=g.hasClass(H,i)?H:g.getAncestorByClassName(H,i);
+z.isDraggingThumb=true;
+z.mouseStartY=I.clientY;
+z.thumbStartY=h(H.style.top);
+g.addClass(document.body,f);
+o.on(document,l,F,null,this)
+}}function F(L){B();
+var M=z.thumbStartY+L.clientY-z.mouseStartY,I=M<0,K=(M+z.thumbHeight)>z.content.clientHeight,J,H;
+if(I){M=0
+}if(K){M=z.content.clientHeight
+}if(z.isDraggingThumb&&!I&&!K){if(window.getSelection){window.getSelection().removeAllRanges()
+}else{if(document.getSelection){document.getSelection().removeAllRanges()
+}}J=M/z.track.clientHeight;
+H=parseInt(Math.round(z.content.scrollHeight*J));
+z.content.scrollTop=H;
+g.setStyle(z.thumb,"top",M+"px");
+E()
+}A()
+}function w(H){if(z.isDraggingThumb){z.isDraggingThumb=false;
+g.removeClass(document.body,f);
+o.removeListener(document,l,F);
+A()
+}}function D(M){var L=o.getTarget(M),K=e(L,"li-scroll-content"),H=z.content,N=0,J,I;
+if(K){B();
+if(M.wheelDelta){N=M.wheelDelta
+}else{if(M.detail){N=-M.detail
+}}if(N<0){H.scrollTop+=q
+}else{H.scrollTop-=q
+}E();
+I=H.scrollTop/H.scrollHeight;
+J=parseInt(Math.round(z.track.clientHeight*I));
+g.setStyle(z.thumb,"top",J+"px");
+A();
+return false
+}}if(v&&v.customScrollbars){z={content:Y$(".li-scroll-content",u,true),track:Y$(".li-scroll-track",u,true),thumb:Y$(".li-scroll-track ."+i,u,true),isDraggingThumb:false,thumbStartY:0,mouseStartY:0,thumbHideTimeout:v.customScrollbars.fadeTimeout||k,thumbHideTimeoutIds:[]};
+this.customScrolling=z;
+o.on(z.content,p,D,null,this);
+o.on(z.thumb,"mousedown",y,null,this);
+o.on(document,"mouseup",w,null,this);
+o.on(u,"mouseover",C,null,this);
+o.on(u,"mouseout",x,null,this);
+o.on(u,"selectstart",function(){return false
+},null,this);
+this.render()
+}else{o.on(u,"scroll",E,null,this)
+}};
+LI.ScrollTopObserver.prototype={render:function(){if(this.customScrolling){var t=this.customScrolling.content,y=parseInt(g.getStyle(t,b))||t.scrollHeight,u=this.customScrolling,w=t.clientHeight/t.scrollHeight,x=parseInt(Math.round(u.track.clientHeight*w)),v;
+if(t.scrollHeight<=y){LI.hide(u.track);
+return
+}LI.show(u.track);
+this.customScrolling.thumbHeight=x;
+g.setStyle(this.customScrolling.thumb,"height",x+"px");
+w=t.scrollTop/t.scrollHeight;
+v=parseInt(Math.round(this.customScrolling.track.clientHeight*w));
+g.setStyle(this.customScrolling.thumb,"top",v+"px")
+}}};
+function h(u){var t=parseInt(u);
+return isNaN(t)?0:t
+}function e(u,t){if(!u){return null
+}return(g.hasClass(u,t))?u:g.getAncestorByClassName(u,t)
+}})();LI.define("RoundButtonAnim");
+LI.RoundButtonAnim=LI.BaseControl.extend(function(a){var i="press",g="pressed",e="unpress",b=false,d="toggle",h="manualtoggle",f="autotoggle",c={buttonType:d,autoToggleDelay:500};
+return{beforeDecoration:function(){b=this._supportsAnimations();
+this._config=_.defaults(this._config,c)
+},attachEventListeners:function(){var k=this,j=this._config.buttonType;
+if(j!==h){this._$el.on("click",function(l){l.preventDefault();
+k.toggleClass($(this))
+})
+}if(b){this._$el.on("animationend webkitAnimationEnd oanimationend MSAnimationEnd",function(m){var l=this.$animStepDeferred;
+if(l.state()==="pending"){l.resolve();
+k._toggleAnimClasses($(this))
+}})
+}},toggleClass:function(j){var l=this,k=j.get(0),m=k.$animDeferred=$.Deferred();
+if(!b){this._toggleNonAnimClass(j);
+m.resolve()
+}else{this._toggleAnimClasses(j)
+}j.trigger("blur").trigger("focus");
+return m.promise()
+},_supportsAnimations:function(){var k=document.body,m,l=["","ms","O","Webkit","Moz"],j;
+for(m in l){if(k.style[l[m]+"Animation"]!==undefined){j=true;
+break
+}}return j
+},_toggleNonAnimClass:function(j){var l=this;
+j.toggleClass(g);
+if(this._config.buttonType===f){var k=window.setTimeout(function(){l.toggleClass(j);
+window.clearTimeout(k)
+},this._config.autoToggleDelay)
+}},_toggleAnimClasses:function(j){var m=this,l=j.get(0),k=l.$animStepDeferred=$.Deferred();
+if(j.hasClass(i)){k.then(function(){if(m._config.buttonType===f){var n=window.setTimeout(function(){m._toggleAnimClass(j);
+window.clearTimeout(n)
+},m._config.autoToggleDelay)
+}else{l.$animDeferred.resolve()
+}});
+j.toggleClass(i+" "+g);
+k.resolve()
+}else{if(j.hasClass(g)){j.toggleClass(g+" "+e)
+}else{if(j.hasClass(e)){j.removeClass(e);
+l.$animDeferred.resolve()
+}else{j.addClass(i)
+}}}}}
+});LI.define("PendingConnectionList");
+LI.PendingConnectionList=LI.BaseControl.extend(function(e){var d={ACTION_TYPE:{PRIMARY:0,SECONDARY:1},SELECTOR:{CONNECTION_LIST:".connection-tab-people-list",CONNECTION_LIST_ITEM:".connection-item-actions-wrapper",HEADLINE:".item-secondary-headline",CONNECTION_TYPE:"connectionType",LIST_ITEM_CONTAINER:"li",GEM_SELECTOR:".gem",NAV_ITEM:".nav-item",HEIGHT_SETTER:"heightSet",IGNORE_CONFIRMATION:".ignore-confirmation",CLOSE_CONFIRMATION:".close-confirmation",INVITE_SPAM:'[data-action="invitationReportAbuse"]',INVITE_DECLINE:'[data-action="invitationDecline"]'},CSS_CLASS:{LIST_ITEM_ACTION:"connection-item-action",SECONDARY_ACTION:"secondary",IN_PROGRESS:"in-progress",ACTION_DONE:"success-card",SHOW_MESSAGING:"show-msg",MESSAGE_BUTTON:"message-button",FADE:"fade",FOCUS:"focus",NAV_ITEM_SEEN:"gray",ERROR:"error"},CONNECTION_TYPE:{PYMK:"pymk",INVITATION:"invitation",GYMK:"gymk"},CONNECTION_BEHAVIORS:{RIVER:"river",REDIRECT:"redirect"},OFFSET_SIZE:10,MAX_LIMIT_INVITES:999,MARK_AS_SEEN_URL:LI.HeaderNotificationsDependencies.addconn.markAsSeen},c={},b,g,a,f=LI.HeaderNotificationsDependencies.addconn;
+return{afterDecoration:function(){this._render()
+},attachEventListeners:function(){var i=this,h="."+d.CSS_CLASS.LIST_ITEM_ACTION+":not(."+d.CSS_CLASS.MESSAGE_BUTTON+")";
+this._$el.on("click.pendingconnection",h,i._onListClick).on("click.closeconfirmation",d.SELECTOR.CLOSE_CONFIRMATION,i._closeDialog).on("click.invitespam",d.SELECTOR.INVITE_SPAM,i._handleSpamInvites).on("click.invitedecline",d.SELECTOR.INVITE_DECLINE,i._handleSpamInvites).on("focus.addwrapperfocus","."+d.CSS_CLASS.LIST_ITEM_ACTION,function(j){i._toggleWrapperFocus(j,true)
+}).on("blur.removewrapperfocus","."+d.CSS_CLASS.LIST_ITEM_ACTION,function(j){i._toggleWrapperFocus(j,false)
+})
+},_render:function(){var h=this._$el;
+dust.render(this._config.template,this._config.model,function(j,i){if(i){h.html(i)
+}});
+this._checkUnseenCount()
+},renderList:function(i,k){var j=this._getList(),l=this,h;
+dust.render(this._config.template,i,function(n,m){if(m){h=$("<div>"+m+"</div>").find(d.SELECTOR.CONNECTION_LIST);
+if(k){if(typeof(j.data(d.SELECTOR.HEIGHT_SETTER)==="undefined")){j.height(k).data(d.SELECTOR.HEIGHT_SETTER,true)
+}else{if(k!==parseInt(j.css("height"),10)){j.data(d.SELECTOR.HEIGHT_SETTER,true)
+}}}l._setFadeAction();
+if(h.length){j.append(h.html())
+}}})
+},_getList:function(){if(!this.$list){this.$list=this._$el.find(d.SELECTOR.CONNECTION_LIST)
+}return this.$list
+},_onListClick:function(j){var h=$(j.currentTarget),i=h.hasClass(d.CSS_CLASS.LIST_ITEM_ACTION);
+if(!i){h=$(this).closest("."+d.CSS_CLASS.LIST_ITEM_ACTION);
+if(h){i=true
+}}if(i){j.preventDefault();
+this._onActionClick(h)
+}},_onActionClick:function(h){var n=h.closest(d.SELECTOR.CONNECTION_LIST_ITEM),p=h.closest("form"),o=this,m=this._config.model,i=h.attr("data-li-trk-code"),j,k,l;
+g=n.closest(d.SELECTOR.LIST_ITEM_CONTAINER);
+b=n.data(d.SELECTOR.CONNECTION_TYPE);
+if(h.hasClass(d.CSS_CLASS.SECONDARY_ACTION)){j=d.ACTION_TYPE.SECONDARY
+}else{j=d.ACTION_TYPE.PRIMARY
+}if(i){WebTracking.trackUserAction(i)
+}k=(((m.lix_invitation_connect_behavior===d.CONNECTION_BEHAVIORS.REDIRECT)&&b===d.CONNECTION_TYPE.INVITATION)||((m.lix_pymk_connect_behavior===d.CONNECTION_BEHAVIORS.REDIRECT)&&b===d.CONNECTION_TYPE.PYMK)||((m.lix_pymk_connect_behavior===d.CONNECTION_BEHAVIORS.REDIRECT)&&b===d.CONNECTION_TYPE.GYMK))?true:false;
+if(k&&j===d.ACTION_TYPE.PRIMARY){p.submit();
+return
+}g.addClass(d.CSS_CLASS.IN_PROGRESS);
+$.ajax(p.attr("action"),{type:p.attr("method"),data:p.serialize(),headers:{"X-IsAJAXForm":1,"X-Requested-With":"XMLHttpRequest"}}).done(function(q){c=q;
+l=c.status||"fail";
+if(l==="ok"){o._handleItem(j)
+}else{o._handleErrorItem()
+}}).complete(function(){g.removeClass(d.CSS_CLASS.IN_PROGRESS)
+}).error(function(r,q,s){p.submit()
+})
+},_handleItem:function(h){var i=this._config.model;
+if(h===d.ACTION_TYPE.PRIMARY){g.addClass(d.CSS_CLASS.ACTION_DONE);
+if(b===d.CONNECTION_TYPE.INVITATION&&(i.lix_invitation_connect_behavior===d.CONNECTION_BEHAVIORS.RIVER)||b===d.CONNECTION_TYPE.PYMK&&(i.lix_pymk_connect_behavior===d.CONNECTION_BEHAVIORS.RIVER)||b===d.CONNECTION_TYPE.GYMK&&(i.lix_pymk_connect_behavior===d.CONNECTION_BEHAVIORS.RIVER)){g.addClass(d.CSS_CLASS.FADE)
+}else{g.addClass(d.CSS_CLASS.SHOW_MESSAGING)
+}this._updateHeadline()
+}else{if("content" in c){$(c.content).children(d.SELECTOR.IGNORE_CONFIRMATION).appendTo(g);
+setTimeout(function(){g.addClass(d.CSS_CLASS.FADE)
+},800)
+}else{g.addClass(d.CSS_CLASS.FADE)
+}}this.updateCount(b);
+this._onActionDone()
+},_handleErrorItem:function(){var h=g.find(d.SELECTOR.HEADLINE),i=this._config.model["i18n_connection_tab_error_state"]||false;
+g.addClass(d.CSS_CLASS.ACTION_DONE+" "+d.CSS_CLASS.ERROR);
+if(!i){return
+}h.text(i);
+h.attr("title",i)
+},_closeDialog:function(i){i.preventDefault();
+var h=$(i.currentTarget),j=h.closest(d.SELECTOR.LIST_ITEM_CONTAINER);
+this._fade(j)
+},_handleSpamInvites:function(i){i.preventDefault();
+var h=$(i.currentTarget),j=h.data("actionUrl"),k=h.closest(d.SELECTOR.IGNORE_CONFIRMATION);
+if(j){k.addClass(d.CSS_CLASS.IN_PROGRESS);
+$.ajax(j,{headers:{"X-IsAJAXForm":1,"X-Requested-With":"XMLHttpRequest"}}).done(function(l){k.html(l.content)
+}).complete(function(){k.removeClass(d.CSS_CLASS.IN_PROGRESS)
+})
+}},_toggleWrapperFocus:function(j,i){var h=$(j.currentTarget),k=h.closest(d.SELECTOR.LIST_ITEM_CONTAINER)||[];
+if(k.length){k.toggleClass(d.CSS_CLASS.FOCUS,i)
+}},_setFadeAction:function(){var j=this,i=g.siblings(),k=i.hasClass(d.CSS_CLASS.FADE),h;
+if(g.hasClass(d.CSS_CLASS.FADE)){this._fade(g)
+}if(k){i.each(function(){h=$(this);
+if(h.hasClass(d.CSS_CLASS.FADE)){j._fade(h)
+}})
+}},_fade:function(h){var i=this;
+h.fadeOut(2000,function(){if(h.siblings().length){h.remove()
+}else{i._$el.remove();
+if(f.pymkBadgeLiXOn&&b===d.CONNECTION_TYPE.INVITATION){f.pymkBadgeLegoCoolOffData.reason="Cleared invitations";
+$.post(f.pymkBadgeLegoConfig.coolOffUrl,f.pymkBadgeLegoCoolOffData);
+if(WebTracking){WebTracking.trackUserAction("sitenav-pymkbadge-cooloff",{reason:f.pymkBadgeLegoCoolOffData.reason,coolOffPeriod:f.pymkBadgeLegoCoolOffData.period},true)
+}}}i._config["redrawScrollBar"]()
+})
+},_updateHeadline:function(){var h=g.find(d.SELECTOR.HEADLINE),i=b.toUpperCase(),j=(i in d.CONNECTION_TYPE)?this._config.model["i18n_"+d.CONNECTION_TYPE[i]+"_confirmation"]:null;
+if(!j){return
+}h.text(j);
+h.attr("title",j)
+},_onActionDone:function(){var h=(b==="gymk")?"pymk":b,i;
+h=h.replace(/\w\S*/g,function(j){return j.charAt(0).toUpperCase()+j.substr(1).toLowerCase()
+});
+i=this._config["on"+h+"ActionDone"];
+if(typeof(i)!=="undefined"&&$.isFunction(i)){i()
+}},_checkUnseenCount:function(){var l=this._config.model,h=this._$el.parents(d.SELECTOR.NAV_ITEM).first(),k=this,n=l.lix_inbox_notification_style,i,m,j;
+if(!n){return
+}a=(h.length)?h.find(d.SELECTOR.GEM_SELECTOR):[];
+if(a.length){i=a.data("gemNewInvites")||0;
+m=a.data("gemPendingInvites")||0;
+if(i===0){return
+}j=parseInt(i,10)+parseInt(m,10)
+}else{return
+}setTimeout(function(){j=(n==="B")?j:0;
+k.markInvitesAsSeen(j)
+},2000)
+},markInvitesAsSeen:function(i){var h=this;
+$.ajax(d.MARK_AS_SEEN_URL,{data:{type:"invitation",rnd:new Date().getTime()},headers:{"X-IsAJAXForm":1,"X-Requested-With":"XMLHttpRequest"}}).done(function(){h.updateNavGem(i);
+a.addClass(d.CSS_CLASS.NAV_ITEM_SEEN)
+}).error(function(){throw new Error("Failed to mark invitations as seen")
+})
+},updateCount:function(){var k=this._$el.find("."+b+"-count"),j,h,i,l;
+if(!k.length){return
+}i=k.text().replace(/,/g,"");
+h=parseInt((i||0),10);
+l=h-1;
+if(l>0){k.text(l.toString().replace(/\B(?=(\d{3})+(?!\d))/g,","))
+}else{j=k.parent("."+b+"-count-container");
+j=(j.length)?j:k;
+j.remove()
+}if(b===d.CONNECTION_TYPE.INVITATION){this.updateNavGem(l)
+}},updateNavGem:function(i){if(a.length){if(i>0){if(i<=d.MAX_LIMIT_INVITES){a.text(i)
+}else{var h=d.MAX_LIMIT_INVITES.toString()+"+";
+if(a.text()!==h){a.text(h)
+}}}else{a.remove()
+}}},getFetchReqs:function(h){var k=g.siblings().length||0,m=this._getList(),l=false,i={},n=m.data("offset"),o=(typeof(m.data("hasResults"))==="undefined"),j=g.innerHeight();
+if((k+1)<=h&&o){l=true;
+i.elementHeight=((j+1)*h)+2;
+if(typeof(n)==="undefined"){n=((b===d.CONNECTION_TYPE.INVITATION)?0:1)+h
+}else{n+=d.OFFSET_SIZE
+}i.offset=n;
+m.data("offset",n)
+}else{this._setFadeAction()
+}i.verdict=l;
+return i
+},resetParentHeight:function(){var h=this._getList();
+h.data("hasResults",false).height("auto").removeData(d.SELECTOR.HEIGHT_SETTER);
+this._setFadeAction()
+}}
+});(function(f){LI.define("HeaderNotifications.ConnectionTab.DataProvider");
+var n=null,k=null,d=5,c=5,m=0,s=false,a=false,r=10,b=null,g=null,e={BASE_URL:LI.HeaderNotificationsDependencies.addconn.url,PYMK_URL:LI.HeaderNotificationsDependencies.addconn.pymk,INVITATIONS_URL:LI.HeaderNotificationsDependencies.addconn.invitations,BASE_KEY:"global_nav_pymk_invitations",INVITATIONS_KEY:"inbox_pending_invitations",PYMK_KEY:"contacts_pymk_people_cards",LIX_KEY:{LIST_POSITION:"lix_list_position",SHOW_INVITATION:"lix_show_invitations",INVITATIONS_MAX_NUMBER:"lix_invitations_max_number",SHOW_PYMK:"lix_show_pymk",PYMK_MAX_NUMBER:"lix_pymk_max_number",CONNECT_BEHAIVOR:"lix_invitation_connect_behavior"}};
+LI.HeaderNotifications.ConnectionTab.DataProvider={fetch:function(u){k=u;
+f.ajax(e.BASE_URL,{type:"GET",success:_.bind(h,this)})
+},getData:function(){return n
+},getBaseData:function(){return _.omit(n[e.BASE_KEY],[e.INVITATIONS_KEY,e.PYMK_KEY])
+},getScrollBar:function(u){if(!g&&typeof(u)!=="undefined"){g=new LI.ScrollTopObserver(u,{customScrollbars:true})
+}return g
+},getPYMK:function(u,v){return t(e.PYMK_KEY,u,v)
+},getInvitations:function(u,v){return t(e.INVITATIONS_KEY,u,v)
+},getNewPYMK:function(w,x){var w=w||this.getMaxPYMKNumber()+1,v={offset:w,records:r,fetchMode:"noncached",seed:b},u;
+f.ajax(e.PYMK_URL,{type:"GET",data:v,success:function(y){u=i(e.PYMK_KEY,y);
+return x(u)
+},error:function(y){throw new Error("PYMK backfill failed: "+y.textStatus)
+}})
+},getNewInvitations:function(w,x){var w=w||this.getMaxInvitationsNumber(),v={offset:w,count:r,fetchMode:"noncached"},u;
+f.ajax(e.INVITATIONS_URL,{type:"GET",data:v,success:function(y){u=i(e.INVITATIONS_KEY,y);
+return x(u)
+},error:function(y){throw new Error("Pending invites backfill failed: "+y.textStatus)
+}})
+},getRandomSeed:function(){return b
+},getMaxInvitationsNumber:function(){return d
+},getMaxPYMKNumber:function(){return c
+},getListPosition:function(){return m
+},isInvitationsVisible:function(){return s
+},isPYMKVisible:function(){return a
+}};
+function t(v,u,z){var x,y,w;
+z=z||1;
+if(_.isNumber(u)&&_.isNumber(z)&&n[e.BASE_KEY][v]){y=(z-1)*u;
+w=(z*u);
+x=_.clone(n[e.BASE_KEY][v]);
+if(x.people&&!_.isEmpty(x.people)){x.people=x.people.slice(y,w)
+}return x
+}return n[e.BASE_KEY][v]
+}function i(u,v){v=v.content[u];
+return(v&&v.people&&!_.isEmpty(v.people))?v:null
+}function q(v){var u=parseInt(n[v].substring(1),10);
+if(!_.isNaN(u)){switch(v){case e.LIX_KEY.INVITATIONS_MAX_NUMBER:d=u;
+break;
+case e.LIX_KEY.PYMK_MAX_NUMBER:c=u;
+break
+}}}function l(){b=n[e.BASE_KEY][e.PYMK_KEY]["randomSeed"]
+}function o(u){m=u
+}function j(u){s=(u==="active")
+}function p(u){a=(u==="active")
+}function h(u){if(u.status==="ok"&&u.content&&u.content[e.BASE_KEY]){n=u.content;
+if(!_.isUndefined(n[e.LIX_KEY.INVITATIONS_MAX_NUMBER])){q(e.LIX_KEY.INVITATIONS_MAX_NUMBER)
+}if(!_.isUndefined(n[e.LIX_KEY.PYMK_MAX_NUMBER])){q(e.LIX_KEY.PYMK_MAX_NUMBER)
+}if(!_.isUndefined(n[e.LIX_KEY.LIST_POSITION])){o(n[e.LIX_KEY.LIST_POSITION])
+}if(!_.isUndefined(n[e.LIX_KEY.SHOW_INVITATION])){j(n[e.LIX_KEY.SHOW_INVITATION])
+}if(!_.isUndefined(n[e.LIX_KEY.SHOW_PYMK])){p(n[e.LIX_KEY.SHOW_PYMK]);
+l()
+}if(k){k()
+}}}}(jQuery));(function(e){var t=LI.HeaderNotifications.ConnectionTab.DataProvider,l=LI.PendingConnectionList,o=null,q=null,k=null,a=null,n=null,c=null,g=null,h=null,f=null,d={PYMK:1,INVITATION:2,SELECTOR:{BASE_BODY:"#add-connection-container",CONNECTION_LIST:".connection-tab-people-list",TOP_LIST_CONTAINER:"#connection-tab-top-container",MIDDLE_LIST_CONTAINER:"#connection-tab-middle-container",BOTTOM_LIST_CONTAINER:"#connection-tab-bottom-container"},TL:{BASE:"tl/apps/chrome/consumer/nav/header/add_connection/connectionTab",INVITATION:"tl/apps/chrome/consumer/nav/header/add_connection/invitations",PYMK:"tl/apps/chrome/consumer/nav/header/add_connection/pymk",CONNECTION_IMPORTER:"tl/apps/chrome/consumer/nav/header/add_connection/add_connection_invite_import"}};
+t.fetch(function(){var u=t.getData()||{};
+if(u.global_nav_pymk_invitations&&u.global_nav_pymk_invitations.contacts_pymk_people_cards){u.global_nav_pymk_invitations.contacts_pymk_people_cards.hasPYMKBadge=LI.HeaderNotificationsDependencies.addconn.hasPYMKBadge
+}dust.render(d.TL.BASE,u,function(w,v){var y,x;
+m();
+if(v){n=e(d.SELECTOR.BASE_BODY);
+n.html(v);
+n.closest(".activity-drop-loading").removeClass("activity-drop-loading");
+if(t.isInvitationsVisible()){y=t.getMaxInvitationsNumber();
+k=t.getInvitations(y,1);
+p(k,d.INVITATION,y);
+if(k.people&&!_.isEmpty(k.people)){r()
+}else{e(g).remove()
+}}if(t.isPYMKVisible()){x=t.getMaxPYMKNumber();
+a=t.getPYMK(x,0);
+p(a,d.PYMK,x);
+if(a.people&&!_.isEmpty(a.people)){i()
+}else{e(h).remove()
+}}j();
+f=t.getScrollBar(n);
+if(f){f.render()
+}}})
+});
+function p(x,w,v){var u;
+u=(w===d.INVITATION)?x.totalCount:x.peopleCount;
+x.totalResults=u;
+x.maxResults=v
+}function r(){o=new l(g,{model:k,template:d.TL.INVITATION,onInvitationActionDone:function(){s()
+},redrawScrollBar:function(){if(f){f.render()
+}}})
+}function i(){q=new l(h,{model:a,template:d.TL.PYMK,onPymkActionDone:function(){b()
+},redrawScrollBar:function(){if(f){f.render()
+}}})
+}function s(){var u=t.getMaxInvitationsNumber(),v=o.getFetchReqs(u),w=v.verdict,x;
+if(!w){return
+}t.getNewInvitations(v.offset,function(y){if(!_.isNull(y)){o.renderList(y,v.elementHeight)
+}else{o.resetParentHeight()
+}})
+}function b(){var u=t.getMaxPYMKNumber(),v=q.getFetchReqs(u),w=v.verdict,x;
+if(!w){return
+}t.getNewPYMK(v.offset,function(y){if(!_.isNull(y)){q.renderList(y,v.elementHeight)
+}else{q.resetParentHeight()
+}})
+}function j(){var u=e(c);
+dust.render(d.TL.CONNECTION_IMPORTER,t.getBaseData(),function(w,v){if(v){u.html(v);
+LI.Controls.parseFragment(u[0])
+}})
+}function m(){switch(t.getListPosition()){case"top":c=d.SELECTOR.TOP_LIST_CONTAINER;
+g=d.SELECTOR.MIDDLE_LIST_CONTAINER;
+h=d.SELECTOR.BOTTOM_LIST_CONTAINER;
+break;
+case"bottom":c=d.SELECTOR.BOTTOM_LIST_CONTAINER;
+g=d.SELECTOR.TOP_LIST_CONTAINER;
+h=d.SELECTOR.MIDDLE_LIST_CONTAINER;
+break;
+default:c=d.SELECTOR.MIDDLE_LIST_CONTAINER;
+g=d.SELECTOR.TOP_LIST_CONTAINER;
+h=d.SELECTOR.BOTTOM_LIST_CONTAINER;
+break
+}}}(jQuery));

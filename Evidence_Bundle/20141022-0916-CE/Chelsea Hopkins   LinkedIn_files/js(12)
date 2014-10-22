@@ -1,0 +1,26 @@
+LI.define("TextTruncate");
+LI.TextTruncate=function(b,a){LI.TextTruncate.truncate(b,a);
+b=null;
+a=null
+};
+LI.TextTruncate.truncate=function(d,f){if(!d){return
+}var k=/^\s*|\s*$/g,a=d.parentNode,e=d.innerHTML.replace(k,""),j=e,c;
+if(d.getAttribute("data-li-text-truncate-full")&&d.getAttribute("data-li-text-truncate-full")!==""){j=e=d.getAttribute("data-li-text-truncate-full")
+}f=f||{};
+f={addTitle:(f.addTitle===false)?false:true,ellipsis:(f.ellipsis)?f.ellipsis:"&hellip;",truncateFrom:(f.truncateFrom&&f.truncateFrom.match(/^(end)|(middle)$/))?f.truncateFrom:"end"};
+if(d.childNodes.length!==1||d.firstChild.nodeName!=="#text"){return false
+}c=a.clientWidth;
+c-=parseInt(YDom.getStyle(a,"paddingRight"),10);
+c-=parseInt(YDom.getStyle(a,"paddingLeft"),10);
+var h=0,l,b,g,i,m;
+while(h<=j.length-4&&(d.scrollWidth>d.offsetWidth||d.scrollHeight>d.offsetHeight)){if(f.truncateFrom==="middle"){l=Math.floor(j.length/2);
+i=Math.round(h/2);
+b=j.substring(0,l-i).replace(k,"");
+g=j.substring(l+i).replace(k,"");
+d.innerHTML=b+f.ellipsis+g
+}else{d.innerHTML=j.substring(0,j.length-h).replace(k,"");
+d.innerHTML+=f.ellipsis
+}h++
+}if(f.addTitle&&!d.getAttribute("title")){d.setAttribute("title",e)
+}d.setAttribute("data-li-text-truncate-full",e)
+};

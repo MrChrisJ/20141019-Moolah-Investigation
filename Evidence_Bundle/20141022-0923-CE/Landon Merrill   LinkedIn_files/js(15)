@@ -1,0 +1,82 @@
+(function(){dust.register("tl/apps/profile/v2/partial/discovery/discovery_items",j);
+var a={"displayName":f};
+function j(l,k){k=k.shiftBlocks(a);
+return l.section(k.get("people"),k,{"block":i},null)
+}function i(l,k){k=k.shiftBlocks(a);
+return l.write("<li").helper("math",k,{"block":h},{"key":k.get("$idx"),"method":"mod","operand":"4"}).write(">").exists(k.get("discoveryType"),k,{"block":c},null).write("</li>")
+}function h(l,k){k=k.shiftBlocks(a);
+return l.helper("eq",k,{"block":g},{"value":"3","type":"number"})
+}function g(l,k){k=k.shiftBlocks(a);
+return l.write(' class="page-last-item"')
+}function f(l,k){k=k.shiftBlocks(a);
+return l.exists(k.get("isHeadless"),k,{"else":e,"block":d},null)
+}function e(l,k){k=k.shiftBlocks(a);
+return l.reference(k.get("fullName"),k,"h")
+}function d(l,k){k=k.shiftBlocks(a);
+return l.reference(k.get("i18n__Linkedin_member"),k,"h")
+}function c(l,k){k=k.shiftBlocks(a);
+return l.partial(b,k,{"trackPrefix":k.get("trkPrefix")})
+}function b(l,k){k=k.shiftBlocks(a);
+return l.write("tl/apps/profile/v2/partial/discovery/discovery_").reference(k.get("discoveryType"),k,"h").write("_item")
+}return j
+})();
+(function(){dust.register("discovery_items",dust.cache["tl/apps/profile/v2/partial/discovery/discovery_items"])
+})();(function(){dust.register("tl/apps/profile/v2/partial/discovery/discovery_pymk_items",j);
+function j(l,k){return l.section(k.get("people"),k,{"block":i},null)
+}function i(l,k){return l.write("<li").helper("math",k,{"block":h},{"key":k.get("$idx"),"method":"mod","operand":"4"}).write('><a class="discovery-photo" href="').reference(k.get("link_profile"),k,"h").write('&trk=prof-sb-pdm-pymk-photo">').helper("select",k,{"block":f},{"key":c}).write('</a><dl class="discovery-detail"><dt><a href="').reference(k.get("link_profile"),k,"h").write('&trk=prof-sb-pdm-pymk-name">').reference(k.get("full_name"),k,"h").write("</a>").partial("tl/shared/degree_icon",k,{"distanceP":k.get("distance"),"fNameP":k.get("firstName"),"lNameP":k.get("lastName")}).write('</dt><dd title="').reference(k.get("headline"),k,"h").write('" class="take-action-headline">').reference(k.get("headline"),k,"h").write("</dd>").notexists(k.get("isFirstDegree"),k,{"block":b},null).write("</dl></li>")
+}function h(l,k){return l.helper("eq",k,{"block":g},{"value":"3","type":"number"})
+}function g(l,k){return l.write(' class="page-last-item"')
+}function f(l,k){return l.helper("eq",k,{"block":e},{"value":"B"}).helper("default",k,{"block":d},null)
+}function e(l,k){return l.partial("tl/apps/profile/v2/partial/member_photo_optimized",k,{"pictureId":k.get("pictureID"),"noPic":k.get("noPic"),"ghostImgUrl":k.get("ghost"),"spacerImgUrl":k.get("spacer"),"size":"60","altText":k.get("fullName"),"defer":k.get("deferImg")})
+}function d(l,k){return l.partial("tl/apps/profile/v2/partial/member_photo_optimized",k,{"pictureId":k.get("pictureID"),"noPic":k.get("noPic"),"ghostImgUrl":k.get("ghost"),"spacerImgUrl":k.get("spacer"),"size":"60","altText":k.get("fullName")})
+}function c(l,k){return l.reference(k.get("lix_deferImage"),k,"h")
+}function b(l,k){return l.write('<dd class="take-action"><a class="connect" name="_inviteLink" href="').reference(k.get("link_connect"),k,"h").write('&trk=prof-sb-pdm-pymk-connect">').reference(k.get("i18n_connect"),k,"h").write("</a>").exists(k.get("numSharedConn"),k,{"block":a},null).write("</dd>")
+}function a(l,k){return l.write('<abbr class="common-connections" title="').reference(k.get("i18n_common_conn"),k,"h").write('">').reference(k.get("numSharedConn"),k,"h").write("</abbr>")
+}return j
+})();
+(function(){dust.register("discovery_pymk_items",dust.cache["tl/apps/profile/v2/partial/discovery/discovery_pymk_items"])
+})();(function(){dust.register("tl/apps/profile/v2/partial/discovery/discovery_item",m);
+function m(q,p){return q.write('<a class="discovery-photo" href="').reference(p.get("pview"),p,"h").write("&trk=").reference(p.get("photoTrackingCode"),p,"h").write('">').helper("select",p,{"block":k},{"key":f}).write('</a><dl class="discovery-detail"><dt><a href="').reference(p.get("pview"),p,"h").write("&trk=").reference(p.get("nameTrackingCode"),p,"h").write('">').block(p.getBlock("displayName"),p,{},null).write("</a>").helper("ne",p,{"block":e},{"key":p.get("discoveryType"),"value":"INFLUENCER"}).write('</dt><dd title="').reference(p.get("headline"),p,"h").write('" class="take-action-headline">').reference(p.get("headline"),p,"h").write("</dd>").helper("eq",p,{"else":d,"block":j},{"key":p.get("distance"),"value":"1","type":"number"}).write("</dl>")
+}function k(q,p){return q.helper("eq",p,{"block":i},{"value":"B"}).helper("default",p,{"block":g},null)
+}function i(q,p){return q.partial("tl/apps/profile/v2/partial/member_photo_optimized",p,{"pictureId":p.get("pictureID"),"size":"60","altText":p.get("fullName"),"ghostImgUrl":p.get("ghost"),"spacerImgUrl":p.get("spacer"),"defer":p.get("deferImg")})
+}function g(q,p){return q.partial("tl/apps/profile/v2/partial/member_photo_optimized",p,{"pictureId":p.get("pictureID"),"size":"60","altText":p.get("fullName"),"ghostImgUrl":p.get("ghost"),"spacerImgUrl":p.get("spacer")})
+}function f(q,p){return q.reference(p.get("lix_deferImage"),p,"h")
+}function e(q,p){return q.partial("tl/shared/degree_icon",p,{"distanceP":p.get("distance"),"fNameP":p.get("firstName"),"lNameP":p.get("lastName")})
+}function d(q,p){return q.write('<dd class="take-action">').helper("eq",p,{"else":c,"block":b},{"key":p.get("discoveryType"),"value":"INFLUENCER"}).write("</dd>")
+}function c(q,p){return q.write('<a class="connect" name="_inviteLink" href="').reference(p.get("link_connect"),p,"h").write('">').reference(p.get("i18n__connect"),p,"h").write("</a>")
+}function b(q,p){return q.helper("eq",p,{"block":a},{"key":p.get("lix_profileDiscoveryFollow"),"value":"B"})
+}function a(q,p){return q.section(p.get("following"),p,{"block":o},null)
+}function o(q,p){return q.helper("eq",p,{"block":n},{"key":p.get("id"),"value":p.get("memberID")})
+}function n(q,p){return q.write('<div class="follow-container').exists(p.get("isFollowing"),p,{"block":l},null).write('"><a role="button" class="action-follow" href=\'').reference(p.get("link_followMember"),p,"h").write("'>").reference(p.get("i18n__Follow"),p,"h").write('</a><a role="button" class="action-unfollow" href=\'').reference(p.get("link_unfollowMember"),p,"h").write('\'><span class="unfollow-text">').reference(p.get("i18n__Unfollow"),p,"h").write('</span><span class="following-text">').reference(p.get("i18n__Following"),p,"h").write("</span></a></div>")
+}function l(q,p){return q.write(" is-following")
+}function j(q,p){return q.write('<dd class="take-action"><a href="').reference(p.get("pview"),p,"h").write("&trk=").reference(p.get("viewTrackingCode"),p,"h").write('">').reference(p.get("i18n__View_Profile"),p,"h").write("</a>").exists(p.get("numSharedConnections"),p,{"block":h},null).write("</dd>")
+}function h(q,p){return q.write('<abbr class="common-connections" title="').reference(p.get("i18n_common_conn"),p,"h").write('">').reference(p.get("numSharedConnections"),p,"h").write("</abbr>")
+}return m
+})();
+(function(){dust.register("discovery_item",dust.cache["tl/apps/profile/v2/partial/discovery/discovery_item"])
+})();(function(){dust.register("tl/apps/profile/v2/partial/discovery/discovery_INFLUENCER_item",e);
+function e(h,g){return h.exists(g.get("trkPrefix"),g,{"else":d,"block":c},null)
+}function d(h,g){return h.partial("tl/apps/profile/v2/partial/discovery/discovery_item",g,{"nameTrackingCode":"prof-sb-pdm-thought_leaders-name","photoTrackingCode":"prof-sb-pdm-thought_leaders-photo","viewTrackingCode":"prof-sb-pdm-thought_leaders-view"})
+}function c(h,g){return h.partial("tl/apps/profile/v2/partial/discovery/discovery_item",g,{"nameTrackingCode":b,"photoTrackingCode":a,"viewTrackingCode":f})
+}function b(h,g){return h.reference(g.get("trkPrefix"),g,"h").write("-thought_leaders-name")
+}function a(h,g){return h.reference(g.get("trkPrefix"),g,"h").write("-thought_leaders-photo")
+}function f(h,g){return h.reference(g.get("trkPrefix"),g,"h").write("-thought_leaders-view")
+}return e
+})();
+(function(){dust.register("discovery_INFLUENCER_item",dust.cache["tl/apps/profile/v2/partial/discovery/discovery_INFLUENCER_item"])
+})();(function(){dust.register("tl/apps/profile/v2/partial/discovery/discovery_NUS_item",a);
+function a(c,b){return c.partial("tl/apps/profile/v2/partial/discovery/discovery_item",b,{"nameTrackingCode":"prof-sb-pdm-updates-name","photoTrackingCode":"prof-sb-pdm-updates-photo","viewTrackingCode":"prof-sb-pdm-updates-view"})
+}return a
+})();
+(function(){dust.register("discovery_NUS_item",dust.cache["tl/apps/profile/v2/partial/discovery/discovery_NUS_item"])
+})();(function(){dust.register("tl/apps/profile/v2/partial/discovery/discovery_SEARCH_item",a);
+function a(c,b){return c.partial("tl/apps/profile/v2/partial/discovery/discovery_item",b,{"nameTrackingCode":"prof-sb-pdm-search-name","photoTrackingCode":"prof-sb-pdm-search-photo","viewTrackingCode":"prof-sb-pdm-search-view"})
+}return a
+})();
+(function(){dust.register("discovery_SEARCH_item",dust.cache["tl/apps/profile/v2/partial/discovery/discovery_SEARCH_item"])
+})();(function(){dust.register("tl/apps/profile/v2/partial/discovery/discovery_SIMILAR_item",a);
+function a(c,b){return c.partial("tl/apps/profile/v2/partial/discovery/discovery_item",b,{"nameTrackingCode":"prof-sb-pdm-similar-name","photoTrackingCode":"prof-sb-pdm-similar-photo","viewTrackingCode":"prof-sb-pdm-similar-view"})
+}return a
+})();
+(function(){dust.register("discovery_SIMILAR_item",dust.cache["tl/apps/profile/v2/partial/discovery/discovery_SIMILAR_item"])
+})();

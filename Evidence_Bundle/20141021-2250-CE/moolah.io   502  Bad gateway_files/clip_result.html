@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!-- saved from url=(0088)chrome-extension://pioclpoplcdbaefihamjohnefbikjilc/content/clip_result/clip_result.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+    <link rel="stylesheet" type="text/css" href="chrome-extension://pioclpoplcdbaefihamjohnefbikjilc/css/common.css">
+    <link rel="stylesheet" type="text/css" href="chrome-extension://pioclpoplcdbaefihamjohnefbikjilc/content/clip_result/small_snippet.css">
+    <link rel="stylesheet" type="text/css" href="chrome-extension://pioclpoplcdbaefihamjohnefbikjilc/content/clip_result/date_picker.css">
+    <link rel="stylesheet" type="text/css" href="chrome-extension://pioclpoplcdbaefihamjohnefbikjilc/content/clip_result/ReminderSetter.css">
+    <link rel="stylesheet" type="text/css" href="chrome-extension://pioclpoplcdbaefihamjohnefbikjilc/content/clip_result/HeroNoteSnippets.css">
+    <link rel="stylesheet" type="text/css" href="chrome-extension://pioclpoplcdbaefihamjohnefbikjilc/content/clip_result/clip_result.css">
+    <script type="text/javascript" src="chrome-extension://pioclpoplcdbaefihamjohnefbikjilc/third_party/port.js"></script>
+    <script type="text/javascript" src="chrome-extension://pioclpoplcdbaefihamjohnefbikjilc/js/opera.js"></script>
+    <script type="text/javascript" src="chrome-extension://pioclpoplcdbaefihamjohnefbikjilc/js/yandex.js"></script>
+    <script type="text/javascript" src="chrome-extension://pioclpoplcdbaefihamjohnefbikjilc/js/common/Browser.js"></script>
+    <script type="text/javascript" src="chrome-extension://pioclpoplcdbaefihamjohnefbikjilc/js/GlobalUtils.js"></script>
+    <script src="chrome-extension://pioclpoplcdbaefihamjohnefbikjilc/js/common/Log.js" type="text/javascript"></script>
+    <script type="text/javascript" src="chrome-extension://pioclpoplcdbaefihamjohnefbikjilc/content/clip_result/NoteSnippets.js"></script>
+    <script type="text/javascript" src="chrome-extension://pioclpoplcdbaefihamjohnefbikjilc/content/clip_result/HeroNoteSnippets.js"></script>
+    <script type="text/javascript" src="chrome-extension://pioclpoplcdbaefihamjohnefbikjilc/content/clip_result/DatePicker.js"></script>
+    <script type="text/javascript" src="chrome-extension://pioclpoplcdbaefihamjohnefbikjilc/content/clip_result/ReminderSetter.js"></script>
+    <script type="text/javascript" src="chrome-extension://pioclpoplcdbaefihamjohnefbikjilc/js/common/Analytics.js"></script>
+    <script type="text/javascript" src="chrome-extension://pioclpoplcdbaefihamjohnefbikjilc/content/clip_result/ClipResult.js"></script>
+  <style>#remindersSetter { width: 113px; }</style></head>
+  <body class="done">
+    <div id="main">
+      <div id="close"></div>
+      <section id="header" message="contentclipper_clipping_no_title"><span id="status" title="World Crypto Network">Clipped to <span id="notebookName">World Crypto Network</span></span><a id="title" title="moolah.io | 502: Bad gateway" target="_blank" href="https://www.evernote.com/SetAuthToken.action?auth=S%3Ds78%3AU%3D8186b6%3AE%3D14fd2b1ccb2%3AC%3D1487b00a180%3AP%3D195%3AA%3Den-chrome-clipper-xauth-new%3AV%3D2%3AH%3D16a6ab93c3d05c8350b9f91827db0022&targetUrl=%2Fshard%2Fs78%2Fnl%2F8488630%2F4f3d7502-e432-4520-b229-fc85e703a927%2F">moolah.io | 502: Bad gateway</a><div id="reminders"></div><div id="remindersSetter" style="right: 187px; -webkit-transform-origin: calc(100% - 47px) 0px;"><div id="noDate"><div class="reminderHeader">Reminder Added</div><div id="addDate" class="reminderButton">Add a Date</div></div><div id="hasDate"><div class="reminderHeader">Notify me…</div><div id="tomorrow" class="reminderButton">Tomorrow</div><div id="nextWeek" class="reminderButton">In a Week</div><div id="date"><span id="selectedMonth">10</span>/<span id="selectedDate">21</span>/<span id="selectedYear">2014</span> <span id="selectedHour">&nbsp;8</span>:<span id="selectedMinute">00</span> <span id="selectedMeridian">AM</span></div><div id="datePicker"><div id="topRow"><div id="previous"></div><div id="next"></div><div id="monthYearHeader">OCTOBER 2014</div></div><div id="dowHeader"><div class="dow">S</div><div class="dow">M</div><div class="dow">T</div><div class="dow">W</div><div class="dow">T</div><div class="dow">F</div><div class="dow">S</div></div><div class="week"><div class="day previousMonth">28</div><div class="day previousMonth">29</div><div class="day previousMonth">30</div><div class="day">1</div><div class="day">2</div><div class="day">3</div><div class="day">4</div></div><div class="week"><div class="day">5</div><div class="day">6</div><div class="day">7</div><div class="day">8</div><div class="day">9</div><div class="day">10</div><div class="day">11</div></div><div class="week"><div class="day">12</div><div class="day">13</div><div class="day">14</div><div class="day">15</div><div class="day">16</div><div class="day">17</div><div class="day">18</div></div><div class="week"><div class="day">19</div><div class="day">20</div><div class="day" id="today">21</div><div class="day">22</div><div class="day">23</div><div class="day">24</div><div class="day">25</div></div><div class="week"><div class="day">26</div><div class="day">27</div><div class="day">28</div><div class="day">29</div><div class="day">30</div><div class="day">31</div><div class="day nextMonth">1</div></div><div class="week"><div class="day nextMonth">2</div><div class="day nextMonth">3</div><div class="day nextMonth">4</div><div class="day nextMonth">5</div><div class="day nextMonth">6</div><div class="day nextMonth">7</div><div class="day nextMonth">8</div></div></div></div></div></section>
+      <section id="share">
+        <div id="linkedin" class="shareOpt"></div><!--
+        --><div id="weibo" class="shareOpt"></div><!--
+        --><div id="facebook" class="shareOpt"></div><!--
+        --><div id="twitter" class="shareOpt"></div><!--
+        --><div id="gplus" class="shareOpt"></div><!--
+        --><div id="email" class="shareOpt"></div><!--
+        --><div id="url" class="shareOpt"></div>
+      </section>
+      <hr>
+      <section id="smart" class="relatedNotes">
+        <div>
+          <h2 message="relatedNotes" id="relatedNotes" class="pressed">Related Notes</h2><!--
+          --><h2 id="sameSiteNotes">Clips from moolah.io</h2><!--
+          --><h2 id="tips" message="dismissTip" style="display: none;">Dismiss tip</h2>
+        </div>
+        <div id="smartPanel">
+          <div id="relatedNotesContainer" data-no-result="No Result" class="noResults"><table></table></div><!--
+          --><div id="sameSiteNotesContainer"></div><!--
+          --><div id="tipsContainer">
+            <div id="ratingsPrompt">
+              <div class="tipLogo" message="ratingPromptHeader">How do you like the Web Clipper?</div>
+              <div class="tipDetails" message="ratingPromptBody">The new Web Clipper is designed to help you capture, save, markup and selectively share anything from the Web. Tell us how you like it.</div>
+              <a class="green button" message="rateNow" target="_blank" id="rateNow" href="https://chrome.google.com/webstore/detail/evernote-web-clipper/pioclpoplcdbaefihamjohnefbikjilc/reviews">Rate Now</a>
+              <div class="tipLink" id="sendFeedback"><span message="sendFeedback">Send Feedback</span></div>
+              <div class="tipLink" id="closeRatingsPrompt"><span message="noThanks">No Thanks</span></div>
+            </div>
+            <div id="referralTip">
+              <div class="tipLogo" message="referralTipHeader">Invite Friends. Get Premium.</div>
+              <div class="tipDetails" message="referralTipBody">When your friends get started with Evernote, we'll give you points to use toward Evernote Premium, increased monthly uploads, and more.</div>
+              <div class="flat green button" message="referralTipCTA" id="referralCTA">Invite Friends</div>
+            </div>
+            <div id="nearQuotaTip">
+              <div class="tipLogo" message="nearQuota">Near your upload limit</div>
+              <div class="tipDetails"></div>
+              <div class="green button upgradable nearQuota"></div>
+            </div>
+            <div id="skitchTip">
+              <div class="tipLogo"></div>
+              <div class="tipDetails" message="skitchTip">Draw shapes, arrows and quick sketches to get your point across with Skitch.</div>
+              <a class="pink button" message="getSkitch" target="_blank" href="https://www.evernote.com/skitch">Get Skitch</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Error states -->
+      <div id="errorTitle"></div>
+      <div id="errorDetails"></div>
+      <div id="errorButton"></div>
+    </div>
+  
+</body></html>
