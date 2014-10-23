@@ -198,13 +198,18 @@ phoenix2014 @2BStandingAgain
 ### Blog post by “Alex Green” on Moolah Blog- Transparency, emotions and many things.
 [Link](https://web.archive.org/web/20140720001742/http://blog.moolah.io/2014/05/01/transparency-emotions-and-many-things/) | Mirror  1  
 
-## 
-### 
-Link | Mirror  1  
+## [20141023-1139-CE](https://github.com/MrChrisJ/20141019-Moolah-Investigation/tree/master/Evidence_Bundle/20141022-1139-CE)
+### @bitcoinbegger tweets: “Looking over blockchain. Assuming this is Greens wallet. I saw 500 btc spread over 100 addresses at one point. End wallet has almost 4k btc.”
+[Link](https://twitter.com/bitcoinbegger/status/523657412515876864) | [Mirror  1](https://web.archive.org/web/20141023113829/https://twitter.com/bitcoinbegger/status/523657412515876864)    
 
-## 
-### 
-Link | Mirror  1  
+Also contains other relevant information.
+
+## [20141023-1248-CE](https://github.com/MrChrisJ/20141019-Moolah-Investigation/tree/master/Evidence_Bundle/20141022-1248-CE)
+### Skype conversation with former Moolah employee
+### Content **REDACTED** for now as it contains personally identifiable information
+
+Proof of knowledge:  
+3d78cc835c8061d78db781c3f66714879ad683557ece64434526ff215d3d2aad
 
 ## 
 ### 
