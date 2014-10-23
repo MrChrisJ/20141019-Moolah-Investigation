@@ -1,6 +1,3 @@
------BEGIN PGP SIGNED MESSAGE-----
-Hash: SHA512
-
 ## Block #326,625
 ### Merkle Root:  c38cbc233c6de0d141241decafff7bb9eaf9a72ca6781c76b64d42a02bbe8330
 
@@ -76,16 +73,3 @@ This would improve the PGP Signing scheme a lot as now we have a PGP Signature t
 Thank-you for your time :)  
 
 /BrainDump
-
------BEGIN PGP SIGNATURE-----
-Version: Keybase OpenPGP v1.1.3
-Comment: https://keybase.io/crypto
-
-wsBcBAABCgAGBQJUSRqMAAoJEOw2pfEsR+bQAPgIAIk11r4mqIhr95jvmXHOqmwN
-ZMorfedXgPq+4BQ3u/bZFQ8+7OWO639gpIRGNaM3U3RMnG1iOOpGCxskjm4StMrQ
-KE8XB1ms7QX/YyUY4Dfv1nzz0PruWNloUDjzDAzzWFfcVsSRvylptyMMbxARNZLd
-qLUrk6LlxaWhYWHmPYKs6R292hKkvXfslksm2lssEkQErpx3qOKbJs32aN5nPpcJ
-P1qC0dYxqwYDtun4YnV6QT0H6ltihmB3cXy8ku4vwSJ2WY0h15eCHvZ8svQVrrL2
-zTEUtflZV4aYkUvJQJnxYlpT93SwhT47gICKZHYmuQDjlPvwpdh9rwHMz56jwcg=
-=UDLc
------END PGP SIGNATURE-----
