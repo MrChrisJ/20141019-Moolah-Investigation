@@ -8,6 +8,7 @@
 [Timestamp 4](http://www.cryptograffiti.info/?txnr=1257) | [Block 326,297](https://blockchain.info/tx/60b4c67ea20a2ff72aa3c113d597764dc7ee8899368a7af616413b15d6ddca1a) | [0fab334](https://github.com/MrChrisJ/20141019-Moolah-Investigation/commit/0fab334b10cd1bd5441586f5fbe16fe8345dd037)  
 [Timestamp 5](http://www.cryptograffiti.info/?txnr=1262) | [Block 326,447](https://blockchain.info/tx/3ec653d690fef59f3611410acb10d6c8bedc7ac4d1bf44d0312650c54d1d821c) | [8d2801c](https://github.com/MrChrisJ/20141019-Moolah-Investigation/commit/8d2801ca80c9e13285e29231731f6fb84e468dbc)  
 [Timestamp 6](http://www.cryptograffiti.info/?txnr=1263) | [Block 326,548](https://blockchain.info/tx/f9499b18f4867937baeab854fa877af20c71867e19f1c34340a66aecbae8e547) | [bfcc33e](https://github.com/MrChrisJ/20141019-Moolah-Investigation/commit/bfcc33ef9ab2a285bd5e4dbcd028d23b1b31f164)  
+[Timestamp 7](http://www.cryptograffiti.info/?txnr=1264) | [Block 326,630](https://blockchain.info/tx/58594d5a15df732d5de5c353822fd4346cd7c339a472d0fe951a4d3c256288b8) | [2b5ff87](https://github.com/MrChrisJ/20141019-Moolah-Investigation/commit/2b5ff87d9dd87c1b025e84d5278202d280a72cd5)  
 
 Investigation stage: **Discovery**
 
@@ -17,6 +18,10 @@ See [**Journal**](https://github.com/MrChrisJ/20141019-Moolah-Investigation/tree
 ## Description
 
 This is an experimental investigation technique using the a GitHub repository and and the Bitcoin blockchain to conduct an investigation on [Moolah.io](https://moolah.io/).  
+
+Take note this is a slow and exact process and not summary justice. I am not a qualified lawyer or criminal investigator, I am just a concerned member of the Bitcoin community who wants to see truth and justice.  
+
+There are postings online which link to information including personal identifiable information on individuals who’s guilt or innocence is still unknown and yet the revealing of such information could put them and their families at risk were that information to fall in to the hands who show more care to emotional reactions than to the principles of justice.  
 
 The methods used are still very new but the intention is to create an unbreakable record of witnessed events which are timestamped in to the Bitcoin blockchain and identified using their cryptographic digests in the git repository.  
 
