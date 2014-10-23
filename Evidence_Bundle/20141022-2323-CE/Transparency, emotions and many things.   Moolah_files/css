@@ -1,0 +1,37 @@
+
+
+
+
+
+/*
+     FILE ARCHIVED ON 15:20:24 Jul 28, 2014 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 23:16:03 Oct 22, 2014.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato Regular'), local('Lato-Regular'), url(/web/20140728152024/http://themes.googleusercontent.com/static/fonts/lato/v7/v0SdcGFAl2aezM9Vq_aFTQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Lato Bold'), local('Lato-Bold'), url(/web/20140728152024/http://themes.googleusercontent.com/static/fonts/lato/v7/DvlFBScY1r-FMtZSYIYoYw.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Poly';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Poly-Regular'), url(/web/20140728152024/http://fonts.gstatic.com/s/poly/v6/qxffZqXMYilu7qgydWiaJw.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Poly';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Poly-Italic'), url(/web/20140728152024/http://fonts.gstatic.com/s/poly/v6/C9onSnJU6fR8B1DWbFxerA.ttf) format('truetype');
+}

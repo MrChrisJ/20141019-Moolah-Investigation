@@ -41,7 +41,8 @@ See: “[**20141020-2336-CE**](https://github.com/MrChrisJ/20141019-Moolah-Inves
 
 ## [20141021-0018-CE](https://github.com/MrChrisJ/20141019-Moolah-Investigation/tree/master/Evidence_Bundle/20141021-0018-CE)
 ### Where Is Alex Green, Former CEO of Moolah.io As Evidence Stacks Up Against Him?
-Youtube: [Link](http://youtu.be/WTT5B4EhHDw)
+
+: [Link](http://youtu.be/WTT5B4EhHDw)
 [Mirror 1](https://web.archive.org/web/20141021001619/https://www.youtube.com/watch?v=WTT5B4EhHDw)  
 
 ## [20141021-0056-CE](https://github.com/MrChrisJ/20141019-Moolah-Investigation/tree/master/Evidence_Bundle/20141021-0056-CE)
@@ -132,7 +133,7 @@ She is also listed as one of the directors at Moolah see [**20141020-1851-CE**](
 [Link](https://twitter.com/ummjackson/status/524608030109732865) | [Mirror 1](https://web.archive.org/web/20141022092737/https://twitter.com/ummjackson/status/524608030109732865)  
 
 ## [20141022-0929-CE](https://github.com/MrChrisJ/20141019-Moolah-Investigation/tree/master/Evidence_Bundle/20141022-0929-CE)
-### Secret content
+### **REDACTED**
 
 Proof-of-Knowledge: 
 7fede6e615b424960d0bba5566630ab0cdaa79000d4682dcf46ac5ad934fedda
@@ -144,13 +145,120 @@ d531c7e35926281bd343233a26b45a237ffd4081b855aabcce96cbd8a660f0d9
 #### Stated Publish Date: October 21, 2014 / 20141021
 [Link](http://www.dailydot.com/politics/moolah-dogecoin-alex-green-ryan-kennedy-ryan-gentle-millions-missing-mintpal/) | [Mirror 1](https://web.archive.org/web/20141022092948/http://www.dailydot.com/politics/moolah-dogecoin-alex-green-ryan-kennedy-ryan-gentle-millions-missing-mintpal/)  
 
-## 
-### 
-Link | Mirror  
+## [20141022-1011-CE](https://github.com/MrChrisJ/20141019-Moolah-Investigation/tree/master/Evidence_Bundle/20141022-1011-CE)
+### Tweet from @Moolah.io “@ferdousbhai Those funds remain there and are set to be passed on to a trusted member.”
+[Link](https://twitter.com/moolah_io/status/523778823289331712) | [Mirror  1](https://web.archive.org/web/20141022101035/https://twitter.com/moolah_io/status/523778823289331712)  
+
+## [20141022-2122-CE](https://github.com/MrChrisJ/20141019-Moolah-Investigation/tree/master/Evidence_Bundle/20141022-2122-CE)
+### Bitcointalk thread
+[Link](https://bitcointalk.org/index.php?topic=824211.0) | [Mirror 1](https://web.archive.org/web/20141022180554/https://bitcointalk.org/index.php?topic=824211.0)  
+
+## [20141022-2144-CE](https://github.com/MrChrisJ/20141019-Moolah-Investigation/tree/master/Evidence_Bundle/20141022-2144-CE)
+### Tweet from @Moolah_io: “Withdrawal processing is ongoing, and user notes are being actioned and responded to.”
+[Link](https://twitter.com/moolah_io/status/524971859876782080) | [Mirror  1](https://web.archive.org/web/20141022214547/https://twitter.com/moolah_io/status/524971859876782080)  
+
+## [20141022-2148-CE](https://github.com/MrChrisJ/20141019-Moolah-Investigation/tree/master/Evidence_Bundle/20141022-2148-CE)
+### Tweet from @MintPalExchange: “We have managed to recover wallets from the old server that failed to migrate to "V2": FLT, KARMA, MIN, XCR, XMR, FAIR, SUPER, TES”
+[Link](https://twitter.com/MintPalExchange/status/524963448917344256) | [Mirror  1](https://web.archive.org/web/20141022181111/https://twitter.com/MintPalExchange/status/524963448917344256)  
+
+## [20141022-2153-CE](https://github.com/MrChrisJ/20141019-Moolah-Investigation/tree/master/Evidence_Bundle/20141022-2153-CE)
+### **REDACTED**
+
+Proof-of-Knowledge:  
+f31d09ab824f27d228532473201beea50dbd833b17b395c16e84794883d95c67  
+f6a060faf251a976bee7c63d6303b9edd1888a484a6a3324f431a954e6691b38  
+
+## [20141022-2240-CE](https://github.com/MrChrisJ/20141019-Moolah-Investigation/tree/master/Evidence_Bundle/20141022-2240-CE)
+### Tweet by Chelsea Hopkins/@inkymoggy: “@sh0lla I'm going to bed. The community is on a rabid witch hunt only backed by wild claims. They should leave it in the hands of the law.”
+[Link](https://twitter.com/inkymoggy/status/524696204882759680) | [Mirror  1 ](https://web.archive.org/web/20141022223919/https://twitter.com/inkymoggy/status/524696204882759680)   
+
+## [20141022-2301-CE](https://github.com/MrChrisJ/20141019-Moolah-Investigation/tree/master/Evidence_Bundle/20141022-2301-CE)
+### Chelsea Hopkins/@inkymoggy Twitter with replies
+[Link](https://twitter.com/inkymoggy/with_replies) | [Mirror  1](https://web.archive.org/web/20141022225846/https://twitter.com/inkymoggy/with_replies)    
+
+## [20141022-2318-CE](https://github.com/MrChrisJ/20141019-Moolah-Investigation/tree/master/Evidence_Bundle/20141022-2318-CE)
+### phoenix2014/@2BStandingAgain Twitter with replies
+[Link](https://twitter.com/2BStandingAgain/with_replies) | [Mirror  1](https://web.archive.org/web/20141022230813/https://twitter.com/2BStandingAgain/with_replies)  
+
+## [20141022-2320-CE](https://github.com/MrChrisJ/20141019-Moolah-Investigation/tree/master/Evidence_Bundle/20141022-2320-CE)
+### Tweet between @2BStandingAgain & @ferdousbhai
+[Link](https://twitter.com/2BStandingAgain/status/523780760248287232) | [Mirror  1](https://web.archive.org/web/20141022232052/https://twitter.com/2BStandingAgain/status/523780760248287232)    
+
+FerdousBhai ‏@ferdousbhai  Oct 18
+Ryan’s DOB: 12/17/1986
+Alex Green's DOB:11/23/1984
+I am not very good with laws in the UK, but can you really legally change your DOB?
+
+
+phoenix2014 @2BStandingAgain
+@ferdousbhai @BenDoernberg No u cant change ur date of birth unless u r under major threat & the police give you a new ID 4 ur safety.V RARE  
+
+
+## [20141022-2323-CE](https://github.com/MrChrisJ/20141019-Moolah-Investigation/tree/master/Evidence_Bundle/20141022-2323-CE)
+### Blog post by “Alex Green” on Moolah Blog- Transparency, emotions and many things.
+[Link](https://web.archive.org/web/20140720001742/http://blog.moolah.io/2014/05/01/transparency-emotions-and-many-things/) | Mirror  1  
 
 ## 
 ### 
-Link | Mirror  
-	
+Link | Mirror  1  
 
+## 
+### 
+Link | Mirror  1  
+
+## 
+### 
+Link | Mirror  1  
+
+## 
+### 
+Link | Mirror  1  
+
+## 
+### 
+Link | Mirror  1  
+
+## 
+### 
+Link | Mirror  1  
+
+## 
+### 
+Link | Mirror  1  
+
+## 
+### 
+Link | Mirror  1  
+
+## 
+### 
+Link | Mirror  1  
+
+## 
+### 
+Link | Mirror  1  
+
+## 
+### 
+Link | Mirror  1  
+
+## 
+### 
+Link | Mirror  1  
+
+## 
+### 
+Link | Mirror  1  
+
+## 
+### 
+Link | Mirror  1  
+
+## 
+### 
+Link | Mirror  1  
+
+## 
+### 
+Link | Mirror  1  
 
