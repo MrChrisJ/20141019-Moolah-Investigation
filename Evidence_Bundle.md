@@ -84,7 +84,7 @@ Note that I was unable to copy comments using Archive.org or with Save As in bro
 
 ## [20141021-1108-CE](https://github.com/MrChrisJ/20141019-Moolah-Investigation/tree/master/Evidence_Bundle/20141021-1108-CE)
 ### Bitcoin Talk Thread “Ryan Gentle scamming on this forum” by @Scammedflirblecustomer
-[Link](https://bitcointalk.org/index.php?topic=306947.0)] | [Mirror 1](https://web.archive.org/web/*/https://bitcointalk.org/index.php?topic=306947.0)  
+[Link](https://bitcointalk.org/index.php?topic=306947.0)] | [Mirror 1](https://web.archive.org/web/*/https://.org/index.php?topic=306947.0)  
 Note Mirror is archive.org and seems to be broken.  
 
 ## [20141021-1114-CE](https://github.com/MrChrisJ/20141019-Moolah-Investigation/tree/master/Evidence_Bundle/20141021-1114-CE)
@@ -212,56 +212,131 @@ Proof of knowledge:
 3d78cc835c8061d78db781c3f66714879ad683557ece64434526ff215d3d2aad
 
 ## 
-### 
-Link | Mirror  1  
+### The Guardian: British serial entrepreneur missing as $1.4m bitcoin is apparently stolen
+[Link](http://www.theguardian.com/technology/2014/oct/23/british-serial-entrepreneur-missing-bitcoin-apparently-stolen) | [Mirror  1](https://web.archive.org/web/20141023165935/http://www.theguardian.com/technology/2014/oct/23/british-serial-entrepreneur-missing-bitcoin-apparently-stolen)  
 
 ## 
-### 
-Link | Mirror  1  
+### Tweet from @Moolah_io: “In the interests of full disclosure, not all 3700 BTC are missing. Our hot wallets were refilled on numerous occasions.”
+[Link](https://twitter.com/moolah_io/status/525324507108876289) | [Mirror  1](https://web.archive.org/web/20141023171544/https://twitter.com/moolah_io/status/525324507108876289)  
 
-## 
-### 
-Link | Mirror  1  
+## 20141024-0102-CE
+### Tweet from Moolah “@VeryVeriViral @theguardian I am not quite sure why I keep being reported as missing. The numbers are wrong too.”
+[Link](https://twitter.com/moolah_io/status/525415471081078785) | [Mirror  1](https://web.archive.org/web/20141024010040/https://twitter.com/moolah_io/status/525415471081078785)  
 
-## 
-### 
-Link | Mirror  1  
+## 20141024-1051-CE
+### Tweets with replies from @rednetkjh on Twitter
+[Link](https://twitter.com/rednetkjh/with_replies) | [Mirror  1](https://web.archive.org/web/20141024103703/https://twitter.com/rednetkjh/with_replies)  
 
-## 
-### 
-Link | Mirror  1  
+## 20141024-1101-CE
+### Tweet from @ferdousbhai: “Knowing that Ryan would take advantage of the death of a distinguished member of society makes me sick. http://remembercarlos.com  @moolah_io”
+[Link](https://twitter.com/ferdousbhai/status/523777110775963648) | [Mirror  1](https://web.archive.org/web/20141024110912/https://twitter.com/ferdousbhai/status/523777110775963648)  
 
-## 
-### 
-Link | Mirror  1  
+## 20141024-1111-CE
+### Tweet from @ferdousbhai: “Oh and remember the moofund initiative to raise money for the homeless? Yup, also a scam. @moolah_io”
+[Link](https://twitter.com/ferdousbhai/status/523777572631769088) | [Mirror  1](https://web.archive.org/web/20141024111044/https://twitter.com/ferdousbhai/status/523777572631769088)  
 
-## 
-### 
-Link | Mirror  1  
+## 20141024-1117-CE
+### Tweet from @ferdousbhai: “https://blockchain.info/address/1NjBaY8fKg85TfCvP1AoQGUSXjifD5Nw2G … @moolah_io Seriously though, what did you do with this money? Just tell me; I promise I won't tell anyone.”
+[Link](https://twitter.com/ferdousbhai/status/523780268352897024) | [Mirror  1](https://web.archive.org/web/20141024111800/https://twitter.com/ferdousbhai/status/523780268352897024)  
 
-## 
-### 
-Link | Mirror  1  
+## 20141024-1122-CE
+### Tweet from @ferdousbhai: “We have managed to recover some wallets including FAIR, KARMA, XMR among a few others that were left to die in the old server by @moolah_io”
+[Link](https://twitter.com/ferdousbhai/status/524954531927715840) | [Mirror  1](https://web.archive.org/web/20141024112132/https://twitter.com/ferdousbhai/status/524954531927715840)  
 
-## 
-### 
-Link | Mirror  1  
+## 20141024-1124-CE
+### Published Time as Stated: 5:06 PM - 22 Oct 2014
+### “But we still need @moolah_io to hand over V2 to us in order to distribute these coins fairly.”
+[Link](https://twitter.com/ferdousbhai/status/524955007440134145) | [Mirror  1](https://web.archive.org/web/20141024112446/https://twitter.com/ferdousbhai/status/524955007440134145)  
 
-## 
-### 
-Link | Mirror  1  
+## 20141024-1126-CE
+### Tweet from @BenDoernberg: “PSA: There is still no warrant out for @moolah_io’s arrest. If you’ve been defrauded, file a complaint: http://www.actionfraud.police.uk/  Please RT”
+[Link](https://twitter.com/BenDoernberg/status/524984361444462592) | [Mirror  1](https://web.archive.org/web/20141024112529/https://twitter.com/BenDoernberg/status/524984361444462592)  
 
-## 
-### 
-Link | Mirror  1  
+## 20141024-1226-CE
+### Tweet in response to @houseOFdoge from @Moolah_io: “@houseOFdoge If you have a suggestion regarding those two options, I would love to hear it.”
+[Link](https://twitter.com/moolah_io/status/525363291389173761) | [Mirror  1](https://web.archive.org/web/20141024122639/https://twitter.com/moolah_io/status/525363291389173761)  
 
-## 
-### 
-Link | Mirror  1  
+## 20141024-1226-CE
+### Tweet from @moolah_io: “… 1,000 BTC less than expected (hot wallet refills). We are continuing to refund and investigate. /2”
+[Link](https://twitter.com/moolah_io/status/525360009878986753) | [Mirror  1](https://web.archive.org/web/20141024124053/https://twitter.com/moolah_io/status/525360009878986753)  
 
-## 
-### 
-Link | Mirror  1  
+## 20141024-1235-CE
+### Tweet from @moolah_io: “Withdrawals of available coins are still being processed. Actual total of missing MintPal coins at this stage appears to be at least... /1”
+[Link](https://twitter.com/moolah_io/status/525359761215479808) | [Mirror  1](https://web.archive.org/web/20141024124223/https://twitter.com/moolah_io/status/525359761215479808)  
+
+## 20141024-1241-CE
+### Tweet from @TignizuShigris: “RT !! Private efforts to locate Ryan Kennedy, #Mintpal scammer. Source confirms that he still holds the stolen #BTC”
+[Link](https://twitter.com/TignizuShigris/status/524146573626707969) | [Mirror  1](https://web.archive.org/web/20141024124817/https://twitter.com/TignizuShigris/status/524146573626707969)  
+
+## 20141024-1255-CE
+### 4x4 Driving School featuring “Moolah store”
+[Link](http://4x4drivingschool.com/experiences/) | [Mirror  1](https://web.archive.org/web/20140722185948/http://4x4drivingschool.com/experiences/)  
+
+## 20141024-1259-CE
+### Tweet from @moolah_io: “Torihiki LTD has ended all association with MintPal Limited.”
+[Link](https://twitter.com/moolah_io/status/523707673922256896) | [Mirror  1](https://web.archive.org/web/20141024125920/https://twitter.com/moolah_io/status/523707673922256896)  
+
+## 20141024-1259-CE
+### Bitcointalk messages from User @Lemon alleged to be Ryan Gentle
+[Link](https://bitcointalk.org/index.php?action=profile;u=99332;sa=showPosts) | [Mirror  1](https://www.evernote.com/shard/s78/sh/dbfd3ecf-4635-4721-8b32-94dff72d3d69/43aeea89cf14a0ece92679f1e772827c)  
+
+## 20141024-1305-CE
+### Bitcointalk thread with allegations against @Lemon user
+[Link](https://bitcointalk.org/index.php?topic=237537.0;all) | [Mirror  1](https://www.evernote.com/shard/s78/sh/dbfd3ecf-4635-4721-8b32-94dff72d3d69/43aeea89cf14a0ece92679f1e772827c)  
+
+## 20141024-1306-CE
+### Paste Bin containing background information on Ryan Gentle
+[Link](http://pastebin.com/JuHV0mEn) | [Mirror  1](https://web.archive.org/web/20130926034254/http://pastebin.com/JuHV0mEn)  
+
+## 20141024-1312-CE
+### Tweet from @MintPalExchange: “We have reached out @moolah_io over the last few days to hand over V2 in order for us to distribute these coins fairly.”
+[Link](https://twitter.com/MintPalExchange/status/524965362870546435) | [Mirror  1](https://web.archive.org/web/20141024131223/https://twitter.com/MintPalExchange/status/524965362870546435)  
+
+## 20141024-1313-CE
+### Tweet from @MintPalExchange: “We have reached out law enforcement agencies. We encourage you to also call UK Action Fraud: 0300 123 2040  http://www.actionfraud.police.uk “
+[Link](https://twitter.com/MintPalExchange/status/523942820357636096) | [Mirror  1](https://web.archive.org/web/20141024131442/https://twitter.com/MintPalExchange/status/523942820357636096)  
+
+## 20141024-1313-CE
+### Bath Chronicle  |  Posted: December 02, 2013 (Stated Publication Date)
+### “Ryan Kennedy, 26, of Vineyards, Bath, was given a 12-month conditional discharge and restraining order for harassment.”
+[Link](http://www.bathchronicle.co.uk/latest-cases-Bath-Magistrates-Court/story-20248778-detail/story.html) | [Mirror  1](https://web.archive.org/web/20141015233332/http://www.bathchronicle.co.uk/latest-cases-Bath-Magistrates-Court/story-20248778-detail/story.html)  
+
+## 20141024-1327-CE
+### LinkedIn Profile of Seb Ferraro
+[Link](http://uk.linkedin.com/pub/seb-ferraro/47/250/127) | [Mirror  1](https://www.evernote.com/shard/s78/sh/49ae02e7-c0a2-4263-b27f-db655440ecbf/840fd93f72798abe2f6182d940a72ad3)  
+
+## 20141024-1329-CE
+### Article in Cryptocoins Today: “HELP TRACK 3,700 BTC TAKEN FROM MINTPAL BY SCAMMER RYAN KENNEDY VIA /R/BITCOIN”
+### Stated Publication date: OCTOBER 18, 2014
+[Link](http://cryptocoinstoday.com/2014/10/18/help-track-3700-btc-taken-from-mintpal-by-scammer-ryan-kennedy-via-rbitcoin/) | [Mirror  1](https://web.archive.org/web/20141021015135/http://cryptocoinstoday.com/2014/10/18/help-track-3700-btc-taken-from-mintpal-by-scammer-ryan-kennedy-via-rbitcoin/)  
+
+## 20141024-1332-CE
+### Reddit post by /u/MintpalInvestigator “Help track 3,700 BTC taken from MintPal by scammer Ryan Kennedy”
+[Link](http://www.reddit.com/r/Bitcoin/comments/2jmuq1/help_track_3700_btc_taken_from_mintpal_by_scammer/) | [Mirror  1](https://web.archive.org/web/20141024133212/http://www.reddit.com/r/Bitcoin/comments/2jmuq1/help_track_3700_btc_taken_from_mintpal_by_scammer/)  
+
+## 20141024-1335-CE
+### Pastebin  “BY: A GUEST ON OCT 18TH, 2014” (Stated Publication Date)
+[Link](http://pastebin.com/VYpQ5CWA) | [Mirror  1](https://web.archive.org/web/20141019030309/http://pastebin.com/VYpQ5CWA)  
+
+## 20141024-1338-CE
+### Bitcointalk thread: Information on suspected Moolah addressed by @Gatekeeper
+[Link](https://bitcointalk.org/index.php?topic=824211.msg9264746#msg9264746) | [Mirror  1](https://www.evernote.com/shard/s78/sh/8357c9c2-3978-4efe-aaf3-d1ed5e4fd2e0/c966233f51ebfde0960ce7e7e9856273)  
+
+## 20141024-1342-CE
+### Tweet from Chelsea Hopkins: “@2BStandingAgain they have NOTHING TO DO WITH THIS”
+[Link](https://twitter.com/inkymoggy/status/524666771115368448)
+
+Partially **REDACTED**. Chelsea is responding to trolls who continue to harass her family members.
+
+## 20141024-1347-CE
+### Tweet from Chelsea Hopkins: “@2BStandingAgain you have posted his contact details. I KNOW they have been contacted before this. Remove that tweet immediately.”
+[Link](https://twitter.com/inkymoggy/status/524663495032578049) | [Mirror  1](https://web.archive.org/web/20141024134802/https://twitter.com/inkymoggy/status/524663495032578049)    
+
+## 20141024-1351-CE
+### Tweet from @2BStandingAgain: “@LanDoge what took u so long to do that?coincidence that its 24h since @moolah_io  stopped communicating?still waiting 4 my coins.#dogecoin”
+[Link](https://twitter.com/2BStandingAgain/status/523622957978230785) | [Mirror  1](https://web.archive.org/web/20141024135051/https://twitter.com/2BStandingAgain/status/523622957978230785)  
+
+Responding to [@LanDoge](https://twitter.com/LanDoge) tweet on Twitter with his public statements.
 
 ## 
 ### 

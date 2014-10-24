@@ -1,0 +1,7 @@
+.text .de1, .text .de2 {-moz-user-select: text;-khtml-user-select: text;-webkit-user-select: text;-ms-user-select: text;user-select: text;margin:0; padding: 0 5px; background:none; vertical-align:top;color:#000;border-left: 1px solid #ccc; margin: 0 0 0 -7px; position: relative; background: #ffffff;}
+.text  {color:#ACACAC;}
+.text .imp {font-weight: bold; color: red;}
+.text li, .text .li1 {-moz-user-select: -moz-none;-khtml-user-select: none;-webkit-user-select: none;-ms-user-select: none;user-select: none;}
+.text .ln {width:1px;text-align:right;margin:0;padding:0 2px;vertical-align:top;}
+.text .ln-xtra, .text li.ln-xtra, .text div.ln-xtra {color:black;background:#FFFF88;}
+.text span.xtra { display:block; }

@@ -1,0 +1,573 @@
+/* ----------------------------------------------
+   HTML ELEMENTS
+------------------------------------------------- */ 
+@font-face {
+    font-family: 'us101';
+    src: url('http://www.4x4drivingschool.com/themes/4x4/font/US101.TTF');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* Top Elements */
+* { margin: 0; padding: 0; outline: 0 }
+
+body {
+	font: 11px/165% us101, sans-serif;
+	color: #666666; 	
+	margin: 0; padding: 0 0 50px 0;
+	text-align: center;
+}
+
+/* Links */
+a {
+	text-decoration: none;
+	color: #033c57; 	
+}
+a:hover {
+	color: #000;
+}
+
+/* Headers */
+h1, h2, h3 {
+	font: bold 1em/1em us101, Sans-serif;
+	color: #033c57;
+	padding: 15px 10px 5px 10px;
+	margin: 0;
+}
+h1 {
+	font-size: 345%;	
+	font-weight: normal;
+	letter-spacing: -2px;
+	border-bottom: 1px solid #ebebeb;
+	padding-bottom: 3px;	
+}
+h2 {
+	font-size: 200%;	
+}
+h3 {
+	font-size: 170%;	
+	font-weight: normal;	
+}
+
+p, dl { padding: 10px; margin: 0; }
+
+ul, ol {
+	margin: 10px 20px;
+	padding: 0 20px;
+}
+ul { list-style: none; }
+
+dt {
+  font-weight: bold;
+  color: #895F30;
+}
+dd {
+  padding-left: 25px; 
+}
+
+/* Images */
+img {
+border: 0;
+padding: 0px;
+}
+img.float-right {
+  	margin: 5px 0px 10px 10px;  
+}
+img.float-left {
+  	margin: 5px 10px 10px 0px;
+}
+
+code {
+  	margin: 5px 0;
+  	padding: 15px;
+  	text-align: left;
+  	display: block;
+  	overflow: auto;  
+  	font: 500 1em/1.5em 'Lucida Console', 'courier new', monospace ;
+  	/* white-space: pre; */
+  	border: 1px solid #EBEBEB;
+	background: #F0F0F0;  
+}
+acronym {
+  cursor: help;
+  border-bottom: 1px dotted #895F30;
+}
+blockquote {
+	margin: 15px 10px;
+ 	padding: 10px 10px 10px 35px;  
+   border: 1px solid #F0F0F0;
+	background: #F0F0F0 url(http://www.4x4drivingschool.com/themes/4x4/images/quote.jpg) no-repeat 10px 10px;
+	font-weight: normal;
+	font-size: 17px;
+	line-height: 1.5em;
+	font-style: italic;
+	font-family: Georgia, "Times New Roman", Times, serif;	
+	color: #555;	
+}
+
+/* start - table */
+table {
+	border-collapse: collapse;
+	margin: 15px 10px;	
+}
+th {
+	color: #555;
+	background: #E6E6E6;
+	height: 38px;
+	padding-left: 12px;
+	padding-right: 12px;
+	text-align: left;	
+	
+	border-width: 1px;
+  	border-style: solid;
+  	border-color: #ebebeb #d4d4d4 #d4d4d4 #ebebeb;	
+}
+tr {
+	height: 34px;	
+	background: #fff;
+}
+td {
+	padding-left: 11px;
+	padding-right: 11px;
+	border: 1px solid #ECECEC;	
+}	
+/* end - table */
+
+/* form elements */
+form {
+	margin: 15px 10px; padding: 5px 10px 20px 10px;
+	border: 1px solid #f1f1f1; 
+	background: #fdfdfd; 	
+}
+label {
+	display: block;
+	font-weight: bold;
+	margin: 8px 0 5px 0;
+	color: #895F30;
+}
+input, select {
+	padding: 4px;
+	font: normal 1em us101, sans-serif;
+	color: #666666;
+	background: #fff;  	
+}
+textarea {
+	width: 350px;
+	padding: 4px;
+	font: normal 1em us101, sans-serif;
+	height: 100px;
+	display: block;
+	color: #666666;
+}
+input, textarea, select {
+	background: #fff;
+  	border-width: 1px;
+  	border-style: solid;
+  	border-color: #D4D4D4 #ebebeb #ebebeb #d4d4d4; 
+}
+
+input.button { 
+	font: bold 12px us101, Sans-serif; 
+	height: 30px;
+	margin: 0;
+	padding: 2px 3px; 
+	color: #555;
+	background: #E6E6E6;
+	
+	border-width: 1px;
+  	border-style: solid;
+  	border-color: #ebebeb #d4d4d4 #d4d4d4 #ebebeb;
+}
+
+/* search form */
+.searchform {
+	background-color: transparent;
+	border: none;	
+	margin: 0; padding: 12px 0 15px 8px;	
+	width: 190px;	
+}
+.searchform p { margin: 0; padding: 0 0 10px 0; }
+.searchform input.textbox { 
+	width: 115px;
+	color: #666666; 
+	height: 18px;
+	padding: 2px;	
+	vertical-align: top;
+}
+.searchform input.button { 
+	width: 60px;
+	height: 24px;
+	padding: 2px 5px;
+	vertical-align: top;
+}
+
+/* ------------------------------------------
+   LAYOUT
+------------------------------------------- */ 
+#page-wrap {
+	background: #ffffff;
+}
+#header-wrap {
+	position: relative;
+	margin: 0 auto;
+	width: 1025px;
+	height: 176px;
+	text-align: left;	
+}
+
+#topcontent{
+	width: 1024px;
+	height:126px;
+}
+
+#logo {
+	width: 376px;
+	height: 126px;
+	float:left;
+}
+
+#headercontent {
+	width: 640px;
+	float:right;
+	text-align: right;
+}
+
+#sitename {
+	margin: 0; padding: 0;		
+	width: 319px;	
+	height:50px;
+	float:left;
+	background-color: #68a158;
+}
+
+#sitename a {
+	text-decoration:none;
+	color:black;
+	font: 37px/54px us101, Sans-serif;
+}
+
+#header-photo img {
+	border: none;
+	margin: 0; padding: 0;
+} 
+/*  Navigation  */
+
+#nav {
+	margin: 0; padding: 0;		
+	width: 706px;	
+	height:50px;
+	float:right;
+	background-color: #68a158;
+}
+
+#nav ul {
+	float: left;
+	list-style: none;
+	width: 649px;		
+	height: 40px;
+	margin: 0; padding: 0;	
+	display: inline;
+}
+
+#nav ul li {
+	display: inline;
+	margin: 0; padding: 0;
+}
+#nav ul li a {
+	float: left;
+	padding: 18px 0 0 11px;
+	font: 37px/18px us101, Sans-serif;	text-decoration: none;	
+	color: #fff;	
+	text-align: right;
+}
+#nav ul li a:hover, 
+#nav ul li a:active {
+	color: #e8e8e8;
+	background: none;
+	border: none;
+}
+#nav ul li.nav-selected a {	
+	color: #e8e8e8;	
+}
+
+#header-wrap h1#logo-text a {
+	position: absolute;
+	margin: 0; padding: 0;
+	font: normal 60px us101, serif;
+	letter-spacing: -1.5px;
+	color: #070000;
+	text-decoration: none;
+	border: none;
+		
+	/* change the values of top and left to adjust the position of the logo*/
+	top: 135px; left: 48px;	
+}
+#header-wrap h1#logo-text a:hover {
+	background: none;	border: none;
+}
+#header-wrap p#intro {
+	position: absolute;
+	margin: 0; padding: 0;
+	font-family: us101, serif;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 1.6em;
+	font-style: italic;
+	text-transform: none;
+	color: #663333;
+	width: 400px;
+	
+	/* change the values of top and left to adjust the position */
+	top: 205px; left: 60px;		
+}
+
+/* header quick search */
+#header-wrap form#quick-search {
+	position: absolute;
+	top: 25px; right: 25px;
+	padding: 0; margin: 0;
+	width: 260px; height: 26px;
+	background: #fff;	
+	z-index: 999999;
+	border: 1px solid #D8D8D8;		
+}
+#header-wrap form#quick-search p {
+	margin: 0; padding: 0;		
+}
+#header-wrap form#quick-search .tbox {
+	margin: 2px 0 0 4px; 
+	width: 210px;
+	background: none;
+	border: none;
+	color: #ABABAB;
+}
+#header-wrap form#quick-search label,
+#header-wrap form#quick-search .btn {
+	display: none;	
+}
+
+#content-outer {
+	width: 100%;
+}
+#content-wrapper {
+	margin: 0 auto;	
+	text-align: left;
+}
+#content {
+	position: relative;
+	margin: 0 auto;
+	width: 1025px;
+	overflow: auto;
+	height: 90%;
+	background: url(http://www.4x4drivingschool.com/themes/4x4//images/bg_sideb.jpg);
+	background-repeat: repeat-y;
+	background-position: left top;
+	background-color: white;
+}
+
+#topimage {
+	width: 1025px;
+	height: 500px;
+}
+
+.col-one {
+	width: 204px;
+	float: left;
+	margin-left: 15px;
+	background-color: #cae5c2;
+}
+.col-two {
+	float: left;
+	width: 677px;
+	margin: 0 54px 0 74px;
+}
+
+
+#content .col-one ul li {
+	list-style-image: url(http://www.4x4drivingschool.com/themes/4x4/images/bullet.gif);
+}
+#content-wrapper .col-two h3, 
+#content-wrapper .col-three h3 {
+	color: #111;
+	font: normal 1.8em us101, sans-serif;
+	text-transform: none;
+	letter-spacing: -0.5px;
+	padding: 5px 10px;
+	margin: 15px 0 5px 0;
+}
+
+/* sidebar menu */
+.side-col ul {
+	text-align: left;
+	margin: 7px 5px 8px 0px; padding: 0;
+	text-decoration: none;		
+	background: url(http://www.4x4drivingschool.com/themes/4x4/images/dots.gif) repeat-x left top;
+}
+.side-col ul li {
+	list-style: none;
+	background: url(http://www.4x4drivingschool.com/themes/4x4/images/dots.gif) repeat-x left bottom;
+	padding: 6px 10px;
+	margin: 0;		
+}
+* html body .side-col ul li {
+	height: 1%;
+}
+.side-col ul li a {
+	text-decoration: none;	
+	background-image: none;	
+	background-color: transparent;
+	border: none;
+	color: #666666;		
+}
+.side-col ul li a span {
+	color: #989898;	
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-style: italic;
+	font-weight: normal;	
+	font-size: 1em;
+}
+.side-col ul li a:hover {	
+	color: #000;	
+	background: none;
+	border: none;
+}
+.side-col ul li.nav-selected a {
+	color: #000;
+	font-weight: bold;
+}
+.side-col ul ul { margin: 0 0 0 5px; padding: 0; }
+.side-col ul ul li { background: none; }
+
+
+/* footer */
+#footer-wrapper {
+	padding: 30px 54px 100px 15px;
+	width: 956px;
+	margin: 0 auto;
+	margin-top: -18px;
+	text-align: left;
+	background-color: #68a158;
+}
+
+#footer-wrapper h3, #footer-wrapper p {
+	padding-left: 0;
+	color:white;
+}
+#footer-wrapper h3 {
+	font: normal 1.6em/1.6em us101, Sans-serif;
+	color: #ABABAB;	
+}
+#footer-wrapper a {
+	color: #fff;
+	background: transparent;
+}
+
+#footer-wrapper ul {
+	border-top: 1px solid #fff;
+	list-style: none;
+	padding: 0;	
+	margin-left: 0;	
+}
+#footer-wrapper ul li {
+	border-bottom: 1px solid #fff;
+}
+#footer-wrapper ul li a {
+	display: block;
+	width: 98%;
+	line-height: 2em;
+	font-weight: bold;
+	padding: 4px 0;
+	border: none;
+	margin-left: 0;
+	padding-left: 0;
+	color: #fff;
+}
+#footer-wrapper ul li a span {
+	color: #444;
+	font-style: italic;
+	font-weight: normal;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#footer-wrapper ul li a:hover,
+#footer-wrapper ul li a:hover span {
+	color: #fff;
+	text-decoration: none;	
+}
+
+
+.col-one-footer {
+	width: 468px;
+	margin: 0 20px 0 0;
+	float:left;
+}
+.col-two-footer {
+	width: 468px;
+	float:right;
+}
+
+#footer-bottom {
+	clear: both;
+	width: 880px;
+	margin: 0 auto;	
+}
+
+#footer-bottom .bottom-left {
+	float: left;
+	padding-left: 5px;	
+}
+
+#footer-bottom .bottom-right {
+	text-align: right;
+	padding-right: 0;
+}
+
+
+/* postmeta */
+.postmeta {	
+	padding: 5px; margin: 20px 10px 15px 10px;	
+	font-size: 1em;	
+	color: #777;
+	border: 1px solid #EBEBEB;
+	background: #F5F5F5;
+}
+.postmeta a { background: transparent; }
+.postmeta .date{ margin: 0 10px 0 5px;	}
+.postmeta a.comments { margin: 0 10px 0 5px;	}
+.postmeta a.readmore { margin: 0 10px 0 5px;	}
+
+.post-info { font-size: .95em; padding-top: 3px; margin-left: 5px; color: #bababa; }
+.post-info a { color: #000; }
+
+/* thumbnails */
+p.thumbs{ padding: 12px 0 0 10px; }
+
+.thumbs img { 
+	position: relative;
+	padding: 4px;
+	margin: 5px;
+	background: #fafafa;
+   border: 1px solid #dcdcdc;	
+}
+.thumbs img:hover	{
+	border: 1px solid #8E8E8E;
+	background: #8E8E8E;	
+}
+.thumbs a:hover { background-color: transparent; border: none }
+
+/* alignment classes */
+.float-left  { float: left; }
+.float-right { float: right; }
+.align-left  { text-align: left; }
+.align-right { text-align: right; }
+
+/* clearing */
+.clearer { clear: both; }
+.clear {	display:inline-block; }
+.clear:after {
+	display:block; 
+	visibility:hidden; 
+	clear:both; 
+	height:0; 
+	content: "."; 
+}

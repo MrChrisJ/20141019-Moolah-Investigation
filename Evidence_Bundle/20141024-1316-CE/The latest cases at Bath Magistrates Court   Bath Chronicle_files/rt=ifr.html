@@ -1,0 +1,59 @@
+
+<!-- saved from url=(0122)http://bcp.crwdcntrl.net/5/c=1876/rand=232085574/pv=y/ug=%23OpR%2350557%23GrapeShot%20%3A%20Channel%20%3A%20DEFAULT/rt=ifr -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" style="background-color:transparent; width: 100%; text-align: center;">
+<div><img src="382416.gif" width="1" height="1"><img src="usync" height="1" width="1"><img src="5907" width="1" height="1"><img src="http://tap.rubiconproject.com/oz/feeds/lotame/tokens?pk=BP6A-G754QKW2&afu=ace621d1a139210b227dc44f241b572d" height="1" width="1" style="display: none !important;"><img src="http://lotame.nexac.com/5/c=205/dc=1/pid=ace621d1a139210b227dc44f241b572d/tp=DLGX/tpc=na_id" height="1" width="1" style="display: none !important;"><script id="LOTCC_368" src="cc(2).js"></script>
+<script id="LOTCC_796" src="cc(3).js"></script>
+<script>
+function processTargusData(json)
+{
+   if (json != null) {
+       if (json.targus != null) {
+            var fire = null;
+            if (json.targus.sk != null && json.targus.sk != "") {
+                lot368.add("tp", "TARG");
+                lot368.add("tpid", json.targus.sk);
+                fireIt = "m";
+            }
+            if (json.targus.segment != null && json.targus.segment != "000") {
+                lot368.add("genp","tiaas-" + json.targus.segment);
+                fireIt = "b";
+            }
+            if (json.targus.age != null && json.targus.age != "") {
+                lot368.add("genp", new Date().getFullYear() - json.targus.age);
+                fireIt = "b";
+            }
+            if (json.targus.gender != null && json.targus.gender != "") {
+                lot368.add("genp", "gender - " + json.targus.gender);
+                fireIt = "b";
+            }
+            if (fireIt == "b") {
+                lot368.bcpdpv();
+            } else if (fireIt == "m") {
+                var img = new Image();
+                img.src = "http://bcp.crwdcntrl.net/map/c=368/tp=TARG/tpid=" + json.targus.sk;
+                document.body.appendChild(img);
+            }
+        }
+        if (json.Client1 != null) {
+            var fireIt = false;
+            if (json.Client1.segment != null && json.Client1.segment != "000") {
+                if (json.Client1.segment instanceof Array) {
+                    for(var i =0; i < json.Client1.segment.length; i++) {
+                        lot796.add("genp","tialnt-" + json.Client1.segment[i]);
+                        fireIt = true;
+                    }
+                } else {
+                    lot796.add("genp","tialnt-" + json.Client1.segment);
+                    fireIt = true;
+                }
+            }
+            if (fireIt) {
+                lot796.bcpdpv();
+            }
+        }
+   }
+}
+</script>
+<script src="http://adadvisor.net/adscores/g.json?sid=9202507693"></script><div><img src="http://ib.adnxs.com/getuid?http%3A%2F%2Fbcp.crwdcntrl.net%2Fmap%2Fc=281%2Frand=748365802%2Ftpid%3D%24UID%2Ftp%3DANXS" height="1" width="1" style="display: none !important;"></div><img width="1" height="1" src="http://p.acxiom-online.com/pixel/dap?pid=3011&ord=1000&uid=ace621d1a139210b227dc44f241b572d&ot=pixel&redir=http%3A%2F%2Fbcp.crwdcntrl.net%2F5%2Fc%3D1205%2Fseg%3D%23DATTRIBUTES%23"><img src="saved_resource" height="1" width="1"><iframe src="px(1).html" frameborder="0" height="0" width="0" scrolling="no"></iframe></div>
+
+</body></html>

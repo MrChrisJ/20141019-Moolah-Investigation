@@ -1,0 +1,8 @@
+.glossary-popup{font-size:.85em;color:#333;width:350px;background-color:#ebf4fa;border:1px solid #ccc;padding:10px;text-indent:0;z-index:999;}
+.glossary-popup div{clear:left;}
+.glossary-popup .close{float:right;cursor:pointer;}
+body.article div#article-wrapper ul li div.glossary-popup,body.article div#article-wrapper ul li div.glossary-popup h3,body.article div#article-wrapper ul li div.glossary-popup p{text-indent:0;}
+div#box div#content div.glossary-popup h3{margin-top:0;color:#555;border-top-width:0;border-bottom-width:0;font-size:1.1em;font-weight:bold;float:left;final;}
+a.gu-gloss-link,a.gloss-link{background-color:#faf4b1;color:#333;}
+a.gu-gloss-link:hover,a.gloss-link:hover{border-bottom-style:dotted;border-bottom-width:1px;text-decoration:none;}
+a.gu-gloss-link:focus,a.gloss-link:focus,a.gu-gloss-link:active,a.gloss-link:active{background-color:#f3e600;}

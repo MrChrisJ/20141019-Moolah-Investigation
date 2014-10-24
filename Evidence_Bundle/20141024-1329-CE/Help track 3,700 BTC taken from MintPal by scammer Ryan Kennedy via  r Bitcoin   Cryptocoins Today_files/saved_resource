@@ -1,0 +1,1140 @@
+/**
+ * Smiley project CSS 
+ */
+
+/* generic emoji styles */
+.wp-emoji, .wp-emoji:before {
+	display: inline-block !important; /* shouldn't have been necessary, but some themes set this to static */
+}
+
+.wp-emoji {
+	position: relative !important; /* shouldn't have been necessary, but some themes set this to static */
+	vertical-align: bottom;
+
+	/* this will be a line-height tall wrapper for vertically centering the smiley */
+	width: 1.375em;
+	overflow: hidden;
+	white-space: nowrap;	
+	text-indent: 9999px;
+	min-height: 1.2em; /* for really small lineheights */
+}
+
+/* Firefox does weird things with text-indent and selection */
+@-moz-document url-prefix() { 
+	.wp-emoji {
+		text-indent: 0;
+		text-align: center;
+		color: rgba(255,255,255,0);
+		overflow: visible;
+	}
+}
+
+/* @noflip */
+.wp-emoji:before {
+	/* vertically center the smiley */
+	position: absolute;
+	content: "";
+	
+	/* height/width for IE, Firefox and non-webkit browsers */
+	height: 1.25em;
+	width: 1.375em;
+	margin-top: -0.625em; /* minus half the height of the smiley */
+
+	left: 0;
+	top: 50%;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 100% 100%;
+}
+
+/* WebKit specific hacks */
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+	.wp-emoji {
+		width: 1.35em;
+	}
+    .wp-emoji:before {
+		height: 1.4em;
+		width: 1.35em;
+		margin-top: -0.7em; /* minus half the height of the smiley */
+    }
+}
+
+/* IE specific hacks */
+@media screen and (min-width:0\0) {
+	.wp-emoji {
+		height: 1.2em;
+		width: 1.38em;
+	}
+    .wp-emoji:before {
+		width: 1.38em;
+    }
+}
+
+/* individual smileys */
+	/* PNGs are for IE8 fallbacks. Let's remove them some day please */
+.wp-emoji-smile:before {
+	background-image: url(/wp-content/mu-plugins/smileyproject/default/ie/smile.png);
+	background-image: url(/wp-content/mu-plugins/smileyproject/default/smile.svg), none;
+}
+
+.wp-emoji-wink:before {
+	background-image: url(/wp-content/mu-plugins/smileyproject/default/ie/wink.png);
+	background-image: url(/wp-content/mu-plugins/smileyproject/default/wink.svg), none;
+}
+
+.wp-emoji-bigsmile:before {
+	background-image: url(/wp-content/mu-plugins/smileyproject/default/ie/bigsmile.png);
+	background-image: url(/wp-content/mu-plugins/smileyproject/default/bigsmile.svg), none;
+}
+
+.wp-emoji-heart:before {
+	background-image: url(/wp-content/mu-plugins/smileyproject/default/ie/heart.png);
+	background-image: url(/wp-content/mu-plugins/smileyproject/default/heart.svg), none;
+}
+
+.wp-emoji-neutral:before {
+	background-image: url(/wp-content/mu-plugins/smileyproject/default/ie/neutral.png);
+	background-image: url(/wp-content/mu-plugins/smileyproject/default/neutral.svg), none;
+}
+
+.wp-emoji-uneasy:before {
+	background-image: url(/wp-content/mu-plugins/smileyproject/default/ie/uneasy.png);
+	background-image: url(/wp-content/mu-plugins/smileyproject/default/uneasy.svg), none;
+}
+
+.wp-emoji-lol:before {
+	background-image: url(/wp-content/mu-plugins/smileyproject/default/ie/lol.png);
+	background-image: url(/wp-content/mu-plugins/smileyproject/default/lol.svg), none;
+}
+
+.wp-emoji-sad:before {
+	background-image: url(/wp-content/mu-plugins/smileyproject/default/ie/sad.png);
+	background-image: url(/wp-content/mu-plugins/smileyproject/default/sad.svg), none;
+}
+
+.wp-emoji-cry:before {
+	background-image: url(/wp-content/mu-plugins/smileyproject/default/ie/cry.png);
+	background-image: url(/wp-content/mu-plugins/smileyproject/default/cry.svg), none;
+}
+
+.wp-emoji-evilgrin:before {
+	background-image: url(/wp-content/mu-plugins/smileyproject/default/ie/evilgrin.png);
+	background-image: url(/wp-content/mu-plugins/smileyproject/default/evilgrin.svg), none;
+}
+
+.wp-emoji-twisted:before {
+	background-image: url(/wp-content/mu-plugins/smileyproject/default/ie/twisted.png);
+	background-image: url(/wp-content/mu-plugins/smileyproject/default/twisted.svg), none;
+}
+
+.wp-emoji-evil:before {
+	background-image: url(/wp-content/mu-plugins/smileyproject/default/ie/evil.png);
+	background-image: url(/wp-content/mu-plugins/smileyproject/default/evil.svg), none;
+}
+
+.wp-emoji-surprised:before {
+	background-image: url(/wp-content/mu-plugins/smileyproject/default/ie/surprised.png);
+	background-image: url(/wp-content/mu-plugins/smileyproject/default/surprised.svg), none;
+}
+
+.wp-emoji-tongue:before {
+	background-image: url(/wp-content/mu-plugins/smileyproject/default/ie/tongue.png);
+	background-image: url(/wp-content/mu-plugins/smileyproject/default/tongue.svg), none;
+}
+
+.wp-emoji-angry:before {
+	background-image: url(/wp-content/mu-plugins/smileyproject/default/ie/angry.png);
+	background-image: url(/wp-content/mu-plugins/smileyproject/default/angry.svg), none;
+}
+
+.wp-emoji-burrito:before {
+	background-image: url(/wp-content/mu-plugins/smileyproject/default/ie/burrito.png);
+	background-image: url(/wp-content/mu-plugins/smileyproject/default/burrito.svg), none;
+}
+.wp-emoji-burrito, .wp-emoji-burrito:before {
+	width: 1.6em;
+}
+
+.wp-emoji-wordpress:before {
+	background-image: url(/wp-content/mu-plugins/smileyproject/default/ie/wordpress.png);
+	background-image: url(/wp-content/mu-plugins/smileyproject/default/wordpress.svg), none;
+}
+
+.wp-emoji-mindblown:before {
+	background-image: url(/wp-content/mu-plugins/smileyproject/default/ie/mindblown.png);
+	background-image: url(/wp-content/mu-plugins/smileyproject/default/mindblown.svg), none;
+}
+
+.wp-emoji-mindblown-alt:before {
+	background-image: url(/wp-content/mu-plugins/smileyproject/default/ie/mindblown-alt.png);
+	background-image: url(/wp-content/mu-plugins/smileyproject/default/mindblown-alt.svg), none;
+}
+
+.wp-emoji-martini:before {
+	background-image: url(/wp-content/mu-plugins/smileyproject/default/ie/martini.png);
+	background-image: url(/wp-content/mu-plugins/smileyproject/default/martini.svg), none;
+}
+
+.wp-emoji-whiterussian:before {
+	background-image: url(/wp-content/mu-plugins/smileyproject/default/ie/whiterussian.png);
+	background-image: url(/wp-content/mu-plugins/smileyproject/default/whiterussian.svg), none;
+}
+
+.wp-emoji-star:before {
+	background-image: url(/wp-content/mu-plugins/smileyproject/default/ie/star.png);
+	background-image: url(/wp-content/mu-plugins/smileyproject/default/star.svg), none;
+}
+
+.wp-emoji-developer:before {
+	background-image: url(/wp-content/mu-plugins/smileyproject/default/ie/developer.png);
+	background-image: url(/wp-content/mu-plugins/smileyproject/default/developer.svg), none;
+}
+.wp-emoji-developer, .wp-emoji-developer:before {
+	width: 1.5em;
+}
+
+.wp-emoji-facepalm:before {
+	background-image: url(/wp-content/mu-plugins/smileyproject/default/ie/facepalm.png);
+	background-image: url(/wp-content/mu-plugins/smileyproject/default/facepalm.svg), none;
+}
+.wp-emoji-facepalm, .wp-emoji-facepalm:before {
+	width: 1.4em;
+}
+
+.wp-emoji-bear:before {
+	background-image: url(/wp-content/mu-plugins/smileyproject/default/ie/bear.png);
+	background-image: url(/wp-content/mu-plugins/smileyproject/default/bear.svg), none;
+}
+
+.wp-emoji-mrgreen:before {
+	background-image: url(/wp-content/mu-plugins/smileyproject/default/ie/mrgreen.png);
+	background-image: url(/wp-content/mu-plugins/smileyproject/default/mrgreen.svg), none;
+}
+
+.wp-emoji-arrow:before {
+	background-image: url(/wp-content/mu-plugins/smileyproject/default/ie/arrow.png);
+	background-image: url(/wp-content/mu-plugins/smileyproject/default/arrow.svg), none;
+}
+
+.wp-emoji-confused:before {
+	background-image: url(/wp-content/mu-plugins/smileyproject/default/ie/confused.png);
+	background-image: url(/wp-content/mu-plugins/smileyproject/default/confused.svg), none;
+}
+
+.wp-emoji-cool:before {
+	background-image: url(/wp-content/mu-plugins/smileyproject/default/ie/cool.png);
+	background-image: url(/wp-content/mu-plugins/smileyproject/default/cool.svg), none;
+}
+
+.wp-emoji-idea:before {
+	background-image: url(/wp-content/mu-plugins/smileyproject/default/ie/idea.png);
+	background-image: url(/wp-content/mu-plugins/smileyproject/default/idea.svg), none;
+}
+
+.wp-emoji-blush:before {
+	background-image: url(/wp-content/mu-plugins/smileyproject/default/ie/blush.png);
+	background-image: url(/wp-content/mu-plugins/smileyproject/default/blush.svg), none;
+}
+
+.wp-emoji-oops:before {
+	background-image: url(/wp-content/mu-plugins/smileyproject/default/ie/oops.png);
+	background-image: url(/wp-content/mu-plugins/smileyproject/default/oops.svg), none;
+}
+
+.wp-emoji-rolleyes:before {
+	background-image: url(/wp-content/mu-plugins/smileyproject/default/ie/rolleyes.png);
+	background-image: url(/wp-content/mu-plugins/smileyproject/default/rolleyes.svg), none;
+}
+
+.wp-emoji-exclaim:before {
+	background-image: url(/wp-content/mu-plugins/smileyproject/default/ie/exclaim.png);
+	background-image: url(/wp-content/mu-plugins/smileyproject/default/exclaim.svg), none;
+}
+
+.wp-emoji-question:before {
+	background-image: url(/wp-content/mu-plugins/smileyproject/default/ie/question.png);
+	background-image: url(/wp-content/mu-plugins/smileyproject/default/question.svg), none;
+}
+
+.wp-emoji-kitten:before {
+	background-image: url(/wp-content/mu-plugins/smileyproject/default/ie/kitten.png);
+	background-image: url(/wp-content/mu-plugins/smileyproject/default/kitten.svg), none;
+}
+
+.wp-emoji-momface:before {
+	background-image: url(/wp-content/mu-plugins/smileyproject/default/ie/momface.png);
+	background-image: url(/wp-content/mu-plugins/smileyproject/default/momface.svg), none;
+}
+
+
+/* to enable text-selection of smileys in Firefox, we can't use text-indent or overflow to hide the text, so letterspace it instead */
+@-moz-document url-prefix() { 
+	.wp-emoji-rolleyes {
+		letter-spacing: -.2em;
+	}
+
+	.wp-emoji-oops, .wp-emoji-idea, .wp-emoji-confused {
+		letter-spacing: -.25em;
+	}
+
+	.wp-emoji-burrito, .wp-emoji-arrow, .wp-emoji-bear, .wp-emoji-star {
+		letter-spacing: -.3em;
+	}
+
+	.wp-emoji-developer, .wp-emoji-mrgreen, .wp-emoji-facepalm {
+		letter-spacing: -.35em;
+	}
+
+}
+
+
+
+
+/**
+ * Like Button toolbar button, loading text & container styles
+ *
+ * @todo: doesn't look like "style.css" is used anymore.
+ */
+
+
+/* Master container */
+#jp-post-flair {
+	padding-top: .5em;
+}
+
+/* Overall Sharedaddy block title */
+div.sharedaddy,
+#content div.sharedaddy,
+#main div.sharedaddy {
+	clear: both;
+}
+
+div.sharedaddy h3.sd-title {
+	margin: 0 0 1em 0;
+	display: inline-block;
+	line-height: 1.2;
+	font-size: 9pt;
+	font-weight: bold;
+}
+
+div.sharedaddy h3.sd-title:before {
+	content: "";
+	display: block;
+	width: 100%;
+	min-width: 30px;
+	border-top: 1px solid #ddd;
+	margin-bottom: 1em;
+}
+
+
+/* Toolbar */
+#wpadminbar li#wp-admin-bar-admin-bar-likes-widget {
+	width: 61px;
+	overflow: hidden;
+}
+
+#wpadminbar iframe.admin-bar-likes-widget {
+	width: 61px;
+	height: 28px;
+	min-height: 28px;
+	border-width: 0px;
+	position: absolute;
+	top: 0;
+}
+
+div.jetpack-likes-widget-wrapper {
+	width: 100%;
+	min-height: 50px;	/* Previous height, 60px */
+	position: relative; /* Need to abs position placeholder and iframe so there isn't a jarring jump */
+}
+
+div.jetpack-likes-widget-wrapper .sd-link-color {
+	font-size: 12px;
+}
+
+div.jetpack-likes-widget-wrapper.slim-likes-widget {
+	width: 1px; /* initial default */
+	min-height: 0;
+}
+
+#likes-other-gravatars {
+	display: none;
+	position: absolute;
+	padding: 10px;
+	background-color: #000;
+	border-width: 0;
+	opacity: 0.88;
+	filter: alpha(opacity=88);
+	box-shadow: 0 0 10px black;
+	min-width: 130px;
+	z-index: 1000;
+}
+
+#likes-other-gravatars * {
+	line-height: normal;
+}
+
+#likes-other-gravatars .likes-text {
+	color: white;
+	font-size: 14px;
+	padding-bottom: 5px;
+}
+
+#likes-other-gravatars ul,
+#likes-other-gravatars li {
+	margin: 0;
+	padding: 0;
+	text-indent: 0;
+	list-style-type: none;
+}
+
+#likes-other-gravatars li::before {
+	content: "";
+}
+
+#likes-other-gravatars ul.wpl-avatars {
+	overflow: auto;
+	display: block;
+	position: absolute;
+	max-height: 190px;
+}
+
+#likes-other-gravatars ul.wpl-avatars li {
+	width: 32px;
+	height: 32px;
+	float: left;
+	margin: 0 5px 5px 0;
+}
+
+#likes-other-gravatars ul.wpl-avatars li a {
+	margin: 0 2px 0 0;
+	border-bottom: none !important;
+	display: block;
+}
+
+#likes-other-gravatars ul.wpl-avatars li a img {
+	background: none;
+	border: none;
+	margin: 0 !important;
+	padding: 0 !important;
+	position: static;
+}
+
+div.sd-box {
+	border-top: 1px solid #ddd;
+	border-top: 1px solid rgba(0,0,0,.13);
+}
+
+.entry-content .post-likes-widget, .post-likes-widget,
+.comment-likes-widget {
+	margin: 0;
+	border-width: 0;
+	display: block;
+}
+
+
+/* Loading text */
+.post-likes-widget-placeholder {
+	margin: 0;
+	border-width: 0;
+	position: relative;
+}
+
+.post-likes-widget-placeholder .button {
+	display: none;	/* Let's not show a dummy like button, let's just make a great button experience once it's loaded */
+}
+
+.post-likes-widget-placeholder .button span {
+}
+
+.post-likes-widget-placeholder .loading {
+	color: #999;
+	font-size: 12px;
+}
+
+.slim-likes-widget .post-likes-widget {
+	width: auto;
+	float: none;
+}
+
+
+/* Like Special cases (display on it's own) */
+div.sharedaddy.sd-like-enabled .sd-like h3 {
+	display: none;
+}
+
+div.sharedaddy.sd-like-enabled .sd-like .post-likes-widget {
+	width: 100%;
+	float: none;
+	position: absolute; /* Need to abs position placeholder and iframe so there isn't a jarring jump */
+	top: 0;
+}
+
+.comment-likes-widget {
+	width: 100%;
+}
+
+
+/* Make ratings block. @todo: make !important unnecessary by removing inline style */
+.pd-rating {
+	display: block !important;
+}
+
+
+/* Hide G+ title */
+.sd-gplus .sd-title {
+	display: none;
+}
+#bit, #bit * {
+	*zoom: 1;
+}
+
+#bit {
+	font: normal 13px "Helvetica Neue", sans-serif;
+	_display: none;
+}
+
+.loggedout-follow-shelf {
+	position: fixed;
+	right: 40%;
+	z-index: 100;
+	bottom: -300px;
+}
+
+.loggedout-follow-normal {
+	position: fixed;
+	z-index: 100;
+	bottom: -300px;
+	right: 10px;
+}
+
+.loggedout-follow-typekit {
+	margin-right: 4.5em;
+	position: fixed;
+	z-index: 100;
+	bottom: -300px;
+	right: 10px;
+}
+
+#bit a.bsub {
+	display: block;
+	overflow: hidden;
+	padding: 0 10px 0 8px;
+	float: right;
+	text-decoration: none !important;
+	line-height: 28px;
+	font: normal 13px/28px "Helvetica Neue", sans-serif;
+	color: #CCC;
+	text-shadow: #444 0 -1px 0;
+	letter-spacing: normal;
+	border: 0;
+
+	background-color: #464646;
+	background-image: -ms-linear-gradient(bottom, #464646, #3f3f3f 5px);
+	background-image: -moz-linear-gradient(bottom, #3f3f3f, #464646 5px);
+	background-image: -o-linear-gradient(bottom, #464646, #3f3f3f 5px);
+	background-image: -webkit-gradient(linear, left bottom, left top, from(#464646), to(#3f3f3f));
+	background-image: -webkit-linear-gradient(bottom, #3f3f3f, #464646 5px);
+	background-image: linear-gradient(bottom, #464646, #3f3f3f 5px);
+
+	-webkit-box-shadow: 0 -1px 5px rgba(0,0,0,0.20);
+	-moz-box-shadow: 0 -1px 5px rgba(0,0,0,0.20);
+	-o-box-shadow: 0 -1px 5px rgba(0,0,0,0.20);
+	-ms-box-shadow: 0 -1px 5px rgba(0,0,0,0.20);
+	box-shadow: 0 -1px 5px rgba(0,0,0,0.20);
+
+	outline-style: none;
+	outline-width: 0;
+}
+
+#bit a.bsub {
+	-moz-border-radius: 2px 2px 0 0;
+	-webkit-border-radius: 2px 2px 0 0;
+	-o-border-radius: 2px 2px 0 0;
+	-ms-border-radius: 2px 2px 0 0;
+	border-radius: 2px 2px 0 0;
+}
+
+#bit a.bsub span {
+	background: url(/wp-content/blog-plugins/loggedout-follow/../../mu-plugins/admin-bar/wpcom-admin-bar-icons.png) 0 -77px no-repeat;
+	padding-left: 20px;
+	padding-right: 6px;
+}
+
+#bit a:hover span, #bit a.bsub.open span {
+	color: #ffffff !important;
+	background-position: 0 -117px;
+}
+
+#bit a.bsub.open {
+	background: #333;
+}
+
+#bitsubscribe {
+	background: #464646;
+	color: #fff;
+	padding: 15px;
+	width: 200px;
+	margin-top: 27px;
+	-moz-border-radius: 2px 0 0 0;
+	-webkit-border-radius: 2px 0 0 0;
+	-o-border-radius: 2px 0 0 0;
+	-ms-border-radius: 2px 0 0 0;
+	border-radius: 2px 0 0 0;
+	*float: right;
+	*margin-right: -68px;
+}
+
+div#bitsubscribe.open {
+	-webkit-box-shadow: 0 0 8px rgba(0,0,0,0.5);
+	-moz-box-shadow: 0 0 8px rgba(0,0,0,0.5);
+	-o-box-shadow: 0 0 8px rgba(0,0,0,0.5);
+	-ms-box-shadow: 0 0 8px rgba(0,0,0,0.5);
+	box-shadow: 0 0 8px rgba(0,0,0,0.5);
+}
+
+#bitsubscribe div {
+	overflow: hidden;
+}
+
+#bit h3, #bit #bitsubscribe h3 {
+	margin: 0 0 .5em 0 !important;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: 300;
+	text-shadow: 0 1px 0 #333;
+	font-size: 20px;
+	color: #fff;
+	text-align: left;
+}
+
+#bit #bitsubscribe p {
+	margin: 0 0 1em 0;
+	*margin: 0 0 0 0;
+	font: 15px/1.3em "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: 300;
+	text-shadow: 0 1px 0 #333;
+	color: #fff;
+}
+
+#bitsubscribe p a {
+	margin: 20px 0 0;
+	color: #fff;
+	text-decoration: underline;
+}
+
+#bit #bitsubscribe p.bit-follow-count {
+	font-size: 13px;
+}
+
+#bitsubscribe input[type=submit] {
+	padding: 2px 20px;
+	background: #333; /* Old browsers */
+	background: -moz-linear-gradient(top, #333 0%, #111 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#333), color-stop(100%,#111)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #333 0%,#111 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #333 0%,#111 100%); /* Opera11.10+ */
+	background: -ms-linear-gradient(top, #333 0%,#111 100%); /* IE10+ */
+	background: linear-gradient(top, #333 0%,#111 100%);
+	color: #ccc;
+	text-shadow: 0 1px 0 #000;
+	border: 1px solid #282828;
+	-moz-border-radius: 11px;
+	-webkit-border-radius: 11px;
+	border-radius: 11px;
+	-moz-box-shadow: inset 0 1px 0 #444;
+	-webkit-box-shadow: inset 0 1px 0 #444;
+	box-shadow: inset 0 1px 0 #444;
+	text-decoration: none;
+	-webkit-transition: all 0.25s ease-in-out;
+	-moz-transition: all 0.25s ease-in-out;
+	-o-transition: all 0.25s ease-in-out;
+	transition: all 0.25s ease-in-out;
+	*margin: 1em 0 1em 0;
+}
+
+#bitsubscribe input[type=submit]:hover {
+	background: #222; /* Old browsers */
+	background: -moz-linear-gradient(top, #333 0%, #222 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#333), color-stop(100%,#222)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #333 0%,#222 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #333 0%,#222 100%); /* Opera11.10+ */
+	background: -ms-linear-gradient(top, #333 0%,#222 100%); /* IE10+ */
+	background: linear-gradient(top, #333 0%,#222 100%);
+	color: #fff;
+	-moz-box-shadow: inset 0 1px 0 #4f4f4f;
+	-webkit-box-shadow: inset 0 1px 0 #4f4f4f;
+	box-shadow: inset 0 1px 0 #4f4f4f;
+	text-decoration: none;
+}
+
+#bitsubscribe input[type=submit]:active {
+	background: #111; /* Old browsers */
+	background: -moz-linear-gradient(top, #111 0%, #222 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#111), color-stop(100%,#222)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #111 0%,#222 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #111 0%,#222 100%); /* Opera11.10+ */
+	background: -ms-linear-gradient(top, #111 0%,#222 100%); /* IE10+ */
+	background: linear-gradient(top, #111 0%,#222 100%);
+	color: #aaa;
+	-moz-box-shadow: inset 0 -1px 0 #333;
+	-webkit-box-shadow: inset 0 -1px 0 #333;
+	box-shadow: inset 0 -1px 0 #333;
+	text-decoration: none;
+}
+
+#bitsubscribe input[type=text],
+#bitsubscribe input[type=email] {
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-o-border-radius: 3px;
+	-ms-border-radius: 3px;
+	background: #eee;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	font: 15px "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: 300;
+	height: auto;
+	padding: 1px 2px;
+	width: 95%;
+}
+
+#bitsubscribe input[type=text]:focus,
+#bitsubscribe input[type=email]:focus {
+	border: 1px solid #000;
+}
+
+#bitsubscribe.open {
+	display: block;
+}
+
+#bsub-subscribe-button {
+	text-align: center;
+	margin: 0 auto;
+}
+
+/*
+Confirmation
+=============================== */
+
+#bitsubscribe #lof-readerpromo p {
+	color: #ccc;
+}
+
+#bitsubscribe #lof-followpublicize {
+	border-top: 1px solid #3c3c3c;
+	margin-bottom: .5em;
+}
+
+#bitsubscribe #lof-followpublicize h3 {
+	font-size: 13px;
+	padding-top: 1em;
+	margin-bottom: 1em !important;
+}
+
+#bitsubscribe #lof-followpublicize p.lof-followpublicize-twitter,
+#bitsubscribe #lof-followpublicize p.lof-followpublicize-facebook {
+	background: #555;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-o-border-radius: 3px;
+	-ms-border-radius: 3px;
+	border-radius: 3px;
+	-moz-box-shadow: inset 0 1px 1px #333;
+	-webkit-box-shadow: inset 0 1px 1px #333;
+	-o-box-shadow: inset 0 1px 1px #333;
+	-ms-box-shadow: inset 0 1px 1px #333;
+	box-shadow: inset 0 1px 1px #333;
+	margin-bottom: .5em;
+	overflow: hidden;
+}
+#bitsubscribe #lof-followpublicize p.lof-followpublicize-twitter {
+	padding: 10px 10px 5px;
+}
+
+/*
+Footer
+=============================== */
+
+#bitsubscribe #bsub-credit {
+	text-align: center;
+	font: normal 11px "Helvetica Neue", sans-serif;
+	padding: 7px 0;
+	margin:0 0 -15px;
+	border-top: 1px solid #3c3c3c;
+}
+
+#bitsubscribe #bsub-credit a {
+	color: #aaa;
+	text-shadow: 0 1px 0 #262626;
+	background: none;
+	text-decoration: none;
+}
+
+#bitsubscribe #bsub-credit a:hover {
+	color: #fff;
+	background: none;
+}
+
+@media (max-width: 800px) {
+	#bit, #bit a.bsub {
+		display:none;
+	}
+}
+
+@media (min-device-width: 768px) {
+	#bit, #bit a.bsub {
+		display: block;
+	}
+}
+/**
+ * Styles for Jetpack related posts
+ */
+
+/* Container */
+
+div#jp-relatedposts {
+	display: none;
+	padding-top: 1em;
+	margin: 1em 0;
+	position: relative;
+}
+
+div.jp-relatedposts:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+/* Headline above related posts section, labeled "Related" */
+
+div#jp-relatedposts h3.jp-relatedposts-headline {
+	margin: 0 0 1em 0;
+	display: inline-block;
+	float: left;
+	font-size: 9pt;
+	font-weight: bold;
+	font-family: inherit;
+}
+
+div#jp-relatedposts h3.jp-relatedposts-headline em:before {
+	content: "";
+	display: block;
+	width: 100%;
+	min-width: 30px;
+	border-top: 1px solid #ddd;
+	border-top: 1px solid rgba(0,0,0,.2);
+	margin-bottom: 1em;
+}
+
+div#jp-relatedposts h3.jp-relatedposts-headline em {
+	font-style: normal;
+	font-weight: bold;
+}
+
+/* Related posts items (wrapping items) */
+
+div#jp-relatedposts div.jp-relatedposts-items {
+	clear: left;
+}
+
+div#jp-relatedposts div.jp-relatedposts-items-visual {
+	margin-right: -20px;
+}
+
+/* Related posts item */
+
+div#jp-relatedposts div.jp-relatedposts-items .jp-relatedposts-post {
+	float: left;
+	width: 33%;
+	margin: 0 0 1em; /* Needs to be same as the main outer wrapper for Related Posts */
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+div#jp-relatedposts div.jp-relatedposts-items-visual .jp-relatedposts-post {
+	padding-right: 20px;
+	/*cursor: pointer;*/
+	filter: alpha(opacity=80);
+	-moz-opacity: .8;
+	opacity: .8;
+}
+
+div#jp-relatedposts div.jp-relatedposts-items div.jp-relatedposts-post:hover .jp-relatedposts-post-title a {
+	text-decoration: underline;
+}
+
+div#jp-relatedposts div.jp-relatedposts-items div.jp-relatedposts-post:hover {
+	filter: alpha(opacity=100);
+	-moz-opacity: 1;
+	opacity: 1;
+}
+
+/* Related posts item content */
+
+div#jp-relatedposts div.jp-relatedposts-items-visual h4.jp-relatedposts-post-title,
+div#jp-relatedposts div.jp-relatedposts-items p {
+	font-size: 14px;
+	line-height: 20px;
+	margin: 0;
+}
+
+div#jp-relatedposts div.jp-relatedposts-items p {
+	margin-bottom: 0;
+}
+
+div#jp-relatedposts div.jp-relatedposts-items-visual h4.jp-relatedposts-post-title {
+	text-transform: none;
+	margin: 0;
+	font-family: inherit;
+	display: block;
+	max-width: 100%;
+}
+
+div#jp-relatedposts div.jp-relatedposts-items .jp-relatedposts-post .jp-relatedposts-post-title a {
+	font-size: inherit;
+	font-weight: normal;
+	text-decoration: none;
+	filter: alpha(opacity=100);
+	-moz-opacity: 1;
+	opacity: 1;
+}
+
+div#jp-relatedposts div.jp-relatedposts-items .jp-relatedposts-post .jp-relatedposts-post-title a:hover {
+	text-decoration: underline;
+}
+
+div#jp-relatedposts div.jp-relatedposts-items .jp-relatedposts-post img.jp-relatedposts-post-img,
+div#jp-relatedposts div.jp-relatedposts-items .jp-relatedposts-post span {
+	display: block;
+	max-width: 90%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+div#jp-relatedposts div.jp-relatedposts-items-visual .jp-relatedposts-post img.jp-relatedposts-post-img,
+div#jp-relatedposts div.jp-relatedposts-items-visual .jp-relatedposts-post span {
+	max-width: 100%;
+}
+
+div#jp-relatedposts div.jp-relatedposts-items .jp-relatedposts-post .jp-relatedposts-post-context {
+	opacity: .6;
+}
+
+/* Behavior when there are thumbnails in visual mode */
+div#jp-relatedposts div.jp-relatedposts-items-visual div.jp-relatedposts-post-thumbs p.jp-relatedposts-post-excerpt {
+	display: none;
+}
+
+/* Behavior when there are no thumbnails in visual mode */
+div#jp-relatedposts div.jp-relatedposts-items-visual div.jp-relatedposts-post-nothumbs p.jp-relatedposts-post-excerpt {
+	overflow: hidden;
+}
+div#jp-relatedposts div.jp-relatedposts-items-visual div.jp-relatedposts-post-nothumbs span {
+	margin-bottom: 1em;
+}
+
+/**
+ * Responsive
+ */
+
+@media only screen and (max-width: 640px) {
+
+	div#jp-relatedposts div.jp-relatedposts-items .jp-relatedposts-post {
+		width: 50%;
+	}
+
+	div#jp-relatedposts div.jp-relatedposts-items .jp-relatedposts-post:nth-child(3n) {
+		clear: left;
+	}
+
+	div#jp-relatedposts div.jp-relatedposts-items-visual {
+		margin-right: 20px;
+	}
+
+}
+
+@media only screen and (max-width: 320px) {
+
+	div#jp-relatedposts div.jp-relatedposts-items .jp-relatedposts-post {
+		width: 100%;
+		clear: both;
+		margin: 0 0 1em;
+	}
+
+}
+/**
+ * Add text colors to the playlist shortcode light color scheme.
+ * 
+ * Core ticket: https://core.trac.wordpress.org/ticket/27562
+ */
+
+.wp-playlist-light {
+	color: #000;
+}
+
+.wp-playlist-light .wp-playlist-item {
+	color: #333;
+}
+
+.wp-playlist-light .wp-playlist-playing {
+	background: #fff;
+	color: #000;
+}
+
+.wp-playlist-dark .wp-playlist-item .wp-playlist-caption {
+	color: #fff;
+}
+
+.wp-playlist-caption {
+	display: block;
+}/**
+ * MP6 hacks, CSS that's either WPCOM specific or otherwise not suitably for MP6 proper
+ */
+
+
+/* Replace Omnisearch PNG search icon with a dashicon */
+#wpadminbar div.ab-item form#adminbarsearch input.adminbar-search-input {
+	background-image: none;
+	position: relative;
+	z-index: 30;
+}
+
+
+/* Show globe icon next to blog */
+#wpadminbar #wp-admin-bar-blog > .ab-item:before {
+	position: relative;
+	top: 2px;
+	content: '\f319';
+}
+
+/* If a blavatar is present, move it left to cover the globe */
+#wpadminbar #wp-admin-bar-blog > .ab-item {
+	position: relative;
+}
+#wpadminbar #wp-admin-bar-blog > .ab-item img.avatar {
+	position: absolute;
+	z-index: 1;
+	left: 12px;
+	top: 10px;
+}
+
+/* @noflip */
+#wpadminbar.rtl #wp-admin-bar-blog > .ab-item img.avatar {
+	right: 12px;
+}
+
+/* Make sure the margin around the WordPress logo is a bit relaxed, and the WordPress icon aligns to the sidebar icons */
+#wpadminbar ul#wp-admin-bar-root-default>li#wp-admin-bar-newdash {
+	margin: 0 8px 0 -1px;
+}
+
+/* @noflip */
+#wpadminbar.rtl ul#wp-admin-bar-root-default>li#wp-admin-bar-newdash {
+	margin: 0 -1px 0 -8px;
+}
+
+
+/* Fix omnisearch lineheight */
+#wpadminbar>#wp-toolbar>#wp-admin-bar-top-secondary input.adminbar-search-input.search-input-focus {
+	border: none;
+	text-shadow: none;
+	box-shadow: none;
+	line-height: 1;
+	background: #ccc;
+	background: rgba(255,255,255,.7);
+}
+
+/* Invert stats sparkline on light theme */
+body.admin-color-mp6-light li#wp-admin-bar-stats img {
+	filter: invert(100%);
+	-webkit-filter: invert(100%);
+}
+
+/* Override white color on blog title */
+body.admin-color-mp6-light #wpadminbar ul li#wp-admin-bar-blog > .ab-item {
+	color: #333;
+}
+
+/* Updated message fixes */
+body.admin-color-mp6-light #wpadminbar>#wp-toolbar>#wp-admin-bar-top-secondary span.noticon {
+	color: #eee;
+}
+
+div.updated p,
+div.error p {
+	position: relative;
+}
+
+div.updated .noticon-close,
+div.error .noticon-close {
+	font-size: 28px;
+
+	height: 28px;
+	width: 28px;
+
+	position: absolute;
+	right: 0;
+	top: -1px;
+}
+
+/* Fix taller MP6 v2 toolbar. Merge this into mu-plugins/wpcom-admin-bar.css after MP6 v2 launch */
+@media screen and ( max-width: 782px ) {
+
+	.mp6 #wpadminbar li#wp-admin-bar-follow > a,
+	.mp6 #wpadminbar li#wp-admin-bar-blog > a,
+	.mp6 #wpadminbar li#wp-admin-bar-topicpress > a,
+	.mp6 #wpadminbar li#wp-admin-bar-wpr-reblog > a,
+	/* These next lines are necessary for when users opt out to the responsive styles */
+	.mp6 #wpadminbar li#wp-admin-bar-dbg > div,			
+	.mp6 #wpadminbar li#wp-admin-bar-my-account > a
+	{
+		line-height: 46px !important;
+	}
+	
+	/* Notes only shown when users opt out to the responsive styles */
+	body.mp6 #wpadminbar #wp-admin-bar-notes #wpnt-notes-unread-count {
+		margin: 13px 3px 0 3px !important;
+	}
+
+	.mp6 #wpadminbar li#wp-admin-bar-blog > a.ab-item:before {
+		top: 13px;
+	}
+	
+	#wpadminbar #wp-admin-bar-blog > .ab-item img.avatar {
+		top: 17px;
+	}
+
+}
+
+/* Fix toolbar hover color temporarily. Post launch, remove from /wp-content/mu-plugins/admin-bar/wpcom-admin-bar.css */
+.admin-color-mp6 #wpadminbar ul li#wp-admin-bar-blog.hover > .ab-item, .mp6 #wpadminbar ul li#wp-admin-bar-blog.hover > .ab-item, .admin-color-mp6 #wpadminbar .quicklinks #wp-admin-bar-my-account-with-avatar.hover .ab-display-name, .mp6 #wpadminbar .quicklinks #wp-admin-bar-my-account-with-avatar.hover .ab-display-name, .admin-color-mp6 #wpadminbar .quicklinks #wp-admin-bar-my-account-no-avatar.hover .ab-display-name, .mp6 #wpadminbar .quicklinks #wp-admin-bar-my-account-no-avatar.hover .ab-display-name, .admin-color-mp6 #wpadminbar .quicklinks #wp-admin-bar-my-account.hover .ab-display-name, .mp6 #wpadminbar .quicklinks #wp-admin-bar-my-account.hover .ab-display-name {
+	color: inherit !important;
+}
+
+/* add style for reader link in /wp-admin/ leftbar */
+
+/* Reader icon in left-bar */
+.icon16.icon-reader:before,
+#adminmenu .menu-icon-reader div.wp-menu-image:before,
+ul#adminmenu .toplevel_page_reader div.wp-menu-image:before{
+     content: '\f116';
+}
+
+/* Don't show the Edit icon in the admin bar */
+#wpadminbar #wp-admin-bar-edit > .ab-item:before {
+	display: none;
+}
+
+/* Fix dashicons priority so Japanese users can use the toolbar. Should long term be fixed in whatever plugin that forces all fonts to be Arial */
+i.mce-i-bold, i.mce-i-italic, i.mce-i-bullist, i.mce-i-numlist, i.mce-i-blockquote, i.mce-i-alignleft, i.mce-i-aligncenter, i.mce-i-alignright, i.mce-i-link, i.mce-i-unlink, i.mce-i-wp_more, i.mce-i-strikethrough, i.mce-i-spellchecker, i.mce-i-fullscreen, i.mce-i-wp_fullscreen, i.mce-i-wp_adv, i.mce-i-underline, i.mce-i-alignjustify, i.mce-i-forecolor, i.mce-i-pastetext, i.mce-i-pasteword, i.mce-i-removeformat, i.mce-i-charmap, i.mce-i-outdent, i.mce-i-indent, i.mce-i-undo, i.mce-i-redo, i.mce-i-help, i.mce-i-wp_help, i.mce-i-wp-media-library, i.mce-i-ltr, i.mce-i-wp_page, .mce-close {
+	font: normal 20px/1 'dashicons' !important;
+}
+
+.dashicons, .dashicons-before:before {
+	font-family: dashicons !important;
+}
+
+.noticon {
+	font-family: "Noticons" !important;
+}
