@@ -10,7 +10,7 @@
 [Timestamp 6](http://www.cryptograffiti.info/?txnr=1263) | [Block 326,548](https://blockchain.info/tx/f9499b18f4867937baeab854fa877af20c71867e19f1c34340a66aecbae8e547) | [bfcc33e](https://github.com/MrChrisJ/20141019-Moolah-Investigation/commit/bfcc33ef9ab2a285bd5e4dbcd028d23b1b31f164)  
 [Timestamp 7](http://www.cryptograffiti.info/?txnr=1264) | [Block 326,630](https://blockchain.info/tx/58594d5a15df732d5de5c353822fd4346cd7c339a472d0fe951a4d3c256288b8) | [2b5ff87](https://github.com/MrChrisJ/20141019-Moolah-Investigation/commit/2b5ff87d9dd87c1b025e84d5278202d280a72cd5)  
 
-Investigation stage: **Discovery**
+Investigation stage: **Closed**
 
 See [**Evidence_Bundle.md**](https://github.com/MrChrisJ/20141019-Moolah-Investigation/blob/master/Evidence_Bundle.md) to see the *Discovery process*  
 See [**Journal**](https://github.com/MrChrisJ/20141019-Moolah-Investigation/tree/master/Journal) for contextual notes  
